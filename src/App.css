@@ -134,6 +134,229 @@
   cursor: not-allowed;
 }
 
+/* 市区町村選択ボタン */
+.select-cities-button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background: #fff;
+  color: #2c3e50;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.select-cities-button:hover {
+  background: #e3f2fd;
+  border-color: #2980b9;
+}
+
+.selected-cities-preview {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+  color: #495057;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* モーダル */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 800px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #7f8c8d;
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s;
+}
+
+.close-button:hover {
+  color: #2c3e50;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e9ecef;
+  background: #f8f9fa;
+}
+
+.action-button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.action-button:hover {
+  background: #e9ecef;
+  border-color: #adb5bd;
+}
+
+.selected-count {
+  margin-left: auto;
+  font-weight: 600;
+  color: #3498db;
+}
+
+.modal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+}
+
+.cities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.city-checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border: 2px solid #e9ecef;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.city-checkbox-item:hover {
+  background: #f8f9fa;
+  border-color: #bdc3c7;
+}
+
+.city-checkbox-item:has(input[type='checkbox']:checked) {
+  background: #e3f2fd;
+  border-color: #3498db;
+}
+
+.city-checkbox-item:has(input[type='checkbox']:checked):hover {
+  background: #d1e7fd;
+  border-color: #2980b9;
+}
+
+.city-checkbox-item input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #3498db;
+}
+
+.city-checkbox-item span {
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+.city-checkbox-item:has(input[type='checkbox']:checked) span {
+  font-weight: 600;
+}
+
+.modal-footer {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-top: 1px solid #e9ecef;
+  background: #f8f9fa;
+}
+
+.cancel-button {
+  flex: 1;
+  padding: 0.85rem;
+  font-size: 1rem;
+  background: #fff;
+  color: #6c757d;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.cancel-button:hover {
+  background: #e9ecef;
+  border-color: #adb5bd;
+}
+
+.confirm-button {
+  flex: 2;
+  padding: 0.85rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.confirm-button:hover:not(:disabled) {
+  background: #2980b9;
+}
+
+.confirm-button:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+}
+
 /* SearchResults スタイル */
 .search-results {
   background: #fff;
@@ -253,6 +476,19 @@
     font-size: 1rem;
     padding: 1rem;
   }
+
+  /* モーダル */
+  .modal-content {
+    max-height: 95vh;
+  }
+
+  .modal-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .cities-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
 }
 
 /* スマートフォン（480px以下） */
@@ -318,6 +554,47 @@
     font-size: 0.95rem;
     padding: 0.9rem;
   }
+
+  /* モーダル */
+  .modal-backdrop {
+    padding: 0;
+  }
+
+  .modal-content {
+    max-height: 100vh;
+    border-radius: 0;
+  }
+
+  .modal-header {
+    padding: 1rem;
+  }
+
+  .modal-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .modal-actions {
+    padding: 0.75rem 1rem;
+    flex-wrap: wrap;
+  }
+
+  .modal-body {
+    padding: 1rem;
+  }
+
+  .cities-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .city-checkbox-item {
+    padding: 0.65rem;
+    font-size: 0.9rem;
+  }
+
+  .modal-footer {
+    padding: 1rem;
+  }
 }
 
 /* 極小スマートフォン（360px以下） */
@@ -327,6 +604,10 @@
   }
 
   .cities-list {
+    grid-template-columns: 1fr;
+  }
+
+  .cities-grid {
     grid-template-columns: 1fr;
   }
 }
