@@ -68,18 +68,6 @@ export function CitySelectionModal({
           </button>
         </div>
 
-        <div className="modal-actions">
-          <button type="button" onClick={handleSelectAll} className="action-button">
-            すべて選択
-          </button>
-          <button type="button" onClick={handleDeselectAll} className="action-button">
-            すべて解除
-          </button>
-          <span className="selected-count">
-            {tempSelectedCities.size}件選択中
-          </span>
-        </div>
-
         <div className="modal-body">
           <div className="cities-grid">
             {cities.map((city) => (

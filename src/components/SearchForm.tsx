@@ -8,7 +8,7 @@ interface SearchFormProps {
 
 export function SearchForm({ onSearch }: SearchFormProps) {
   const [keyword, setKeyword] = useState('')
-  const [selectedPrefecture, setSelectedPrefecture] = useState('')
+  const [selectedPrefecture, setSelectedPrefecture] = useState('13')
   const [selectedCities, setSelectedCities] = useState<Set<string>>(new Set())
   const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -56,7 +56,7 @@ export function SearchForm({ onSearch }: SearchFormProps) {
     <>
       <form onSubmit={handleSubmit} className="search-form">
         <div className="form-group">
-          <label htmlFor="keyword">キーワード</label>
+          <label htmlFor="keyword">キーワード（任意）</label>
           <input
             type="text"
             id="keyword"
@@ -75,7 +75,6 @@ export function SearchForm({ onSearch }: SearchFormProps) {
             onChange={handlePrefectureChange}
             required
           >
-            <option value="">選択してください</option>
             {PREFECTURES.map((pref) => (
               <option key={pref.code} value={pref.code}>
                 {pref.name}
@@ -87,21 +86,22 @@ export function SearchForm({ onSearch }: SearchFormProps) {
         {currentPrefecture && (
           <div className="form-group">
             <label>市区町村</label>
-            <button
-              type="button"
-              onClick={handleOpenModal}
-              className="select-cities-button"
-            >
-              {selectedCities.size === 0
-                ? '市区町村を選択'
-                : `${selectedCities.size}件選択中`}
-            </button>
             {selectedCityNames.length > 0 && (
               <div className="selected-cities-preview">
                 {selectedCityNames.slice(0, 3).join('、')}
                 {selectedCityNames.length > 3 && ` 他${selectedCityNames.length - 3}件`}
               </div>
             )}
+            <button
+              type="button"
+              onClick={handleOpenModal}
+              className="select-cities-button"
+              style={{ marginTop: '10px' }}
+            >
+              {selectedCities.size === 0
+                ? '市区町村を選択'
+                : `市区町村を選択し直す`}
+            </button>
           </div>
         )}
 
