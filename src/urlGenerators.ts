@@ -8,13 +8,13 @@
  * @returns タウンワークの検索URL
  */
 export function townworkSearchUrl(keyword: string, cityCodes: string[]): string {
-  // TODO: 実装する
-  // キーワードをエンコード
-  const encodedKeyword = encodeURIComponent(keyword)
-  
-  // 市区町村コードをタウンワークのコードに変換してURLを組み立てる
-  // 仮実装
-  return `https://townwork.net/search/?keyword=${encodedKeyword}&cities=${cityCodes.join(',')}`
+    // TODO: 実装する
+    // キーワードをエンコード
+    const encodedKeyword = encodeURIComponent(keyword)
+
+    // 市区町村コードをタウンワークのコードに変換してURLを組み立てる
+    // 仮実装
+    return `https://townwork.net/search/?keyword=${encodedKeyword}&cities=${cityCodes.join(',')}`
 }
 
 /**
@@ -24,11 +24,11 @@ export function townworkSearchUrl(keyword: string, cityCodes: string[]): string 
  * @returns バイトルの検索URL
  */
 export function baitoruSearchUrl(keyword: string, cityCodes: string[]): string {
-  // TODO: 実装する
-  // キーワードをエンコード
-  const encodedKeyword = encodeURIComponent(keyword)
-  
-  // 市区町村コードをバイトルのコードに変換してURLを組み立てる
-  // 仮実装
-  return `https://www.baitoru.com/kw${encodedKeyword}/?cities=${cityCodes.join(',')}`
+    // TODO: 実装する
+    // キーワードをエンコード
+    const encodedKeyword = encodeURIComponent(keyword)
+
+    // 市区町村コードをバイトルのコードに変換してURLを組み立てる
+    // 仮実装
+    return `https://www.baitoru.com/kw${encodedKeyword}/?cities=${cityCodes.join(',')}`
 }

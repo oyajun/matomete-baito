@@ -357,9 +357,11 @@
 
 /* タッチデバイス向けの最適化 */
 @media (hover: none) and (pointer: coarse) {
+
   .search-button,
   .open-all-button {
-    min-height: 44px; /* タッチターゲットの最小サイズ */
+    min-height: 44px;
+    /* タッチターゲットの最小サイズ */
   }
 
   .city-checkbox {
@@ -378,10 +380,11 @@
 }
 
 /* 高解像度ディスプレイ対応 */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
   .search-form,
   .search-results {
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   }
 }
-
