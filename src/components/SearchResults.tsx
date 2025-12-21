@@ -5,36 +5,47 @@ interface SearchResult {
 
 interface SearchResultsProps {
   results: SearchResult[]
+  helperMessage?: string
 }
 
-export function SearchResults({ results }: SearchResultsProps) {
+export function SearchResults({ results, helperMessage }: SearchResultsProps) {
+  const resultsAvailable = results.length > 0
   const handleOpenAll = () => {
+    if (!resultsAvailable) {
+      return
+    }
     results.forEach((result) => {
       window.open(result.url, '_blank', 'noopener,noreferrer')
     })
   }
-
-  if (results.length === 0) {
-    return null
-  }
+  const placeholder =
+    helperMessage || '市区町村を選択するとリンクが表示されます'
 
   return (
     <div className="search-results">
       <div className="results-header">
         <h2>検索結果</h2>
-        <button onClick={handleOpenAll} className="open-all-button">
+        <button
+          onClick={handleOpenAll}
+          className="open-all-button"
+          disabled={!resultsAvailable}
+        >
           すべて開く
         </button>
       </div>
-      <ul className="results-list">
-        {results.map((result, index) => (
-          <li key={index} className="result-item">
-            <a href={result.url} target="_blank" rel="noopener noreferrer">
-              {result.siteName}で検索
-            </a>
-          </li>
-        ))}
-      </ul>
+      {resultsAvailable ? (
+        <ul className="results-list">
+          {results.map((result, index) => (
+            <li key={index} className="result-item">
+              <a href={result.url} target="_blank" rel="noopener noreferrer">
+                {result.siteName}で検索
+              </a>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="results-placeholder">{placeholder}</p>
+      )}
     </div>
   )
 }

@@ -1,12 +1,12 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { PREFECTURES } from '../constants'
 import { CitySelectionModal } from './CitySelectionModal'
 
 interface SearchFormProps {
-  onSearch: (keyword: string, cityCodes: string[]) => void
+  onCriteriaChange: (keyword: string, cityCodes: string[]) => void
 }
 
-export function SearchForm({ onSearch }: SearchFormProps) {
+export function SearchForm({ onCriteriaChange }: SearchFormProps) {
   const [keyword, setKeyword] = useState('')
   const [selectedPrefecture, setSelectedPrefecture] = useState('13')
   const [selectedCities, setSelectedCities] = useState<Set<string>>(new Set())
@@ -28,15 +28,16 @@ export function SearchForm({ onSearch }: SearchFormProps) {
   }
 
   const handleConfirmCities = (cities: Set<string>) => {
-    setSelectedCities(cities)
+    setSelectedCities(new Set(cities))
   }
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    if (keyword.trim() && selectedCities.size > 0) {
-      onSearch(keyword, Array.from(selectedCities))
-    }
   }
+
+  useEffect(() => {
+    onCriteriaChange(keyword, Array.from(selectedCities))
+  }, [keyword, selectedCities, onCriteriaChange])
 
   const currentPrefecture = PREFECTURES.find((p) => p.code === selectedPrefecture)
 
@@ -63,7 +64,6 @@ export function SearchForm({ onSearch }: SearchFormProps) {
             value={keyword}
             onChange={(e) => setKeyword(e.target.value)}
             placeholder="例: カフェ、コンビニ"
-            required
           />
         </div>
 
@@ -104,14 +104,7 @@ export function SearchForm({ onSearch }: SearchFormProps) {
             </button>
           </div>
         )}
-
-        <button
-          type="submit"
-          className="search-button"
-          disabled={!keyword.trim() || selectedCities.size === 0}
-        >
-          検索
-        </button>
+        <p className="auto-search-note">市区町村を選択すると自動でリンクを更新します。</p>
       </form>
 
       {isModalOpen && currentPrefecture && (

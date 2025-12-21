@@ -134,6 +134,12 @@
   cursor: not-allowed;
 }
 
+.auto-search-note {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #7f8c8d;
+}
+
 /* 市区町村選択ボタン */
 .select-cities-button {
   width: 100%;
@@ -393,6 +399,11 @@
   background: #229954;
 }
 
+.open-all-button:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+}
+
 .results-list {
   list-style: none;
   padding: 0;
@@ -419,6 +430,16 @@
   background: #e9ecef;
   border-color: #3498db;
   transform: translateX(4px);
+}
+
+.results-placeholder {
+  margin: 0;
+  padding: 1.25rem;
+  background: #f6f8fa;
+  border: 1px dashed #cfd8e0;
+  border-radius: 4px;
+  color: #7f8c8d;
+  font-size: 1rem;
 }
 
 /* レスポンシブ対応 */

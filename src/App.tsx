@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import './App.css'
 import { PROJECT_NAME_JA } from './constants'
 import { SearchForm } from './components/SearchForm'
@@ -10,22 +10,47 @@ interface SearchResult {
   url: string
 }
 
-function App() {
-  const [results, setResults] = useState<SearchResult[]>([])
+interface SearchCriteria {
+  keyword: string
+  cityCodes: string[]
+}
 
-  const handleSearch = (keyword: string, cityCodes: string[]) => {
-    const searchResults: SearchResult[] = [
-      {
-        siteName: 'タウンワーク',
-        url: townworkSearchUrl(keyword, cityCodes),
-      },
-      {
-        siteName: 'バイトル',
-        url: baitoruSearchUrl(keyword, cityCodes),
-      },
-    ]
-    setResults(searchResults)
-  }
+function App() {
+  const [criteria, setCriteria] = useState<SearchCriteria>({ keyword: '', cityCodes: [] })
+  const [results, setResults] = useState<SearchResult[]>([])
+  const [helperMessage, setHelperMessage] = useState('市区町村を選択してください')
+
+  const handleCriteriaChange = useCallback((keyword: string, cityCodes: string[]) => {
+    setCriteria({ keyword, cityCodes })
+  }, [])
+
+  useEffect(() => {
+    if (criteria.cityCodes.length === 0) {
+      setResults([])
+      setHelperMessage('市区町村を選択してください')
+      return
+    }
+
+    try {
+      const searchResults: SearchResult[] = [
+        {
+          siteName: 'タウンワーク',
+          url: townworkSearchUrl(criteria.keyword, criteria.cityCodes),
+        },
+        {
+          siteName: 'バイトル',
+          url: baitoruSearchUrl(criteria.keyword, criteria.cityCodes),
+        },
+      ]
+      setResults(searchResults)
+      setHelperMessage('')
+    } catch (error) {
+      setResults([])
+      setHelperMessage(
+        error instanceof Error ? error.message : '検索URLの生成に失敗しました'
+      )
+    }
+  }, [criteria])
 
   return (
     <div className="app">
@@ -34,8 +59,8 @@ function App() {
         <p className="subtitle">複数のバイトサイトを一括検索</p>
       </header>
       <main className="app-main">
-        <SearchForm onSearch={handleSearch} />
-        <SearchResults results={results} />
+        <SearchForm onCriteriaChange={handleCriteriaChange} />
+        <SearchResults results={results} helperMessage={helperMessage} />
       </main>
     </div>
   )
