@@ -9,8 +9,11 @@ import { CITYCODE_TOWNWORK, PREFECTURE_SLUG } from './constants'
  * @returns タウンワークの検索URL
  */
 export function townworkSearchUrl(keyword: string, cityCodes: string[]): string {
+    // 重複を削除
+    const uniqueCityCodes = [...new Set(cityCodes)]
+
     // 市区町村コードをタウンワークのコードに変換
-    const townworkCodes = cityCodes
+    const townworkCodes = uniqueCityCodes
         .map(citycode => {
             const mapping = CITYCODE_TOWNWORK.find(m => m.citycode === citycode)
             return mapping?.townwork_code
