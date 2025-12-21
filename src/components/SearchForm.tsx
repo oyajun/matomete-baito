@@ -57,17 +57,6 @@ export function SearchForm({ onCriteriaChange }: SearchFormProps) {
     <>
       <form onSubmit={handleSubmit} className="search-form">
         <div className="form-group">
-          <label htmlFor="keyword">キーワード（任意）</label>
-          <input
-            type="text"
-            id="keyword"
-            value={keyword}
-            onChange={(e) => setKeyword(e.target.value)}
-            placeholder="例: カフェ、コンビニ"
-          />
-        </div>
-
-        <div className="form-group">
           <label htmlFor="prefecture">都道府県</label>
           <select
             id="prefecture"
@@ -104,7 +93,17 @@ export function SearchForm({ onCriteriaChange }: SearchFormProps) {
             </button>
           </div>
         )}
-        <p className="auto-search-note">市区町村を選択すると自動でリンクを更新します。</p>
+
+        <div className="form-group">
+          <label htmlFor="keyword">キーワード（任意）</label>
+          <input
+            type="text"
+            id="keyword"
+            value={keyword}
+            onChange={(e) => setKeyword(e.target.value)}
+            placeholder="例: カフェ、コンビニ"
+          />
+        </div>
       </form>
 
       {isModalOpen && currentPrefecture && (

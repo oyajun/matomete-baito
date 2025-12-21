@@ -41,6 +41,10 @@
   margin-bottom: 1.5rem;
 }
 
+.search-form .form-group:last-of-type {
+  margin-bottom: 0.25rem;
+}
+
 .form-group label {
   display: block;
   font-weight: 600;
@@ -56,6 +60,11 @@
   border: 1px solid #ddd;
   border-radius: 4px;
   transition: border-color 0.3s;
+}
+
+.form-group select:hover,
+.form-group select:active {
+  cursor: pointer;
 }
 
 .form-group input[type='text']:focus,
