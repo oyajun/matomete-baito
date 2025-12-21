@@ -77,8 +77,7 @@ export function SearchForm({ onCriteriaChange }: SearchFormProps) {
             <label>市区町村</label>
             {selectedCityNames.length > 0 && (
               <div className="selected-cities-preview">
-                {selectedCityNames.slice(0, 3).join('、')}
-                {selectedCityNames.length > 3 && ` 他${selectedCityNames.length - 3}件`}
+                {selectedCityNames.join('、')}
               </div>
             )}
             <button
