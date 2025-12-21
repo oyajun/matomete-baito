@@ -52,8 +52,7 @@
   color: #2c3e50;
 }
 
-.form-group input[type='text'],
-.form-group select {
+.form-group input[type='text'] {
   width: 100%;
   padding: 0.75rem;
   font-size: 1rem;
@@ -62,9 +61,30 @@
   transition: border-color 0.3s;
 }
 
-.form-group select:hover,
-.form-group select:active {
+.form-group select {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 0.75rem;
+  font-size: 1rem;
+  background: #fff;
+  color: #2c3e50;
+  border: 2px solid #3498db;
+  border-radius: 4px;
   cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%232c3e50' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 12px 8px;
+}
+
+.form-group select:hover {
+  background-color: #e3f2fd;
+  border-color: #2980b9;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%232c3e50' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
 }
 
 .form-group input[type='text']:focus,
