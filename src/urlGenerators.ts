@@ -1,6 +1,24 @@
 // URL生成関数のテンプレート
 
 import { CITYCODE_BAITORU_URL, CITYCODE_TOWNWORK, PREFECTURE_SLUG } from './constants'
+import citycodeBaitoruUrlRaw from './data/citycode_baitoruurl.json?raw'
+
+// JSONの記述順を保持するために生データから順序を抽出する
+const BAITORU_CODE_ORDER = (() => {
+    const codes: string[] = []
+    const pattern = /"(\d{5})"\s*:/g
+    let match: RegExpExecArray | null
+    while ((match = pattern.exec(citycodeBaitoruUrlRaw)) !== null) {
+        codes.push(match[1])
+    }
+    return codes
+})()
+
+const BAITORU_ORDER_INDEX = (() => {
+    const map = new Map<string, number>()
+    BAITORU_CODE_ORDER.forEach((code, idx) => map.set(code, idx))
+    return map
+})()
 
 /**
  * タウンワークの検索URLを生成する
@@ -82,26 +100,32 @@ export function townworkSearchUrl(keyword: string, cityCodes: string[]): string 
  */
 export function baitoruSearchUrl(keyword: string, cityCodes: string[]): string {
     const uniqueCityCodes = [...new Set(cityCodes)]
-    const normalizedCodes = [...new Set(uniqueCityCodes
-        .map(code => code.substring(0, 5))
-        .filter(code => code.length === 5))]
+
+    // 6桁コードをcitycode_baitoruurl.jsonの記述順でソート
+    const sortedCityCodes = [...uniqueCityCodes].sort((a, b) => {
+        const a5 = a.substring(0, 5)
+        const b5 = b.substring(0, 5)
+        const ai = BAITORU_ORDER_INDEX.get(a5) ?? Number.MAX_SAFE_INTEGER
+        const bi = BAITORU_ORDER_INDEX.get(b5) ?? Number.MAX_SAFE_INTEGER
+        return ai - bi
+    })
+
+    // 5桁に変換して重複を除去（順序を保持）
+    const normalizedCodes: string[] = []
+    const seenCodes = new Set<string>()
+    for (const code of sortedCityCodes) {
+        const code5 = code.substring(0, 5)
+        if (code5.length === 5 && !seenCodes.has(code5)) {
+            seenCodes.add(code5)
+            normalizedCodes.push(code5)
+        }
+    }
 
     if (normalizedCodes.length === 0) {
         throw new Error('市区町村コードを指定してください')
     }
 
-    const orderIndex = (() => {
-        const entries = Object.keys(CITYCODE_BAITORU_URL)
-        const indexMap = new Map<string, number>()
-        entries.forEach((code, idx) => indexMap.set(code, idx))
-        return indexMap
-    })()
-
-    const orderedCodes = [...normalizedCodes].sort((a, b) => {
-        const ai = orderIndex.get(a) ?? Number.MAX_SAFE_INTEGER
-        const bi = orderIndex.get(b) ?? Number.MAX_SAFE_INTEGER
-        return ai - bi
-    })
+    const orderedCodes = normalizedCodes
 
     const paths = orderedCodes.map(code => {
         const path = CITYCODE_BAITORU_URL[code]
@@ -140,6 +164,7 @@ export function baitoruSearchUrl(keyword: string, cityCodes: string[]): string {
         return `/${first.region}/${first.jlist}/${first.prefecture}/`
     })()
 
+    // カテゴリとスラッグをJSONの順序で結合
     const categoryOrder: string[] = []
     const seenCategories = new Set<string>()
     for (const { category } of parsedPaths) {
@@ -155,12 +180,17 @@ export function baitoruSearchUrl(keyword: string, cityCodes: string[]): string {
 
     const basePath = `${prefix}${categoryOrder.join('-')}/`
 
-    const slugs = parsedPaths.map(p => p.slug)
+    // スラッグもJSONの順序で重複を除去して結合
+    const slugOrder: string[] = []
+    const seenSlugs = new Set<string>()
+    for (const { slug } of parsedPaths) {
+        if (!seenSlugs.has(slug)) {
+            seenSlugs.add(slug)
+            slugOrder.push(slug)
+        }
+    }
 
-    // 同じスラッグはまとめる
-    const uniqueSlugs = [...new Set(slugs)]
-
-    const combinedSlug = uniqueSlugs.join('-')
+    const combinedSlug = slugOrder.join('-')
     const encodedKeyword = encodeURIComponent(keyword.trim())
     const keywordSegment = encodedKeyword ? `wrd${encodedKeyword}/` : ''
 
