@@ -18,6 +18,7 @@ export interface Prefecture {
 // 都道府県と市区町村のデータをJSONファイルから読み込み
 import prefecturesData from './data/prefectures.json'
 import citycodeData from './data/citycode_townwork.json'
+import citycodeBaitoruUrlData from './data/citycode_baitoruurl.json'
 
 export const PREFECTURES: Prefecture[] = prefecturesData as Prefecture[]
 
@@ -28,6 +29,9 @@ export interface CitycodeMapping {
 }
 
 export const CITYCODE_TOWNWORK: CitycodeMapping[] = citycodeData as CitycodeMapping[]
+
+// 市区町村コードとバイトルURLパスのマッピング
+export const CITYCODE_BAITORU_URL: Record<string, string> = citycodeBaitoruUrlData as Record<string, string>
 
 // 都道府県コードとタウンワークのslugのマッピング
 export const PREFECTURE_SLUG: Record<string, string> = {

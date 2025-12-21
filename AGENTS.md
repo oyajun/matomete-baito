@@ -33,7 +33,14 @@ https://townwork.net/prefectures/okinawa/job_search/?ma=047005&ma=047006&kw=%E3%
 https://townwork.net/prefectures/kanagawa/job_search/?ma=014014&sa=014001001&sa=014001002&act=true
 
 ### baitoruSearchUrl(keyword: string, cityCodes: string[]): string 
-
+wrd のあとにキーワード
+citycodes 引数は6桁→jsonは5桁。
+6桁の一番右の桁はチェックデジットなので捨てる。
+#### 例
+tokai/jlist/shizuoka/shizuokashiigai/numazushi　の部分はjsonデータから組み立てる  
+https://www.baitoru.com/tokai/jlist/shizuoka/shizuokashiigai/numazushi/wrd%E3%82%AB%E3%83%95%E3%82%A7  
+複数市区町村コードを指定する場合  
+https://www.baitoru.com/tokai/jlist/shizuoka/shizuokashiigai/numazushi-atamishi/wrd%E3%82%AB%E3%83%95%E3%82%A7/
 
 ## 処理内容
 1. キーワードと市区町村コードの配列を受け取る

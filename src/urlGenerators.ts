@@ -1,6 +1,6 @@
 // URL生成関数のテンプレート
 
-import { CITYCODE_TOWNWORK, PREFECTURE_SLUG } from './constants'
+import { CITYCODE_BAITORU_URL, CITYCODE_TOWNWORK, PREFECTURE_SLUG } from './constants'
 
 /**
  * タウンワークの検索URLを生成する
@@ -81,11 +81,50 @@ export function townworkSearchUrl(keyword: string, cityCodes: string[]): string 
  * @returns バイトルの検索URL
  */
 export function baitoruSearchUrl(keyword: string, cityCodes: string[]): string {
-    // TODO: 実装する
-    // キーワードをエンコード
-    const encodedKeyword = encodeURIComponent(keyword)
+    const uniqueCityCodes = [...new Set(cityCodes)]
+    const normalizedCodes = uniqueCityCodes
+        .map(code => code.substring(0, 5))
+        .filter(code => code.length === 5)
 
-    // 市区町村コードをバイトルのコードに変換してURLを組み立てる
-    // 仮実装
-    return `https://www.baitoru.com/kw${encodedKeyword}/?cities=${cityCodes.join(',')}`
+    if (normalizedCodes.length === 0) {
+        throw new Error('市区町村コードを指定してください')
+    }
+
+    const paths = normalizedCodes.map(code => {
+        const path = CITYCODE_BAITORU_URL[code]
+        if (!path) {
+            throw new Error(`バイトルのURLパスが見つかりません: ${code}`)
+        }
+        return path
+    })
+
+    const basePath = (() => {
+        const prefixes = paths.map(path => {
+            const trimmed = path.endsWith('/') ? path.slice(0, -1) : path
+            const lastSlash = trimmed.lastIndexOf('/')
+            if (lastSlash === -1) {
+                throw new Error('バイトルのURLパス形式が不正です')
+            }
+            return trimmed.slice(0, lastSlash + 1)
+        })
+
+        const uniqueBases = new Set(prefixes)
+        if (uniqueBases.size !== 1) {
+            throw new Error('同じエリア内の市区町村を選択してください')
+        }
+
+        return prefixes[0]
+    })()
+
+    const slugs = paths.map(path => {
+        const trimmed = path.endsWith('/') ? path.slice(0, -1) : path
+        const lastSlash = trimmed.lastIndexOf('/')
+        return trimmed.slice(lastSlash + 1)
+    })
+
+    const combinedSlug = slugs.join('-')
+    const encodedKeyword = encodeURIComponent(keyword.trim())
+    const keywordSegment = encodedKeyword ? `wrd${encodedKeyword}/` : ''
+
+    return `https://www.baitoru.com${basePath}${combinedSlug}/${keywordSegment}`
 }
