@@ -24,9 +24,16 @@
 - バイトル
 
 ## 関数仕様
-これらは、テンプレートだけ作って、あとから人間が実装
-- townworkSearchUrl(keyword: string, cityCodes: string[]): string
-- baitoruSearchUrl(keyword: string, cityCodes: string[]): string 
+### townworkSearchUrl(keyword: string, cityCodes: string[]): string
+- ma : 市コード/郡コード（townwork）
+- sa : 区コード（政令市、特別行政区の場合のみ）（townwork）
+- keyword: 検索キーワード (スペースはHTMLエンコードされた空白に変換)
+#### 例
+https://townwork.net/prefectures/okinawa/job_search/?ma=047005&ma=047006&kw=%E3%82%AB%E3%83%95%E3%82%A7
+https://townwork.net/prefectures/kanagawa/job_search/?ma=014014&sa=014001001&sa=014001002&act=true
+
+### baitoruSearchUrl(keyword: string, cityCodes: string[]): string 
+
 
 ## 処理内容
 1. キーワードと市区町村コードの配列を受け取る

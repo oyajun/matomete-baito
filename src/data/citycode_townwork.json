@@ -1,0 +1,7594 @@
+[
+  {
+    "citycode": "011011",
+    "townwork_code": "001001001"
+  },
+  {
+    "citycode": "011029",
+    "townwork_code": "001001002"
+  },
+  {
+    "citycode": "011037",
+    "townwork_code": "001001003"
+  },
+  {
+    "citycode": "011045",
+    "townwork_code": "001001004"
+  },
+  {
+    "citycode": "011053",
+    "townwork_code": "001001005"
+  },
+  {
+    "citycode": "011061",
+    "townwork_code": "001001006"
+  },
+  {
+    "citycode": "011070",
+    "townwork_code": "001001007"
+  },
+  {
+    "citycode": "011088",
+    "townwork_code": "001001008"
+  },
+  {
+    "citycode": "011096",
+    "townwork_code": "001001009"
+  },
+  {
+    "citycode": "011100",
+    "townwork_code": "001001010"
+  },
+  {
+    "citycode": "012025",
+    "townwork_code": "001002"
+  },
+  {
+    "citycode": "012033",
+    "townwork_code": "001003"
+  },
+  {
+    "citycode": "012041",
+    "townwork_code": "001004"
+  },
+  {
+    "citycode": "012050",
+    "townwork_code": "001005"
+  },
+  {
+    "citycode": "012068",
+    "townwork_code": "001006"
+  },
+  {
+    "citycode": "012076",
+    "townwork_code": "001007"
+  },
+  {
+    "citycode": "012084",
+    "townwork_code": "001008"
+  },
+  {
+    "citycode": "012092",
+    "townwork_code": "001009"
+  },
+  {
+    "citycode": "012106",
+    "townwork_code": "001010"
+  },
+  {
+    "citycode": "012114",
+    "townwork_code": "001011"
+  },
+  {
+    "citycode": "012122",
+    "townwork_code": "001012"
+  },
+  {
+    "citycode": "012131",
+    "townwork_code": "001013"
+  },
+  {
+    "citycode": "012149",
+    "townwork_code": "001014"
+  },
+  {
+    "citycode": "012157",
+    "townwork_code": "001015"
+  },
+  {
+    "citycode": "012165",
+    "townwork_code": "001016"
+  },
+  {
+    "citycode": "012173",
+    "townwork_code": "001017"
+  },
+  {
+    "citycode": "012181",
+    "townwork_code": "001018"
+  },
+  {
+    "citycode": "012190",
+    "townwork_code": "001019"
+  },
+  {
+    "citycode": "012203",
+    "townwork_code": "001020"
+  },
+  {
+    "citycode": "012211",
+    "townwork_code": "001021"
+  },
+  {
+    "citycode": "012220",
+    "townwork_code": "001022"
+  },
+  {
+    "citycode": "012238",
+    "townwork_code": "001023"
+  },
+  {
+    "citycode": "012246",
+    "townwork_code": "001024"
+  },
+  {
+    "citycode": "012254",
+    "townwork_code": "001025"
+  },
+  {
+    "citycode": "012262",
+    "townwork_code": "001026"
+  },
+  {
+    "citycode": "012271",
+    "townwork_code": "001027"
+  },
+  {
+    "citycode": "012289",
+    "townwork_code": "001028"
+  },
+  {
+    "citycode": "012297",
+    "townwork_code": "001029"
+  },
+  {
+    "citycode": "012301",
+    "townwork_code": "001030"
+  },
+  {
+    "citycode": "012319",
+    "townwork_code": "001031"
+  },
+  {
+    "citycode": "012335",
+    "townwork_code": "001032"
+  },
+  {
+    "citycode": "012343",
+    "townwork_code": "001033"
+  },
+  {
+    "citycode": "012351",
+    "townwork_code": "001034"
+  },
+  {
+    "citycode": "012360",
+    "townwork_code": "001035"
+  },
+  {
+    "citycode": "013030",
+    "townwork_code": "001036"
+  },
+  {
+    "citycode": "013048",
+    "townwork_code": "001036"
+  },
+  {
+    "citycode": "013315",
+    "townwork_code": "001037"
+  },
+  {
+    "citycode": "013323",
+    "townwork_code": "001037"
+  },
+  {
+    "citycode": "013331",
+    "townwork_code": "001037"
+  },
+  {
+    "citycode": "013340",
+    "townwork_code": "001037"
+  },
+  {
+    "citycode": "013374",
+    "townwork_code": "001039"
+  },
+  {
+    "citycode": "013439",
+    "townwork_code": "001040"
+  },
+  {
+    "citycode": "013455",
+    "townwork_code": "001040"
+  },
+  {
+    "citycode": "013463",
+    "townwork_code": "001041"
+  },
+  {
+    "citycode": "013471",
+    "townwork_code": "001041"
+  },
+  {
+    "citycode": "013617",
+    "townwork_code": "001043"
+  },
+  {
+    "citycode": "013625",
+    "townwork_code": "001043"
+  },
+  {
+    "citycode": "013633",
+    "townwork_code": "001043"
+  },
+  {
+    "citycode": "013641",
+    "townwork_code": "001044"
+  },
+  {
+    "citycode": "013676",
+    "townwork_code": "001045"
+  },
+  {
+    "citycode": "013706",
+    "townwork_code": "001046"
+  },
+  {
+    "citycode": "013714",
+    "townwork_code": "001047"
+  },
+  {
+    "citycode": "013919",
+    "townwork_code": "001048"
+  },
+  {
+    "citycode": "013927",
+    "townwork_code": "001049"
+  },
+  {
+    "citycode": "013935",
+    "townwork_code": "001049"
+  },
+  {
+    "citycode": "013943",
+    "townwork_code": "001050"
+  },
+  {
+    "citycode": "013951",
+    "townwork_code": "001074"
+  },
+  {
+    "citycode": "013960",
+    "townwork_code": "001074"
+  },
+  {
+    "citycode": "013978",
+    "townwork_code": "001074"
+  },
+  {
+    "citycode": "013986",
+    "townwork_code": "001074"
+  },
+  {
+    "citycode": "013994",
+    "townwork_code": "001074"
+  },
+  {
+    "citycode": "014001",
+    "townwork_code": "001074"
+  },
+  {
+    "citycode": "014010",
+    "townwork_code": "001051"
+  },
+  {
+    "citycode": "014028",
+    "townwork_code": "001051"
+  },
+  {
+    "citycode": "014036",
+    "townwork_code": "001052"
+  },
+  {
+    "citycode": "014044",
+    "townwork_code": "001052"
+  },
+  {
+    "citycode": "014052",
+    "townwork_code": "001053"
+  },
+  {
+    "citycode": "014061",
+    "townwork_code": "001054"
+  },
+  {
+    "citycode": "014079",
+    "townwork_code": "001055"
+  },
+  {
+    "citycode": "014087",
+    "townwork_code": "001055"
+  },
+  {
+    "citycode": "014095",
+    "townwork_code": "001055"
+  },
+  {
+    "citycode": "014231",
+    "townwork_code": "001060"
+  },
+  {
+    "citycode": "014249",
+    "townwork_code": "001060"
+  },
+  {
+    "citycode": "014257",
+    "townwork_code": "001060"
+  },
+  {
+    "citycode": "014273",
+    "townwork_code": "001056"
+  },
+  {
+    "citycode": "014281",
+    "townwork_code": "001056"
+  },
+  {
+    "citycode": "014290",
+    "townwork_code": "001056"
+  },
+  {
+    "citycode": "014303",
+    "townwork_code": "001057"
+  },
+  {
+    "citycode": "014311",
+    "townwork_code": "001057"
+  },
+  {
+    "citycode": "014320",
+    "townwork_code": "001057"
+  },
+  {
+    "citycode": "014338",
+    "townwork_code": "001058"
+  },
+  {
+    "citycode": "014346",
+    "townwork_code": "001058"
+  },
+  {
+    "citycode": "014362",
+    "townwork_code": "001058"
+  },
+  {
+    "citycode": "014371",
+    "townwork_code": "001058"
+  },
+  {
+    "citycode": "014389",
+    "townwork_code": "001058"
+  },
+  {
+    "citycode": "014524",
+    "townwork_code": "001059"
+  },
+  {
+    "citycode": "014532",
+    "townwork_code": "001059"
+  },
+  {
+    "citycode": "014541",
+    "townwork_code": "001059"
+  },
+  {
+    "citycode": "014559",
+    "townwork_code": "001059"
+  },
+  {
+    "citycode": "014567",
+    "townwork_code": "001059"
+  },
+  {
+    "citycode": "014575",
+    "townwork_code": "001059"
+  },
+  {
+    "citycode": "014583",
+    "townwork_code": "001059"
+  },
+  {
+    "citycode": "014591",
+    "townwork_code": "001059"
+  },
+  {
+    "citycode": "014605",
+    "townwork_code": "001060"
+  },
+  {
+    "citycode": "014613",
+    "townwork_code": "001060"
+  },
+  {
+    "citycode": "014621",
+    "townwork_code": "001060"
+  },
+  {
+    "citycode": "014630",
+    "townwork_code": "001077"
+  },
+  {
+    "citycode": "014648",
+    "townwork_code": "001059"
+  },
+  {
+    "citycode": "014656",
+    "townwork_code": "001059"
+  },
+  {
+    "citycode": "014681",
+    "townwork_code": "001059"
+  },
+  {
+    "citycode": "014699",
+    "townwork_code": "001061"
+  },
+  {
+    "citycode": "014702",
+    "townwork_code": "001061"
+  },
+  {
+    "citycode": "014711",
+    "townwork_code": "001061"
+  },
+  {
+    "citycode": "014729",
+    "townwork_code": "001058"
+  },
+  {
+    "citycode": "014818",
+    "townwork_code": "001062"
+  },
+  {
+    "citycode": "014826",
+    "townwork_code": "001063"
+  },
+  {
+    "citycode": "014834",
+    "townwork_code": "001064"
+  },
+  {
+    "citycode": "014842",
+    "townwork_code": "001064"
+  },
+  {
+    "citycode": "014851",
+    "townwork_code": "001064"
+  },
+  {
+    "citycode": "014869",
+    "townwork_code": "001067"
+  },
+  {
+    "citycode": "014877",
+    "townwork_code": "001067"
+  },
+  {
+    "citycode": "015113",
+    "townwork_code": "001065"
+  },
+  {
+    "citycode": "015121",
+    "townwork_code": "001066"
+  },
+  {
+    "citycode": "015130",
+    "townwork_code": "001066"
+  },
+  {
+    "citycode": "015148",
+    "townwork_code": "001066"
+  },
+  {
+    "citycode": "015164",
+    "townwork_code": "001067"
+  },
+  {
+    "citycode": "015172",
+    "townwork_code": "001068"
+  },
+  {
+    "citycode": "015181",
+    "townwork_code": "001069"
+  },
+  {
+    "citycode": "015199",
+    "townwork_code": "001069"
+  },
+  {
+    "citycode": "015202",
+    "townwork_code": "001067"
+  },
+  {
+    "citycode": "015431",
+    "townwork_code": "001070"
+  },
+  {
+    "citycode": "015440",
+    "townwork_code": "001070"
+  },
+  {
+    "citycode": "015458",
+    "townwork_code": "001071"
+  },
+  {
+    "citycode": "015466",
+    "townwork_code": "001071"
+  },
+  {
+    "citycode": "015474",
+    "townwork_code": "001071"
+  },
+  {
+    "citycode": "015491",
+    "townwork_code": "001072"
+  },
+  {
+    "citycode": "015504",
+    "townwork_code": "001072"
+  },
+  {
+    "citycode": "015521",
+    "townwork_code": "001072"
+  },
+  {
+    "citycode": "015555",
+    "townwork_code": "001073"
+  },
+  {
+    "citycode": "015598",
+    "townwork_code": "001073"
+  },
+  {
+    "citycode": "015601",
+    "townwork_code": "001073"
+  },
+  {
+    "citycode": "015610",
+    "townwork_code": "001073"
+  },
+  {
+    "citycode": "015628",
+    "townwork_code": "001073"
+  },
+  {
+    "citycode": "015636",
+    "townwork_code": "001073"
+  },
+  {
+    "citycode": "015644",
+    "townwork_code": "001070"
+  },
+  {
+    "citycode": "015717",
+    "townwork_code": "001074"
+  },
+  {
+    "citycode": "015750",
+    "townwork_code": "001074"
+  },
+  {
+    "citycode": "015784",
+    "townwork_code": "001076"
+  },
+  {
+    "citycode": "015814",
+    "townwork_code": "001077"
+  },
+  {
+    "citycode": "015849",
+    "townwork_code": "001074"
+  },
+  {
+    "citycode": "015857",
+    "townwork_code": "001077"
+  },
+  {
+    "citycode": "015865",
+    "townwork_code": "001077"
+  },
+  {
+    "citycode": "016012",
+    "townwork_code": "001078"
+  },
+  {
+    "citycode": "016021",
+    "townwork_code": "001078"
+  },
+  {
+    "citycode": "016047",
+    "townwork_code": "001079"
+  },
+  {
+    "citycode": "016071",
+    "townwork_code": "001080"
+  },
+  {
+    "citycode": "016080",
+    "townwork_code": "001081"
+  },
+  {
+    "citycode": "016098",
+    "townwork_code": "001082"
+  },
+  {
+    "citycode": "016101",
+    "townwork_code": "001083"
+  },
+  {
+    "citycode": "016314",
+    "townwork_code": "001084"
+  },
+  {
+    "citycode": "016322",
+    "townwork_code": "001084"
+  },
+  {
+    "citycode": "016331",
+    "townwork_code": "001084"
+  },
+  {
+    "citycode": "016349",
+    "townwork_code": "001084"
+  },
+  {
+    "citycode": "016357",
+    "townwork_code": "001059"
+  },
+  {
+    "citycode": "016365",
+    "townwork_code": "001059"
+  },
+  {
+    "citycode": "016373",
+    "townwork_code": "001085"
+  },
+  {
+    "citycode": "016381",
+    "townwork_code": "001085"
+  },
+  {
+    "citycode": "016390",
+    "townwork_code": "001085"
+  },
+  {
+    "citycode": "016411",
+    "townwork_code": "001086"
+  },
+  {
+    "citycode": "016420",
+    "townwork_code": "001086"
+  },
+  {
+    "citycode": "016438",
+    "townwork_code": "001087"
+  },
+  {
+    "citycode": "016446",
+    "townwork_code": "001087"
+  },
+  {
+    "citycode": "016454",
+    "townwork_code": "001087"
+  },
+  {
+    "citycode": "016462",
+    "townwork_code": "001087"
+  },
+  {
+    "citycode": "016471",
+    "townwork_code": "001088"
+  },
+  {
+    "citycode": "016489",
+    "townwork_code": "001088"
+  },
+  {
+    "citycode": "016497",
+    "townwork_code": "001089"
+  },
+  {
+    "citycode": "016616",
+    "townwork_code": "001090"
+  },
+  {
+    "citycode": "016624",
+    "townwork_code": "001091"
+  },
+  {
+    "citycode": "016632",
+    "townwork_code": "001091"
+  },
+  {
+    "citycode": "016641",
+    "townwork_code": "001092"
+  },
+  {
+    "citycode": "016659",
+    "townwork_code": "001092"
+  },
+  {
+    "citycode": "016675",
+    "townwork_code": "001093"
+  },
+  {
+    "citycode": "016683",
+    "townwork_code": "001094"
+  },
+  {
+    "citycode": "016918",
+    "townwork_code": "001095"
+  },
+  {
+    "citycode": "016926",
+    "townwork_code": "001096"
+  },
+  {
+    "citycode": "016934",
+    "townwork_code": "001096"
+  },
+  {
+    "citycode": "016942",
+    "townwork_code": "001097"
+  },
+  {
+    "citycode": "016951",
+    "townwork_code": null
+  },
+  {
+    "citycode": "016969",
+    "townwork_code": "001052"
+  },
+  {
+    "citycode": "016977",
+    "townwork_code": null
+  },
+  {
+    "citycode": "016985",
+    "townwork_code": null
+  },
+  {
+    "citycode": "016993",
+    "townwork_code": null
+  },
+  {
+    "citycode": "017001",
+    "townwork_code": null
+  },
+  {
+    "citycode": "022012",
+    "townwork_code": "002001"
+  },
+  {
+    "citycode": "022021",
+    "townwork_code": "002002"
+  },
+  {
+    "citycode": "022039",
+    "townwork_code": "002003"
+  },
+  {
+    "citycode": "022047",
+    "townwork_code": "002004"
+  },
+  {
+    "citycode": "022055",
+    "townwork_code": "002005"
+  },
+  {
+    "citycode": "022063",
+    "townwork_code": "002006"
+  },
+  {
+    "citycode": "022071",
+    "townwork_code": "002007"
+  },
+  {
+    "citycode": "022080",
+    "townwork_code": "002008"
+  },
+  {
+    "citycode": "022098",
+    "townwork_code": "002009"
+  },
+  {
+    "citycode": "022101",
+    "townwork_code": "002010"
+  },
+  {
+    "citycode": "023019",
+    "townwork_code": "002011"
+  },
+  {
+    "citycode": "023035",
+    "townwork_code": "002011"
+  },
+  {
+    "citycode": "023043",
+    "townwork_code": "002011"
+  },
+  {
+    "citycode": "023078",
+    "townwork_code": "002011"
+  },
+  {
+    "citycode": "023213",
+    "townwork_code": "002012"
+  },
+  {
+    "citycode": "023230",
+    "townwork_code": "002012"
+  },
+  {
+    "citycode": "023434",
+    "townwork_code": "002013"
+  },
+  {
+    "citycode": "023612",
+    "townwork_code": "002014"
+  },
+  {
+    "citycode": "023621",
+    "townwork_code": "002014"
+  },
+  {
+    "citycode": "023671",
+    "townwork_code": "002014"
+  },
+  {
+    "citycode": "023817",
+    "townwork_code": "002015"
+  },
+  {
+    "citycode": "023841",
+    "townwork_code": "002015"
+  },
+  {
+    "citycode": "023876",
+    "townwork_code": "002015"
+  },
+  {
+    "citycode": "024015",
+    "townwork_code": "002016"
+  },
+  {
+    "citycode": "024023",
+    "townwork_code": "002016"
+  },
+  {
+    "citycode": "024058",
+    "townwork_code": "002016"
+  },
+  {
+    "citycode": "024066",
+    "townwork_code": "002016"
+  },
+  {
+    "citycode": "024082",
+    "townwork_code": "002016"
+  },
+  {
+    "citycode": "024112",
+    "townwork_code": "002016"
+  },
+  {
+    "citycode": "024121",
+    "townwork_code": "002016"
+  },
+  {
+    "citycode": "024236",
+    "townwork_code": "002017"
+  },
+  {
+    "citycode": "024244",
+    "townwork_code": "002017"
+  },
+  {
+    "citycode": "024252",
+    "townwork_code": "002017"
+  },
+  {
+    "citycode": "024261",
+    "townwork_code": "002017"
+  },
+  {
+    "citycode": "024414",
+    "townwork_code": "002018"
+  },
+  {
+    "citycode": "024422",
+    "townwork_code": "002018"
+  },
+  {
+    "citycode": "024431",
+    "townwork_code": "002018"
+  },
+  {
+    "citycode": "024457",
+    "townwork_code": "002018"
+  },
+  {
+    "citycode": "024465",
+    "townwork_code": "002018"
+  },
+  {
+    "citycode": "024503",
+    "townwork_code": "002018"
+  },
+  {
+    "citycode": "032018",
+    "townwork_code": "003001"
+  },
+  {
+    "citycode": "032026",
+    "townwork_code": "003002"
+  },
+  {
+    "citycode": "032034",
+    "townwork_code": "003003"
+  },
+  {
+    "citycode": "032051",
+    "townwork_code": "003004"
+  },
+  {
+    "citycode": "032069",
+    "townwork_code": "003005"
+  },
+  {
+    "citycode": "032077",
+    "townwork_code": "003006"
+  },
+  {
+    "citycode": "032085",
+    "townwork_code": "003007"
+  },
+  {
+    "citycode": "032093",
+    "townwork_code": "003008"
+  },
+  {
+    "citycode": "032107",
+    "townwork_code": "003009"
+  },
+  {
+    "citycode": "032115",
+    "townwork_code": "003010"
+  },
+  {
+    "citycode": "032131",
+    "townwork_code": "003011"
+  },
+  {
+    "citycode": "032140",
+    "townwork_code": "003012"
+  },
+  {
+    "citycode": "032158",
+    "townwork_code": "003013"
+  },
+  {
+    "citycode": "032166",
+    "townwork_code": "003014"
+  },
+  {
+    "citycode": "033014",
+    "townwork_code": "003015"
+  },
+  {
+    "citycode": "033022",
+    "townwork_code": "003015"
+  },
+  {
+    "citycode": "033031",
+    "townwork_code": "003015"
+  },
+  {
+    "citycode": "033219",
+    "townwork_code": "003016"
+  },
+  {
+    "citycode": "033227",
+    "townwork_code": "003016"
+  },
+  {
+    "citycode": "033669",
+    "townwork_code": "003017"
+  },
+  {
+    "citycode": "033812",
+    "townwork_code": "003018"
+  },
+  {
+    "citycode": "034029",
+    "townwork_code": "003019"
+  },
+  {
+    "citycode": "034410",
+    "townwork_code": "003021"
+  },
+  {
+    "citycode": "034614",
+    "townwork_code": "003022"
+  },
+  {
+    "citycode": "034827",
+    "townwork_code": "003023"
+  },
+  {
+    "citycode": "034835",
+    "townwork_code": "003023"
+  },
+  {
+    "citycode": "034843",
+    "townwork_code": "003023"
+  },
+  {
+    "citycode": "034851",
+    "townwork_code": "003023"
+  },
+  {
+    "citycode": "035017",
+    "townwork_code": "003024"
+  },
+  {
+    "citycode": "035033",
+    "townwork_code": "003024"
+  },
+  {
+    "citycode": "035068",
+    "townwork_code": "003024"
+  },
+  {
+    "citycode": "035076",
+    "townwork_code": "003024"
+  },
+  {
+    "citycode": "035246",
+    "townwork_code": "003025"
+  },
+  {
+    "citycode": "041017",
+    "townwork_code": "004001001"
+  },
+  {
+    "citycode": "041025",
+    "townwork_code": "004001002"
+  },
+  {
+    "citycode": "041033",
+    "townwork_code": "004001003"
+  },
+  {
+    "citycode": "041041",
+    "townwork_code": "004001004"
+  },
+  {
+    "citycode": "041050",
+    "townwork_code": "004001005"
+  },
+  {
+    "citycode": "042021",
+    "townwork_code": "004002"
+  },
+  {
+    "citycode": "042030",
+    "townwork_code": "004003"
+  },
+  {
+    "citycode": "042056",
+    "townwork_code": "004004"
+  },
+  {
+    "citycode": "042064",
+    "townwork_code": "004005"
+  },
+  {
+    "citycode": "042072",
+    "townwork_code": "004006"
+  },
+  {
+    "citycode": "042081",
+    "townwork_code": "004007"
+  },
+  {
+    "citycode": "042099",
+    "townwork_code": "004008"
+  },
+  {
+    "citycode": "042111",
+    "townwork_code": "004009"
+  },
+  {
+    "citycode": "042129",
+    "townwork_code": "004010"
+  },
+  {
+    "citycode": "042137",
+    "townwork_code": "004011"
+  },
+  {
+    "citycode": "042145",
+    "townwork_code": "004012"
+  },
+  {
+    "citycode": "042153",
+    "townwork_code": "004013"
+  },
+  {
+    "citycode": "042161",
+    "townwork_code": "004014"
+  },
+  {
+    "citycode": "043010",
+    "townwork_code": "004015"
+  },
+  {
+    "citycode": "043028",
+    "townwork_code": "004015"
+  },
+  {
+    "citycode": "043214",
+    "townwork_code": "004016"
+  },
+  {
+    "citycode": "043222",
+    "townwork_code": "004016"
+  },
+  {
+    "citycode": "043231",
+    "townwork_code": "004016"
+  },
+  {
+    "citycode": "043249",
+    "townwork_code": "004016"
+  },
+  {
+    "citycode": "043419",
+    "townwork_code": "004017"
+  },
+  {
+    "citycode": "043613",
+    "townwork_code": "004018"
+  },
+  {
+    "citycode": "043621",
+    "townwork_code": "004018"
+  },
+  {
+    "citycode": "044016",
+    "townwork_code": "004019"
+  },
+  {
+    "citycode": "044041",
+    "townwork_code": "004019"
+  },
+  {
+    "citycode": "044067",
+    "townwork_code": "004019"
+  },
+  {
+    "citycode": "044211",
+    "townwork_code": "004020"
+  },
+  {
+    "citycode": "044229",
+    "townwork_code": "004020"
+  },
+  {
+    "citycode": "044245",
+    "townwork_code": "004020"
+  },
+  {
+    "citycode": "044440",
+    "townwork_code": "004021"
+  },
+  {
+    "citycode": "044458",
+    "townwork_code": "004021"
+  },
+  {
+    "citycode": "045012",
+    "townwork_code": "004022"
+  },
+  {
+    "citycode": "045055",
+    "townwork_code": "004022"
+  },
+  {
+    "citycode": "045811",
+    "townwork_code": "004023"
+  },
+  {
+    "citycode": "046060",
+    "townwork_code": "004024"
+  },
+  {
+    "citycode": "052019",
+    "townwork_code": "005001"
+  },
+  {
+    "citycode": "052027",
+    "townwork_code": "005002"
+  },
+  {
+    "citycode": "052035",
+    "townwork_code": "005003"
+  },
+  {
+    "citycode": "052043",
+    "townwork_code": "005004"
+  },
+  {
+    "citycode": "052060",
+    "townwork_code": "005005"
+  },
+  {
+    "citycode": "052078",
+    "townwork_code": "005006"
+  },
+  {
+    "citycode": "052094",
+    "townwork_code": "005007"
+  },
+  {
+    "citycode": "052108",
+    "townwork_code": "005008"
+  },
+  {
+    "citycode": "052116",
+    "townwork_code": "005009"
+  },
+  {
+    "citycode": "052124",
+    "townwork_code": "005010"
+  },
+  {
+    "citycode": "052132",
+    "townwork_code": "005011"
+  },
+  {
+    "citycode": "052141",
+    "townwork_code": "005012"
+  },
+  {
+    "citycode": "052159",
+    "townwork_code": "005013"
+  },
+  {
+    "citycode": "053031",
+    "townwork_code": "005014"
+  },
+  {
+    "citycode": "053279",
+    "townwork_code": "005015"
+  },
+  {
+    "citycode": "053465",
+    "townwork_code": "005016"
+  },
+  {
+    "citycode": "053481",
+    "townwork_code": "005016"
+  },
+  {
+    "citycode": "053490",
+    "townwork_code": "005016"
+  },
+  {
+    "citycode": "053619",
+    "townwork_code": "005017"
+  },
+  {
+    "citycode": "053635",
+    "townwork_code": "005017"
+  },
+  {
+    "citycode": "053660",
+    "townwork_code": "005017"
+  },
+  {
+    "citycode": "053686",
+    "townwork_code": "005017"
+  },
+  {
+    "citycode": "054348",
+    "townwork_code": "005018"
+  },
+  {
+    "citycode": "054631",
+    "townwork_code": "005019"
+  },
+  {
+    "citycode": "054640",
+    "townwork_code": "005019"
+  },
+  {
+    "citycode": "062014",
+    "townwork_code": "006001"
+  },
+  {
+    "citycode": "062022",
+    "townwork_code": "006002"
+  },
+  {
+    "citycode": "062031",
+    "townwork_code": "006003"
+  },
+  {
+    "citycode": "062049",
+    "townwork_code": "006004"
+  },
+  {
+    "citycode": "062057",
+    "townwork_code": "006005"
+  },
+  {
+    "citycode": "062065",
+    "townwork_code": "006006"
+  },
+  {
+    "citycode": "062073",
+    "townwork_code": "006007"
+  },
+  {
+    "citycode": "062081",
+    "townwork_code": "006008"
+  },
+  {
+    "citycode": "062090",
+    "townwork_code": "006009"
+  },
+  {
+    "citycode": "062103",
+    "townwork_code": "006010"
+  },
+  {
+    "citycode": "062111",
+    "townwork_code": "006011"
+  },
+  {
+    "citycode": "062120",
+    "townwork_code": "006012"
+  },
+  {
+    "citycode": "062138",
+    "townwork_code": "006013"
+  },
+  {
+    "citycode": "063011",
+    "townwork_code": "006014"
+  },
+  {
+    "citycode": "063029",
+    "townwork_code": "006014"
+  },
+  {
+    "citycode": "063215",
+    "townwork_code": "006015"
+  },
+  {
+    "citycode": "063223",
+    "townwork_code": "006015"
+  },
+  {
+    "citycode": "063231",
+    "townwork_code": "006015"
+  },
+  {
+    "citycode": "063240",
+    "townwork_code": "006015"
+  },
+  {
+    "citycode": "063410",
+    "townwork_code": "006016"
+  },
+  {
+    "citycode": "063614",
+    "townwork_code": "006017"
+  },
+  {
+    "citycode": "063622",
+    "townwork_code": "006017"
+  },
+  {
+    "citycode": "063631",
+    "townwork_code": "006017"
+  },
+  {
+    "citycode": "063649",
+    "townwork_code": "006017"
+  },
+  {
+    "citycode": "063657",
+    "townwork_code": "006017"
+  },
+  {
+    "citycode": "063665",
+    "townwork_code": "006017"
+  },
+  {
+    "citycode": "063673",
+    "townwork_code": "006017"
+  },
+  {
+    "citycode": "063819",
+    "townwork_code": "006018"
+  },
+  {
+    "citycode": "063827",
+    "townwork_code": "006018"
+  },
+  {
+    "citycode": "064017",
+    "townwork_code": "006019"
+  },
+  {
+    "citycode": "064025",
+    "townwork_code": "006019"
+  },
+  {
+    "citycode": "064033",
+    "townwork_code": "006019"
+  },
+  {
+    "citycode": "064262",
+    "townwork_code": "006020"
+  },
+  {
+    "citycode": "064289",
+    "townwork_code": "006020"
+  },
+  {
+    "citycode": "064611",
+    "townwork_code": "006021"
+  },
+  {
+    "citycode": "072010",
+    "townwork_code": "007001"
+  },
+  {
+    "citycode": "072028",
+    "townwork_code": "007002"
+  },
+  {
+    "citycode": "072036",
+    "townwork_code": "007003"
+  },
+  {
+    "citycode": "072044",
+    "townwork_code": "007004"
+  },
+  {
+    "citycode": "072052",
+    "townwork_code": "007005"
+  },
+  {
+    "citycode": "072079",
+    "townwork_code": "007006"
+  },
+  {
+    "citycode": "072087",
+    "townwork_code": "007007"
+  },
+  {
+    "citycode": "072095",
+    "townwork_code": "007008"
+  },
+  {
+    "citycode": "072109",
+    "townwork_code": "007009"
+  },
+  {
+    "citycode": "072117",
+    "townwork_code": "007010"
+  },
+  {
+    "citycode": "072125",
+    "townwork_code": "007011"
+  },
+  {
+    "citycode": "072133",
+    "townwork_code": "007012"
+  },
+  {
+    "citycode": "072141",
+    "townwork_code": "007013"
+  },
+  {
+    "citycode": "073016",
+    "townwork_code": "007014"
+  },
+  {
+    "citycode": "073032",
+    "townwork_code": "007014"
+  },
+  {
+    "citycode": "073083",
+    "townwork_code": "007014"
+  },
+  {
+    "citycode": "073229",
+    "townwork_code": "007015"
+  },
+  {
+    "citycode": "073423",
+    "townwork_code": "007016"
+  },
+  {
+    "citycode": "073440",
+    "townwork_code": "007016"
+  },
+  {
+    "citycode": "073628",
+    "townwork_code": "007017"
+  },
+  {
+    "citycode": "073644",
+    "townwork_code": "007017"
+  },
+  {
+    "citycode": "073679",
+    "townwork_code": "007017"
+  },
+  {
+    "citycode": "073687",
+    "townwork_code": "007017"
+  },
+  {
+    "citycode": "074021",
+    "townwork_code": "007018"
+  },
+  {
+    "citycode": "074055",
+    "townwork_code": "007018"
+  },
+  {
+    "citycode": "074071",
+    "townwork_code": "007018"
+  },
+  {
+    "citycode": "074080",
+    "townwork_code": "007018"
+  },
+  {
+    "citycode": "074217",
+    "townwork_code": "007019"
+  },
+  {
+    "citycode": "074225",
+    "townwork_code": "007019"
+  },
+  {
+    "citycode": "074233",
+    "townwork_code": "007019"
+  },
+  {
+    "citycode": "074446",
+    "townwork_code": "007020"
+  },
+  {
+    "citycode": "074454",
+    "townwork_code": "007020"
+  },
+  {
+    "citycode": "074462",
+    "townwork_code": "007020"
+  },
+  {
+    "citycode": "074471",
+    "townwork_code": "007020"
+  },
+  {
+    "citycode": "074616",
+    "townwork_code": "007021"
+  },
+  {
+    "citycode": "074641",
+    "townwork_code": "007021"
+  },
+  {
+    "citycode": "074659",
+    "townwork_code": "007021"
+  },
+  {
+    "citycode": "074667",
+    "townwork_code": "007021"
+  },
+  {
+    "citycode": "074811",
+    "townwork_code": "007022"
+  },
+  {
+    "citycode": "074829",
+    "townwork_code": "007022"
+  },
+  {
+    "citycode": "074837",
+    "townwork_code": "007022"
+  },
+  {
+    "citycode": "074845",
+    "townwork_code": "007022"
+  },
+  {
+    "citycode": "075019",
+    "townwork_code": "007023"
+  },
+  {
+    "citycode": "075027",
+    "townwork_code": "007023"
+  },
+  {
+    "citycode": "075035",
+    "townwork_code": "007023"
+  },
+  {
+    "citycode": "075043",
+    "townwork_code": "007023"
+  },
+  {
+    "citycode": "075051",
+    "townwork_code": "007023"
+  },
+  {
+    "citycode": "075213",
+    "townwork_code": "007024"
+  },
+  {
+    "citycode": "075221",
+    "townwork_code": "007024"
+  },
+  {
+    "citycode": "075418",
+    "townwork_code": "007025"
+  },
+  {
+    "citycode": "075426",
+    "townwork_code": "007025"
+  },
+  {
+    "citycode": "075434",
+    "townwork_code": "007025"
+  },
+  {
+    "citycode": "075442",
+    "townwork_code": "007025"
+  },
+  {
+    "citycode": "075451",
+    "townwork_code": "007025"
+  },
+  {
+    "citycode": "075469",
+    "townwork_code": "007025"
+  },
+  {
+    "citycode": "075477",
+    "townwork_code": "007025"
+  },
+  {
+    "citycode": "075485",
+    "townwork_code": "007025"
+  },
+  {
+    "citycode": "075612",
+    "townwork_code": "007026"
+  },
+  {
+    "citycode": "075647",
+    "townwork_code": "007026"
+  },
+  {
+    "citycode": "082015",
+    "townwork_code": "008001"
+  },
+  {
+    "citycode": "082023",
+    "townwork_code": "008002"
+  },
+  {
+    "citycode": "082031",
+    "townwork_code": "008003"
+  },
+  {
+    "citycode": "082040",
+    "townwork_code": "008004"
+  },
+  {
+    "citycode": "082058",
+    "townwork_code": "008005"
+  },
+  {
+    "citycode": "082074",
+    "townwork_code": "008006"
+  },
+  {
+    "citycode": "082082",
+    "townwork_code": "008007"
+  },
+  {
+    "citycode": "082104",
+    "townwork_code": "008008"
+  },
+  {
+    "citycode": "082112",
+    "townwork_code": "008009"
+  },
+  {
+    "citycode": "082121",
+    "townwork_code": "008010"
+  },
+  {
+    "citycode": "082147",
+    "townwork_code": "008011"
+  },
+  {
+    "citycode": "082155",
+    "townwork_code": "008012"
+  },
+  {
+    "citycode": "082163",
+    "townwork_code": "008013"
+  },
+  {
+    "citycode": "082171",
+    "townwork_code": "008014"
+  },
+  {
+    "citycode": "082198",
+    "townwork_code": "008015"
+  },
+  {
+    "citycode": "082201",
+    "townwork_code": "008016"
+  },
+  {
+    "citycode": "082210",
+    "townwork_code": "008017"
+  },
+  {
+    "citycode": "082228",
+    "townwork_code": "008018"
+  },
+  {
+    "citycode": "082236",
+    "townwork_code": "008019"
+  },
+  {
+    "citycode": "082244",
+    "townwork_code": "008020"
+  },
+  {
+    "citycode": "082252",
+    "townwork_code": "008021"
+  },
+  {
+    "citycode": "082261",
+    "townwork_code": "008022"
+  },
+  {
+    "citycode": "082279",
+    "townwork_code": "008023"
+  },
+  {
+    "citycode": "082287",
+    "townwork_code": "008024"
+  },
+  {
+    "citycode": "082295",
+    "townwork_code": "008025"
+  },
+  {
+    "citycode": "082309",
+    "townwork_code": "008026"
+  },
+  {
+    "citycode": "082317",
+    "townwork_code": "008027"
+  },
+  {
+    "citycode": "082325",
+    "townwork_code": "008028"
+  },
+  {
+    "citycode": "082333",
+    "townwork_code": "008029"
+  },
+  {
+    "citycode": "082341",
+    "townwork_code": "008030"
+  },
+  {
+    "citycode": "082350",
+    "townwork_code": "008031"
+  },
+  {
+    "citycode": "082368",
+    "townwork_code": "008032"
+  },
+  {
+    "citycode": "083020",
+    "townwork_code": "008033"
+  },
+  {
+    "citycode": "083097",
+    "townwork_code": "008033"
+  },
+  {
+    "citycode": "083101",
+    "townwork_code": "008033"
+  },
+  {
+    "citycode": "083411",
+    "townwork_code": "008034"
+  },
+  {
+    "citycode": "083640",
+    "townwork_code": "008035"
+  },
+  {
+    "citycode": "084425",
+    "townwork_code": "008036"
+  },
+  {
+    "citycode": "084433",
+    "townwork_code": "008036"
+  },
+  {
+    "citycode": "084476",
+    "townwork_code": "008036"
+  },
+  {
+    "citycode": "085219",
+    "townwork_code": "008037"
+  },
+  {
+    "citycode": "085421",
+    "townwork_code": "008038"
+  },
+  {
+    "citycode": "085464",
+    "townwork_code": "008038"
+  },
+  {
+    "citycode": "085642",
+    "townwork_code": "008039"
+  },
+  {
+    "citycode": "092011",
+    "townwork_code": "009001"
+  },
+  {
+    "citycode": "092029",
+    "townwork_code": "009002"
+  },
+  {
+    "citycode": "092037",
+    "townwork_code": "009003"
+  },
+  {
+    "citycode": "092045",
+    "townwork_code": "009004"
+  },
+  {
+    "citycode": "092053",
+    "townwork_code": "009005"
+  },
+  {
+    "citycode": "092061",
+    "townwork_code": "009006"
+  },
+  {
+    "citycode": "092088",
+    "townwork_code": "009007"
+  },
+  {
+    "citycode": "092096",
+    "townwork_code": "009008"
+  },
+  {
+    "citycode": "092100",
+    "townwork_code": "009009"
+  },
+  {
+    "citycode": "092118",
+    "townwork_code": "009010"
+  },
+  {
+    "citycode": "092134",
+    "townwork_code": "009011"
+  },
+  {
+    "citycode": "092142",
+    "townwork_code": "009012"
+  },
+  {
+    "citycode": "092151",
+    "townwork_code": "009013"
+  },
+  {
+    "citycode": "092169",
+    "townwork_code": "009014"
+  },
+  {
+    "citycode": "093017",
+    "townwork_code": "009015"
+  },
+  {
+    "citycode": "093424",
+    "townwork_code": "009017"
+  },
+  {
+    "citycode": "093432",
+    "townwork_code": "009017"
+  },
+  {
+    "citycode": "093441",
+    "townwork_code": "009017"
+  },
+  {
+    "citycode": "093459",
+    "townwork_code": "009017"
+  },
+  {
+    "citycode": "093611",
+    "townwork_code": "009018"
+  },
+  {
+    "citycode": "093645",
+    "townwork_code": "009018"
+  },
+  {
+    "citycode": "093840",
+    "townwork_code": "009019"
+  },
+  {
+    "citycode": "093866",
+    "townwork_code": "009019"
+  },
+  {
+    "citycode": "094072",
+    "townwork_code": "009020"
+  },
+  {
+    "citycode": "094111",
+    "townwork_code": "009020"
+  },
+  {
+    "citycode": "102016",
+    "townwork_code": "010001"
+  },
+  {
+    "citycode": "102024",
+    "townwork_code": "010002"
+  },
+  {
+    "citycode": "102032",
+    "townwork_code": "010003"
+  },
+  {
+    "citycode": "102041",
+    "townwork_code": "010004"
+  },
+  {
+    "citycode": "102059",
+    "townwork_code": "010005"
+  },
+  {
+    "citycode": "102067",
+    "townwork_code": "010006"
+  },
+  {
+    "citycode": "102075",
+    "townwork_code": "010007"
+  },
+  {
+    "citycode": "102083",
+    "townwork_code": "010008"
+  },
+  {
+    "citycode": "102091",
+    "townwork_code": "010009"
+  },
+  {
+    "citycode": "102105",
+    "townwork_code": "010010"
+  },
+  {
+    "citycode": "102113",
+    "townwork_code": "010011"
+  },
+  {
+    "citycode": "102121",
+    "townwork_code": "010012"
+  },
+  {
+    "citycode": "103446",
+    "townwork_code": "010013"
+  },
+  {
+    "citycode": "103454",
+    "townwork_code": "010013"
+  },
+  {
+    "citycode": "103667",
+    "townwork_code": "010014"
+  },
+  {
+    "citycode": "103675",
+    "townwork_code": "010014"
+  },
+  {
+    "citycode": "103829",
+    "townwork_code": "010015"
+  },
+  {
+    "citycode": "103837",
+    "townwork_code": "010015"
+  },
+  {
+    "citycode": "103845",
+    "townwork_code": "010015"
+  },
+  {
+    "citycode": "104213",
+    "townwork_code": "010016"
+  },
+  {
+    "citycode": "104248",
+    "townwork_code": "010016"
+  },
+  {
+    "citycode": "104256",
+    "townwork_code": "010016"
+  },
+  {
+    "citycode": "104264",
+    "townwork_code": "010016"
+  },
+  {
+    "citycode": "104281",
+    "townwork_code": "010016"
+  },
+  {
+    "citycode": "104299",
+    "townwork_code": "010016"
+  },
+  {
+    "citycode": "104434",
+    "townwork_code": "010017"
+  },
+  {
+    "citycode": "104442",
+    "townwork_code": "010017"
+  },
+  {
+    "citycode": "104485",
+    "townwork_code": "010017"
+  },
+  {
+    "citycode": "104493",
+    "townwork_code": "010017"
+  },
+  {
+    "citycode": "104647",
+    "townwork_code": "010018"
+  },
+  {
+    "citycode": "105210",
+    "townwork_code": "010019"
+  },
+  {
+    "citycode": "105228",
+    "townwork_code": "010019"
+  },
+  {
+    "citycode": "105236",
+    "townwork_code": "010019"
+  },
+  {
+    "citycode": "105244",
+    "townwork_code": "010019"
+  },
+  {
+    "citycode": "105252",
+    "townwork_code": "010019"
+  },
+  {
+    "citycode": "111015",
+    "townwork_code": "011001001"
+  },
+  {
+    "citycode": "111023",
+    "townwork_code": "011001002"
+  },
+  {
+    "citycode": "111031",
+    "townwork_code": "011001003"
+  },
+  {
+    "citycode": "111040",
+    "townwork_code": "011001004"
+  },
+  {
+    "citycode": "111058",
+    "townwork_code": "011001005"
+  },
+  {
+    "citycode": "111066",
+    "townwork_code": "011001006"
+  },
+  {
+    "citycode": "111074",
+    "townwork_code": "011001007"
+  },
+  {
+    "citycode": "111082",
+    "townwork_code": "011001008"
+  },
+  {
+    "citycode": "111091",
+    "townwork_code": "011001009"
+  },
+  {
+    "citycode": "111104",
+    "townwork_code": "011001010"
+  },
+  {
+    "citycode": "112011",
+    "townwork_code": "011002"
+  },
+  {
+    "citycode": "112020",
+    "townwork_code": "011003"
+  },
+  {
+    "citycode": "112038",
+    "townwork_code": "011004"
+  },
+  {
+    "citycode": "112062",
+    "townwork_code": "011005"
+  },
+  {
+    "citycode": "112071",
+    "townwork_code": "011006"
+  },
+  {
+    "citycode": "112089",
+    "townwork_code": "011007"
+  },
+  {
+    "citycode": "112097",
+    "townwork_code": "011008"
+  },
+  {
+    "citycode": "112101",
+    "townwork_code": "011009"
+  },
+  {
+    "citycode": "112119",
+    "townwork_code": "011010"
+  },
+  {
+    "citycode": "112127",
+    "townwork_code": "011011"
+  },
+  {
+    "citycode": "112143",
+    "townwork_code": "011012"
+  },
+  {
+    "citycode": "112151",
+    "townwork_code": "011013"
+  },
+  {
+    "citycode": "112160",
+    "townwork_code": "011014"
+  },
+  {
+    "citycode": "112178",
+    "townwork_code": "011015"
+  },
+  {
+    "citycode": "112186",
+    "townwork_code": "011016"
+  },
+  {
+    "citycode": "112194",
+    "townwork_code": "011017"
+  },
+  {
+    "citycode": "112216",
+    "townwork_code": "011018"
+  },
+  {
+    "citycode": "112224",
+    "townwork_code": "011019"
+  },
+  {
+    "citycode": "112232",
+    "townwork_code": "011020"
+  },
+  {
+    "citycode": "112241",
+    "townwork_code": "011021"
+  },
+  {
+    "citycode": "112259",
+    "townwork_code": "011022"
+  },
+  {
+    "citycode": "112275",
+    "townwork_code": "011023"
+  },
+  {
+    "citycode": "112283",
+    "townwork_code": "011024"
+  },
+  {
+    "citycode": "112291",
+    "townwork_code": "011025"
+  },
+  {
+    "citycode": "112305",
+    "townwork_code": "011026"
+  },
+  {
+    "citycode": "112313",
+    "townwork_code": "011027"
+  },
+  {
+    "citycode": "112321",
+    "townwork_code": "011028"
+  },
+  {
+    "citycode": "112330",
+    "townwork_code": "011029"
+  },
+  {
+    "citycode": "112348",
+    "townwork_code": "011030"
+  },
+  {
+    "citycode": "112356",
+    "townwork_code": "011031"
+  },
+  {
+    "citycode": "112372",
+    "townwork_code": "011032"
+  },
+  {
+    "citycode": "112381",
+    "townwork_code": "011033"
+  },
+  {
+    "citycode": "112399",
+    "townwork_code": "011034"
+  },
+  {
+    "citycode": "112402",
+    "townwork_code": "011035"
+  },
+  {
+    "citycode": "112411",
+    "townwork_code": "011036"
+  },
+  {
+    "citycode": "112429",
+    "townwork_code": "011037"
+  },
+  {
+    "citycode": "112437",
+    "townwork_code": "011038"
+  },
+  {
+    "citycode": "112453",
+    "townwork_code": "011039"
+  },
+  {
+    "citycode": "112461",
+    "townwork_code": "011040"
+  },
+  {
+    "citycode": "113018",
+    "townwork_code": "011044"
+  },
+  {
+    "citycode": "113247",
+    "townwork_code": "011045"
+  },
+  {
+    "citycode": "113263",
+    "townwork_code": "011045"
+  },
+  {
+    "citycode": "113271",
+    "townwork_code": "011045"
+  },
+  {
+    "citycode": "113417",
+    "townwork_code": "011046"
+  },
+  {
+    "citycode": "113425",
+    "townwork_code": "011046"
+  },
+  {
+    "citycode": "113433",
+    "townwork_code": "011046"
+  },
+  {
+    "citycode": "113468",
+    "townwork_code": "011046"
+  },
+  {
+    "citycode": "113476",
+    "townwork_code": "011046"
+  },
+  {
+    "citycode": "113484",
+    "townwork_code": "011046"
+  },
+  {
+    "citycode": "113492",
+    "townwork_code": "011046"
+  },
+  {
+    "citycode": "113611",
+    "townwork_code": "011047"
+  },
+  {
+    "citycode": "113620",
+    "townwork_code": "011047"
+  },
+  {
+    "citycode": "113638",
+    "townwork_code": "011047"
+  },
+  {
+    "citycode": "113654",
+    "townwork_code": "011047"
+  },
+  {
+    "citycode": "113697",
+    "townwork_code": "011047"
+  },
+  {
+    "citycode": "113816",
+    "townwork_code": "011048"
+  },
+  {
+    "citycode": "113832",
+    "townwork_code": "011048"
+  },
+  {
+    "citycode": "113859",
+    "townwork_code": "011048"
+  },
+  {
+    "citycode": "114081",
+    "townwork_code": "011049"
+  },
+  {
+    "citycode": "114421",
+    "townwork_code": "011050"
+  },
+  {
+    "citycode": "114642",
+    "townwork_code": "011051"
+  },
+  {
+    "citycode": "114651",
+    "townwork_code": "011051"
+  },
+  {
+    "citycode": "121011",
+    "townwork_code": "012001001"
+  },
+  {
+    "citycode": "121029",
+    "townwork_code": "012001002"
+  },
+  {
+    "citycode": "121037",
+    "townwork_code": "012001003"
+  },
+  {
+    "citycode": "121045",
+    "townwork_code": "012001004"
+  },
+  {
+    "citycode": "121053",
+    "townwork_code": "012001005"
+  },
+  {
+    "citycode": "121061",
+    "townwork_code": "012001006"
+  },
+  {
+    "citycode": "122025",
+    "townwork_code": "012002"
+  },
+  {
+    "citycode": "122033",
+    "townwork_code": "012003"
+  },
+  {
+    "citycode": "122041",
+    "townwork_code": "012004"
+  },
+  {
+    "citycode": "122050",
+    "townwork_code": "012005"
+  },
+  {
+    "citycode": "122068",
+    "townwork_code": "012006"
+  },
+  {
+    "citycode": "122076",
+    "townwork_code": "012007"
+  },
+  {
+    "citycode": "122084",
+    "townwork_code": "012008"
+  },
+  {
+    "citycode": "122106",
+    "townwork_code": "012009"
+  },
+  {
+    "citycode": "122114",
+    "townwork_code": "012010"
+  },
+  {
+    "citycode": "122122",
+    "townwork_code": "012011"
+  },
+  {
+    "citycode": "122131",
+    "townwork_code": "012012"
+  },
+  {
+    "citycode": "122157",
+    "townwork_code": "012013"
+  },
+  {
+    "citycode": "122165",
+    "townwork_code": "012014"
+  },
+  {
+    "citycode": "122173",
+    "townwork_code": "012015"
+  },
+  {
+    "citycode": "122181",
+    "townwork_code": "012016"
+  },
+  {
+    "citycode": "122190",
+    "townwork_code": "012017"
+  },
+  {
+    "citycode": "122203",
+    "townwork_code": "012018"
+  },
+  {
+    "citycode": "122211",
+    "townwork_code": "012019"
+  },
+  {
+    "citycode": "122220",
+    "townwork_code": "012020"
+  },
+  {
+    "citycode": "122238",
+    "townwork_code": "012021"
+  },
+  {
+    "citycode": "122246",
+    "townwork_code": "012022"
+  },
+  {
+    "citycode": "122254",
+    "townwork_code": "012023"
+  },
+  {
+    "citycode": "122262",
+    "townwork_code": "012024"
+  },
+  {
+    "citycode": "122271",
+    "townwork_code": "012025"
+  },
+  {
+    "citycode": "122289",
+    "townwork_code": "012026"
+  },
+  {
+    "citycode": "122297",
+    "townwork_code": "012027"
+  },
+  {
+    "citycode": "122301",
+    "townwork_code": "012028"
+  },
+  {
+    "citycode": "122319",
+    "townwork_code": "012029"
+  },
+  {
+    "citycode": "122327",
+    "townwork_code": "012030"
+  },
+  {
+    "citycode": "122335",
+    "townwork_code": "012031"
+  },
+  {
+    "citycode": "122343",
+    "townwork_code": "012032"
+  },
+  {
+    "citycode": "122351",
+    "townwork_code": "012033"
+  },
+  {
+    "citycode": "122360",
+    "townwork_code": "012034"
+  },
+  {
+    "citycode": "122378",
+    "townwork_code": "012035"
+  },
+  {
+    "citycode": "122386",
+    "townwork_code": "012036"
+  },
+  {
+    "citycode": "122394",
+    "townwork_code": "012037"
+  },
+  {
+    "citycode": "123226",
+    "townwork_code": "012038"
+  },
+  {
+    "citycode": "123293",
+    "townwork_code": "012038"
+  },
+  {
+    "citycode": "123421",
+    "townwork_code": "012039"
+  },
+  {
+    "citycode": "123471",
+    "townwork_code": "012039"
+  },
+  {
+    "citycode": "123498",
+    "townwork_code": "012039"
+  },
+  {
+    "citycode": "124036",
+    "townwork_code": "012040"
+  },
+  {
+    "citycode": "124095",
+    "townwork_code": "012040"
+  },
+  {
+    "citycode": "124109",
+    "townwork_code": "012040"
+  },
+  {
+    "citycode": "124214",
+    "townwork_code": "012041"
+  },
+  {
+    "citycode": "124222",
+    "townwork_code": "012041"
+  },
+  {
+    "citycode": "124231",
+    "townwork_code": "012041"
+  },
+  {
+    "citycode": "124249",
+    "townwork_code": "012041"
+  },
+  {
+    "citycode": "124265",
+    "townwork_code": "012041"
+  },
+  {
+    "citycode": "124273",
+    "townwork_code": "012041"
+  },
+  {
+    "citycode": "124419",
+    "townwork_code": "012042"
+  },
+  {
+    "citycode": "124435",
+    "townwork_code": "012042"
+  },
+  {
+    "citycode": "124630",
+    "townwork_code": "012043"
+  },
+  {
+    "citycode": "131016",
+    "townwork_code": "013001001"
+  },
+  {
+    "citycode": "131024",
+    "townwork_code": "013001002"
+  },
+  {
+    "citycode": "131032",
+    "townwork_code": "013001003"
+  },
+  {
+    "citycode": "131041",
+    "townwork_code": "013001004"
+  },
+  {
+    "citycode": "131059",
+    "townwork_code": "013001005"
+  },
+  {
+    "citycode": "131067",
+    "townwork_code": "013001006"
+  },
+  {
+    "citycode": "131075",
+    "townwork_code": "013001007"
+  },
+  {
+    "citycode": "131083",
+    "townwork_code": "013001008"
+  },
+  {
+    "citycode": "131091",
+    "townwork_code": "013001009"
+  },
+  {
+    "citycode": "131105",
+    "townwork_code": "013001010"
+  },
+  {
+    "citycode": "131113",
+    "townwork_code": "013001011"
+  },
+  {
+    "citycode": "131121",
+    "townwork_code": "013001012"
+  },
+  {
+    "citycode": "131130",
+    "townwork_code": "013001013"
+  },
+  {
+    "citycode": "131148",
+    "townwork_code": "013001014"
+  },
+  {
+    "citycode": "131156",
+    "townwork_code": "013001015"
+  },
+  {
+    "citycode": "131164",
+    "townwork_code": "013001016"
+  },
+  {
+    "citycode": "131172",
+    "townwork_code": "013001017"
+  },
+  {
+    "citycode": "131181",
+    "townwork_code": "013001018"
+  },
+  {
+    "citycode": "131199",
+    "townwork_code": "013001019"
+  },
+  {
+    "citycode": "131202",
+    "townwork_code": "013001020"
+  },
+  {
+    "citycode": "131211",
+    "townwork_code": "013001021"
+  },
+  {
+    "citycode": "131229",
+    "townwork_code": "013001022"
+  },
+  {
+    "citycode": "131237",
+    "townwork_code": "013001023"
+  },
+  {
+    "citycode": "132012",
+    "townwork_code": "013002"
+  },
+  {
+    "citycode": "132021",
+    "townwork_code": "013003"
+  },
+  {
+    "citycode": "132039",
+    "townwork_code": "013004"
+  },
+  {
+    "citycode": "132047",
+    "townwork_code": "013005"
+  },
+  {
+    "citycode": "132055",
+    "townwork_code": "013006"
+  },
+  {
+    "citycode": "132063",
+    "townwork_code": "013007"
+  },
+  {
+    "citycode": "132071",
+    "townwork_code": "013008"
+  },
+  {
+    "citycode": "132080",
+    "townwork_code": "013009"
+  },
+  {
+    "citycode": "132098",
+    "townwork_code": "013010"
+  },
+  {
+    "citycode": "132101",
+    "townwork_code": "013011"
+  },
+  {
+    "citycode": "132110",
+    "townwork_code": "013012"
+  },
+  {
+    "citycode": "132128",
+    "townwork_code": "013013"
+  },
+  {
+    "citycode": "132136",
+    "townwork_code": "013014"
+  },
+  {
+    "citycode": "132144",
+    "townwork_code": "013015"
+  },
+  {
+    "citycode": "132152",
+    "townwork_code": "013016"
+  },
+  {
+    "citycode": "132187",
+    "townwork_code": "013017"
+  },
+  {
+    "citycode": "132195",
+    "townwork_code": "013018"
+  },
+  {
+    "citycode": "132209",
+    "townwork_code": "013019"
+  },
+  {
+    "citycode": "132217",
+    "townwork_code": "013020"
+  },
+  {
+    "citycode": "132225",
+    "townwork_code": "013021"
+  },
+  {
+    "citycode": "132233",
+    "townwork_code": "013022"
+  },
+  {
+    "citycode": "132241",
+    "townwork_code": "013023"
+  },
+  {
+    "citycode": "132250",
+    "townwork_code": "013024"
+  },
+  {
+    "citycode": "132276",
+    "townwork_code": "013025"
+  },
+  {
+    "citycode": "132284",
+    "townwork_code": "013026"
+  },
+  {
+    "citycode": "132292",
+    "townwork_code": "013027"
+  },
+  {
+    "citycode": "133035",
+    "townwork_code": "013037"
+  },
+  {
+    "citycode": "133051",
+    "townwork_code": "013037"
+  },
+  {
+    "citycode": "133078",
+    "townwork_code": "013037"
+  },
+  {
+    "citycode": "133086",
+    "townwork_code": "013037"
+  },
+  {
+    "citycode": "133612",
+    "townwork_code": "013028"
+  },
+  {
+    "citycode": "133621",
+    "townwork_code": "013029"
+  },
+  {
+    "citycode": "133639",
+    "townwork_code": "013030"
+  },
+  {
+    "citycode": "133647",
+    "townwork_code": "013031"
+  },
+  {
+    "citycode": "133817",
+    "townwork_code": "013032"
+  },
+  {
+    "citycode": "133825",
+    "townwork_code": "013033"
+  },
+  {
+    "citycode": "134015",
+    "townwork_code": "013034"
+  },
+  {
+    "citycode": "134023",
+    "townwork_code": "013035"
+  },
+  {
+    "citycode": "134210",
+    "townwork_code": "013036"
+  },
+  {
+    "citycode": "141011",
+    "townwork_code": "014001001"
+  },
+  {
+    "citycode": "141020",
+    "townwork_code": "014001002"
+  },
+  {
+    "citycode": "141038",
+    "townwork_code": "014001003"
+  },
+  {
+    "citycode": "141046",
+    "townwork_code": "014001004"
+  },
+  {
+    "citycode": "141054",
+    "townwork_code": "014001005"
+  },
+  {
+    "citycode": "141062",
+    "townwork_code": "014001006"
+  },
+  {
+    "citycode": "141071",
+    "townwork_code": "014001007"
+  },
+  {
+    "citycode": "141089",
+    "townwork_code": "014001008"
+  },
+  {
+    "citycode": "141097",
+    "townwork_code": "014001009"
+  },
+  {
+    "citycode": "141101",
+    "townwork_code": "014001010"
+  },
+  {
+    "citycode": "141119",
+    "townwork_code": "014001011"
+  },
+  {
+    "citycode": "141127",
+    "townwork_code": "014001012"
+  },
+  {
+    "citycode": "141135",
+    "townwork_code": "014001013"
+  },
+  {
+    "citycode": "141143",
+    "townwork_code": "014001014"
+  },
+  {
+    "citycode": "141151",
+    "townwork_code": "014001015"
+  },
+  {
+    "citycode": "141160",
+    "townwork_code": "014001016"
+  },
+  {
+    "citycode": "141178",
+    "townwork_code": "014001017"
+  },
+  {
+    "citycode": "141186",
+    "townwork_code": "014001018"
+  },
+  {
+    "citycode": "141313",
+    "townwork_code": "014002001"
+  },
+  {
+    "citycode": "141321",
+    "townwork_code": "014002002"
+  },
+  {
+    "citycode": "141330",
+    "townwork_code": "014002003"
+  },
+  {
+    "citycode": "141348",
+    "townwork_code": "014002004"
+  },
+  {
+    "citycode": "141356",
+    "townwork_code": "014002005"
+  },
+  {
+    "citycode": "141364",
+    "townwork_code": "014002006"
+  },
+  {
+    "citycode": "141372",
+    "townwork_code": "014002007"
+  },
+  {
+    "citycode": "141518",
+    "townwork_code": "014003001"
+  },
+  {
+    "citycode": "141526",
+    "townwork_code": "014003002"
+  },
+  {
+    "citycode": "141534",
+    "townwork_code": "014003003"
+  },
+  {
+    "citycode": "142018",
+    "townwork_code": "014004"
+  },
+  {
+    "citycode": "142034",
+    "townwork_code": "014005"
+  },
+  {
+    "citycode": "142042",
+    "townwork_code": "014006"
+  },
+  {
+    "citycode": "142051",
+    "townwork_code": "014007"
+  },
+  {
+    "citycode": "142069",
+    "townwork_code": "014008"
+  },
+  {
+    "citycode": "142077",
+    "townwork_code": "014009"
+  },
+  {
+    "citycode": "142085",
+    "townwork_code": "014010"
+  },
+  {
+    "citycode": "142107",
+    "townwork_code": "014011"
+  },
+  {
+    "citycode": "142115",
+    "townwork_code": "014012"
+  },
+  {
+    "citycode": "142123",
+    "townwork_code": "014013"
+  },
+  {
+    "citycode": "142131",
+    "townwork_code": "014014"
+  },
+  {
+    "citycode": "142140",
+    "townwork_code": "014015"
+  },
+  {
+    "citycode": "142158",
+    "townwork_code": "014016"
+  },
+  {
+    "citycode": "142166",
+    "townwork_code": "014017"
+  },
+  {
+    "citycode": "142174",
+    "townwork_code": "014018"
+  },
+  {
+    "citycode": "142182",
+    "townwork_code": "014019"
+  },
+  {
+    "citycode": "143014",
+    "townwork_code": "014020"
+  },
+  {
+    "citycode": "143219",
+    "townwork_code": "014021"
+  },
+  {
+    "citycode": "143413",
+    "townwork_code": "014022"
+  },
+  {
+    "citycode": "143421",
+    "townwork_code": "014022"
+  },
+  {
+    "citycode": "143618",
+    "townwork_code": "014023"
+  },
+  {
+    "citycode": "143626",
+    "townwork_code": "014023"
+  },
+  {
+    "citycode": "143634",
+    "townwork_code": "014023"
+  },
+  {
+    "citycode": "143642",
+    "townwork_code": "014023"
+  },
+  {
+    "citycode": "143669",
+    "townwork_code": "014023"
+  },
+  {
+    "citycode": "143821",
+    "townwork_code": "014024"
+  },
+  {
+    "citycode": "143839",
+    "townwork_code": "014024"
+  },
+  {
+    "citycode": "143847",
+    "townwork_code": "014024"
+  },
+  {
+    "citycode": "144011",
+    "townwork_code": "014025"
+  },
+  {
+    "citycode": "144029",
+    "townwork_code": "014025"
+  },
+  {
+    "citycode": "151017",
+    "townwork_code": "015001001"
+  },
+  {
+    "citycode": "151025",
+    "townwork_code": "015001002"
+  },
+  {
+    "citycode": "151033",
+    "townwork_code": "015001003"
+  },
+  {
+    "citycode": "151041",
+    "townwork_code": "015001004"
+  },
+  {
+    "citycode": "151050",
+    "townwork_code": "015001005"
+  },
+  {
+    "citycode": "151068",
+    "townwork_code": "015001006"
+  },
+  {
+    "citycode": "151076",
+    "townwork_code": "015001007"
+  },
+  {
+    "citycode": "151084",
+    "townwork_code": "015001008"
+  },
+  {
+    "citycode": "152021",
+    "townwork_code": "015002"
+  },
+  {
+    "citycode": "152048",
+    "townwork_code": "015003"
+  },
+  {
+    "citycode": "152056",
+    "townwork_code": "015004"
+  },
+  {
+    "citycode": "152064",
+    "townwork_code": "015005"
+  },
+  {
+    "citycode": "152081",
+    "townwork_code": "015006"
+  },
+  {
+    "citycode": "152099",
+    "townwork_code": "015007"
+  },
+  {
+    "citycode": "152102",
+    "townwork_code": "015008"
+  },
+  {
+    "citycode": "152111",
+    "townwork_code": "015009"
+  },
+  {
+    "citycode": "152129",
+    "townwork_code": "015010"
+  },
+  {
+    "citycode": "152137",
+    "townwork_code": "015011"
+  },
+  {
+    "citycode": "152161",
+    "townwork_code": "015012"
+  },
+  {
+    "citycode": "152170",
+    "townwork_code": "015013"
+  },
+  {
+    "citycode": "152188",
+    "townwork_code": "015014"
+  },
+  {
+    "citycode": "152226",
+    "townwork_code": "015015"
+  },
+  {
+    "citycode": "152234",
+    "townwork_code": "015016"
+  },
+  {
+    "citycode": "152242",
+    "townwork_code": "015017"
+  },
+  {
+    "citycode": "152251",
+    "townwork_code": "015018"
+  },
+  {
+    "citycode": "152269",
+    "townwork_code": "015019"
+  },
+  {
+    "citycode": "152277",
+    "townwork_code": "015020"
+  },
+  {
+    "citycode": "153079",
+    "townwork_code": "015022"
+  },
+  {
+    "citycode": "153427",
+    "townwork_code": "015023"
+  },
+  {
+    "citycode": "153613",
+    "townwork_code": "015024"
+  },
+  {
+    "citycode": "153851",
+    "townwork_code": "015025"
+  },
+  {
+    "citycode": "154059",
+    "townwork_code": "015026"
+  },
+  {
+    "citycode": "154610",
+    "townwork_code": "015027"
+  },
+  {
+    "citycode": "154822",
+    "townwork_code": "015028"
+  },
+  {
+    "citycode": "155047",
+    "townwork_code": "015029"
+  },
+  {
+    "citycode": "155811",
+    "townwork_code": "015030"
+  },
+  {
+    "citycode": "155861",
+    "townwork_code": "015030"
+  },
+  {
+    "citycode": "162019",
+    "townwork_code": "016001"
+  },
+  {
+    "citycode": "162027",
+    "townwork_code": "016002"
+  },
+  {
+    "citycode": "162043",
+    "townwork_code": "016003"
+  },
+  {
+    "citycode": "162051",
+    "townwork_code": "016004"
+  },
+  {
+    "citycode": "162060",
+    "townwork_code": "016005"
+  },
+  {
+    "citycode": "162078",
+    "townwork_code": "016006"
+  },
+  {
+    "citycode": "162086",
+    "townwork_code": "016007"
+  },
+  {
+    "citycode": "162094",
+    "townwork_code": "016008"
+  },
+  {
+    "citycode": "162108",
+    "townwork_code": "016009"
+  },
+  {
+    "citycode": "162116",
+    "townwork_code": "016010"
+  },
+  {
+    "citycode": "163210",
+    "townwork_code": "016011"
+  },
+  {
+    "citycode": "163228",
+    "townwork_code": "016011"
+  },
+  {
+    "citycode": "163236",
+    "townwork_code": "016011"
+  },
+  {
+    "citycode": "163422",
+    "townwork_code": "016012"
+  },
+  {
+    "citycode": "163431",
+    "townwork_code": "016012"
+  },
+  {
+    "citycode": "172014",
+    "townwork_code": "017001"
+  },
+  {
+    "citycode": "172022",
+    "townwork_code": "017002"
+  },
+  {
+    "citycode": "172031",
+    "townwork_code": "017003"
+  },
+  {
+    "citycode": "172049",
+    "townwork_code": "017004"
+  },
+  {
+    "citycode": "172057",
+    "townwork_code": "017005"
+  },
+  {
+    "citycode": "172065",
+    "townwork_code": "017006"
+  },
+  {
+    "citycode": "172073",
+    "townwork_code": "017007"
+  },
+  {
+    "citycode": "172090",
+    "townwork_code": "017008"
+  },
+  {
+    "citycode": "172103",
+    "townwork_code": "017009"
+  },
+  {
+    "citycode": "172111",
+    "townwork_code": "017010"
+  },
+  {
+    "citycode": "172120",
+    "townwork_code": "017011"
+  },
+  {
+    "citycode": "173240",
+    "townwork_code": "017012"
+  },
+  {
+    "citycode": "173614",
+    "townwork_code": "017014"
+  },
+  {
+    "citycode": "173657",
+    "townwork_code": "017014"
+  },
+  {
+    "citycode": "173843",
+    "townwork_code": "017015"
+  },
+  {
+    "citycode": "173860",
+    "townwork_code": "017015"
+  },
+  {
+    "citycode": "174076",
+    "townwork_code": "017016"
+  },
+  {
+    "citycode": "174611",
+    "townwork_code": "017017"
+  },
+  {
+    "citycode": "174637",
+    "townwork_code": "017017"
+  },
+  {
+    "citycode": "182010",
+    "townwork_code": "018001"
+  },
+  {
+    "citycode": "182028",
+    "townwork_code": "018002"
+  },
+  {
+    "citycode": "182044",
+    "townwork_code": "018003"
+  },
+  {
+    "citycode": "182052",
+    "townwork_code": "018004"
+  },
+  {
+    "citycode": "182061",
+    "townwork_code": "018005"
+  },
+  {
+    "citycode": "182079",
+    "townwork_code": "018006"
+  },
+  {
+    "citycode": "182087",
+    "townwork_code": "018007"
+  },
+  {
+    "citycode": "182095",
+    "townwork_code": "018008"
+  },
+  {
+    "citycode": "182109",
+    "townwork_code": "018009"
+  },
+  {
+    "citycode": "183229",
+    "townwork_code": "018010"
+  },
+  {
+    "citycode": "183822",
+    "townwork_code": "018011"
+  },
+  {
+    "citycode": "184047",
+    "townwork_code": "018012"
+  },
+  {
+    "citycode": "184233",
+    "townwork_code": "018013"
+  },
+  {
+    "citycode": "184420",
+    "townwork_code": "018014"
+  },
+  {
+    "citycode": "184811",
+    "townwork_code": "018015"
+  },
+  {
+    "citycode": "184837",
+    "townwork_code": "018015"
+  },
+  {
+    "citycode": "185019",
+    "townwork_code": "018016"
+  },
+  {
+    "citycode": "192015",
+    "townwork_code": "019001"
+  },
+  {
+    "citycode": "192023",
+    "townwork_code": "019002"
+  },
+  {
+    "citycode": "192040",
+    "townwork_code": "019003"
+  },
+  {
+    "citycode": "192058",
+    "townwork_code": "019004"
+  },
+  {
+    "citycode": "192066",
+    "townwork_code": "019005"
+  },
+  {
+    "citycode": "192074",
+    "townwork_code": "019006"
+  },
+  {
+    "citycode": "192082",
+    "townwork_code": "019007"
+  },
+  {
+    "citycode": "192091",
+    "townwork_code": "019008"
+  },
+  {
+    "citycode": "192104",
+    "townwork_code": "019009"
+  },
+  {
+    "citycode": "192112",
+    "townwork_code": "019010"
+  },
+  {
+    "citycode": "192121",
+    "townwork_code": "019011"
+  },
+  {
+    "citycode": "192139",
+    "townwork_code": "019012"
+  },
+  {
+    "citycode": "192147",
+    "townwork_code": "019013"
+  },
+  {
+    "citycode": "193461",
+    "townwork_code": "019014"
+  },
+  {
+    "citycode": "193640",
+    "townwork_code": "019015"
+  },
+  {
+    "citycode": "193658",
+    "townwork_code": "019015"
+  },
+  {
+    "citycode": "193666",
+    "townwork_code": "019015"
+  },
+  {
+    "citycode": "193682",
+    "townwork_code": "019015"
+  },
+  {
+    "citycode": "193844",
+    "townwork_code": "019016"
+  },
+  {
+    "citycode": "194221",
+    "townwork_code": "019017"
+  },
+  {
+    "citycode": "194239",
+    "townwork_code": "019017"
+  },
+  {
+    "citycode": "194247",
+    "townwork_code": "019017"
+  },
+  {
+    "citycode": "194255",
+    "townwork_code": "019017"
+  },
+  {
+    "citycode": "194298",
+    "townwork_code": "019017"
+  },
+  {
+    "citycode": "194301",
+    "townwork_code": "019017"
+  },
+  {
+    "citycode": "194425",
+    "townwork_code": "019018"
+  },
+  {
+    "citycode": "194433",
+    "townwork_code": "019018"
+  },
+  {
+    "citycode": "202011",
+    "townwork_code": "020001"
+  },
+  {
+    "citycode": "202029",
+    "townwork_code": "020002"
+  },
+  {
+    "citycode": "202037",
+    "townwork_code": "020003"
+  },
+  {
+    "citycode": "202045",
+    "townwork_code": "020004"
+  },
+  {
+    "citycode": "202053",
+    "townwork_code": "020005"
+  },
+  {
+    "citycode": "202061",
+    "townwork_code": "020006"
+  },
+  {
+    "citycode": "202070",
+    "townwork_code": "020007"
+  },
+  {
+    "citycode": "202088",
+    "townwork_code": "020008"
+  },
+  {
+    "citycode": "202096",
+    "townwork_code": "020009"
+  },
+  {
+    "citycode": "202100",
+    "townwork_code": "020010"
+  },
+  {
+    "citycode": "202118",
+    "townwork_code": "020011"
+  },
+  {
+    "citycode": "202126",
+    "townwork_code": "020012"
+  },
+  {
+    "citycode": "202134",
+    "townwork_code": "020013"
+  },
+  {
+    "citycode": "202142",
+    "townwork_code": "020014"
+  },
+  {
+    "citycode": "202151",
+    "townwork_code": "020015"
+  },
+  {
+    "citycode": "202177",
+    "townwork_code": "020016"
+  },
+  {
+    "citycode": "202185",
+    "townwork_code": "020017"
+  },
+  {
+    "citycode": "202193",
+    "townwork_code": "020018"
+  },
+  {
+    "citycode": "202207",
+    "townwork_code": "020019"
+  },
+  {
+    "citycode": "203033",
+    "townwork_code": "020020"
+  },
+  {
+    "citycode": "203041",
+    "townwork_code": "020020"
+  },
+  {
+    "citycode": "203050",
+    "townwork_code": "020020"
+  },
+  {
+    "citycode": "203068",
+    "townwork_code": "020020"
+  },
+  {
+    "citycode": "203076",
+    "townwork_code": "020020"
+  },
+  {
+    "citycode": "203092",
+    "townwork_code": "020020"
+  },
+  {
+    "citycode": "203211",
+    "townwork_code": "020021"
+  },
+  {
+    "citycode": "203238",
+    "townwork_code": "020021"
+  },
+  {
+    "citycode": "203246",
+    "townwork_code": "020021"
+  },
+  {
+    "citycode": "203491",
+    "townwork_code": "020022"
+  },
+  {
+    "citycode": "203505",
+    "townwork_code": "020022"
+  },
+  {
+    "citycode": "203611",
+    "townwork_code": "020023"
+  },
+  {
+    "citycode": "203629",
+    "townwork_code": "020023"
+  },
+  {
+    "citycode": "203637",
+    "townwork_code": "020023"
+  },
+  {
+    "citycode": "203823",
+    "townwork_code": "020024"
+  },
+  {
+    "citycode": "203831",
+    "townwork_code": "020024"
+  },
+  {
+    "citycode": "203840",
+    "townwork_code": "020024"
+  },
+  {
+    "citycode": "203858",
+    "townwork_code": "020024"
+  },
+  {
+    "citycode": "203866",
+    "townwork_code": "020024"
+  },
+  {
+    "citycode": "203882",
+    "townwork_code": "020024"
+  },
+  {
+    "citycode": "204021",
+    "townwork_code": "020025"
+  },
+  {
+    "citycode": "204030",
+    "townwork_code": "020025"
+  },
+  {
+    "citycode": "204048",
+    "townwork_code": "020025"
+  },
+  {
+    "citycode": "204072",
+    "townwork_code": "020025"
+  },
+  {
+    "citycode": "204099",
+    "townwork_code": "020025"
+  },
+  {
+    "citycode": "204102",
+    "townwork_code": "020025"
+  },
+  {
+    "citycode": "204111",
+    "townwork_code": "020025"
+  },
+  {
+    "citycode": "204129",
+    "townwork_code": "020025"
+  },
+  {
+    "citycode": "204137",
+    "townwork_code": "020025"
+  },
+  {
+    "citycode": "204145",
+    "townwork_code": "020025"
+  },
+  {
+    "citycode": "204153",
+    "townwork_code": "020025"
+  },
+  {
+    "citycode": "204161",
+    "townwork_code": "020025"
+  },
+  {
+    "citycode": "204170",
+    "townwork_code": "020025"
+  },
+  {
+    "citycode": "204226",
+    "townwork_code": "020026"
+  },
+  {
+    "citycode": "204234",
+    "townwork_code": "020026"
+  },
+  {
+    "citycode": "204251",
+    "townwork_code": "020026"
+  },
+  {
+    "citycode": "204293",
+    "townwork_code": "020026"
+  },
+  {
+    "citycode": "204307",
+    "townwork_code": "020026"
+  },
+  {
+    "citycode": "204323",
+    "townwork_code": "020026"
+  },
+  {
+    "citycode": "204463",
+    "townwork_code": "020027"
+  },
+  {
+    "citycode": "204480",
+    "townwork_code": "020027"
+  },
+  {
+    "citycode": "204501",
+    "townwork_code": "020027"
+  },
+  {
+    "citycode": "204510",
+    "townwork_code": "020027"
+  },
+  {
+    "citycode": "204528",
+    "townwork_code": "020027"
+  },
+  {
+    "citycode": "204811",
+    "townwork_code": "020028"
+  },
+  {
+    "citycode": "204820",
+    "townwork_code": "020028"
+  },
+  {
+    "citycode": "204854",
+    "townwork_code": "020028"
+  },
+  {
+    "citycode": "204862",
+    "townwork_code": "020028"
+  },
+  {
+    "citycode": "205214",
+    "townwork_code": "020029"
+  },
+  {
+    "citycode": "205419",
+    "townwork_code": "020030"
+  },
+  {
+    "citycode": "205435",
+    "townwork_code": "020030"
+  },
+  {
+    "citycode": "205613",
+    "townwork_code": "020031"
+  },
+  {
+    "citycode": "205621",
+    "townwork_code": "020031"
+  },
+  {
+    "citycode": "205630",
+    "townwork_code": "020031"
+  },
+  {
+    "citycode": "205834",
+    "townwork_code": "020032"
+  },
+  {
+    "citycode": "205885",
+    "townwork_code": "020032"
+  },
+  {
+    "citycode": "205907",
+    "townwork_code": "020032"
+  },
+  {
+    "citycode": "206024",
+    "townwork_code": "020033"
+  },
+  {
+    "citycode": "212016",
+    "townwork_code": "021001"
+  },
+  {
+    "citycode": "212024",
+    "townwork_code": "021002"
+  },
+  {
+    "citycode": "212032",
+    "townwork_code": "021003"
+  },
+  {
+    "citycode": "212041",
+    "townwork_code": "021004"
+  },
+  {
+    "citycode": "212059",
+    "townwork_code": "021005"
+  },
+  {
+    "citycode": "212067",
+    "townwork_code": "021006"
+  },
+  {
+    "citycode": "212075",
+    "townwork_code": "021007"
+  },
+  {
+    "citycode": "212083",
+    "townwork_code": "021008"
+  },
+  {
+    "citycode": "212091",
+    "townwork_code": "021009"
+  },
+  {
+    "citycode": "212105",
+    "townwork_code": "021010"
+  },
+  {
+    "citycode": "212113",
+    "townwork_code": "021011"
+  },
+  {
+    "citycode": "212121",
+    "townwork_code": "021012"
+  },
+  {
+    "citycode": "212130",
+    "townwork_code": "021013"
+  },
+  {
+    "citycode": "212148",
+    "townwork_code": "021014"
+  },
+  {
+    "citycode": "212156",
+    "townwork_code": "021015"
+  },
+  {
+    "citycode": "212164",
+    "townwork_code": "021016"
+  },
+  {
+    "citycode": "212172",
+    "townwork_code": "021017"
+  },
+  {
+    "citycode": "212181",
+    "townwork_code": "021018"
+  },
+  {
+    "citycode": "212199",
+    "townwork_code": "021019"
+  },
+  {
+    "citycode": "212202",
+    "townwork_code": "021020"
+  },
+  {
+    "citycode": "212211",
+    "townwork_code": "021021"
+  },
+  {
+    "citycode": "213021",
+    "townwork_code": "021022"
+  },
+  {
+    "citycode": "213039",
+    "townwork_code": "021022"
+  },
+  {
+    "citycode": "213411",
+    "townwork_code": "021023"
+  },
+  {
+    "citycode": "213616",
+    "townwork_code": "021024"
+  },
+  {
+    "citycode": "213624",
+    "townwork_code": "021024"
+  },
+  {
+    "citycode": "213811",
+    "townwork_code": "021025"
+  },
+  {
+    "citycode": "213829",
+    "townwork_code": "021025"
+  },
+  {
+    "citycode": "213837",
+    "townwork_code": "021025"
+  },
+  {
+    "citycode": "214019",
+    "townwork_code": "021026"
+  },
+  {
+    "citycode": "214035",
+    "townwork_code": "021026"
+  },
+  {
+    "citycode": "214043",
+    "townwork_code": "021026"
+  },
+  {
+    "citycode": "214213",
+    "townwork_code": "021027"
+  },
+  {
+    "citycode": "215015",
+    "townwork_code": "021028"
+  },
+  {
+    "citycode": "215023",
+    "townwork_code": "021028"
+  },
+  {
+    "citycode": "215031",
+    "townwork_code": "021028"
+  },
+  {
+    "citycode": "215040",
+    "townwork_code": "021028"
+  },
+  {
+    "citycode": "215058",
+    "townwork_code": "021028"
+  },
+  {
+    "citycode": "215066",
+    "townwork_code": "021028"
+  },
+  {
+    "citycode": "215074",
+    "townwork_code": "021028"
+  },
+  {
+    "citycode": "215210",
+    "townwork_code": "021029"
+  },
+  {
+    "citycode": "216046",
+    "townwork_code": "021030"
+  },
+  {
+    "citycode": "221015",
+    "townwork_code": "022001001"
+  },
+  {
+    "citycode": "221023",
+    "townwork_code": "022001002"
+  },
+  {
+    "citycode": "221031",
+    "townwork_code": "022001003"
+  },
+  {
+    "citycode": "221384",
+    "townwork_code": "022002001"
+  },
+  {
+    "citycode": "221392",
+    "townwork_code": "022002002"
+  },
+  {
+    "citycode": "221406",
+    "townwork_code": "022002003"
+  },
+  {
+    "citycode": "222038",
+    "townwork_code": "022003"
+  },
+  {
+    "citycode": "222054",
+    "townwork_code": "022004"
+  },
+  {
+    "citycode": "222062",
+    "townwork_code": "022005"
+  },
+  {
+    "citycode": "222071",
+    "townwork_code": "022006"
+  },
+  {
+    "citycode": "222089",
+    "townwork_code": "022007"
+  },
+  {
+    "citycode": "222097",
+    "townwork_code": "022008"
+  },
+  {
+    "citycode": "222101",
+    "townwork_code": "022009"
+  },
+  {
+    "citycode": "222119",
+    "townwork_code": "022010"
+  },
+  {
+    "citycode": "222127",
+    "townwork_code": "022011"
+  },
+  {
+    "citycode": "222135",
+    "townwork_code": "022012"
+  },
+  {
+    "citycode": "222143",
+    "townwork_code": "022013"
+  },
+  {
+    "citycode": "222151",
+    "townwork_code": "022014"
+  },
+  {
+    "citycode": "222160",
+    "townwork_code": "022015"
+  },
+  {
+    "citycode": "222194",
+    "townwork_code": "022016"
+  },
+  {
+    "citycode": "222208",
+    "townwork_code": "022017"
+  },
+  {
+    "citycode": "222216",
+    "townwork_code": "022018"
+  },
+  {
+    "citycode": "222224",
+    "townwork_code": "022019"
+  },
+  {
+    "citycode": "222232",
+    "townwork_code": "022020"
+  },
+  {
+    "citycode": "222241",
+    "townwork_code": "022021"
+  },
+  {
+    "citycode": "222259",
+    "townwork_code": "022022"
+  },
+  {
+    "citycode": "222267",
+    "townwork_code": "022023"
+  },
+  {
+    "citycode": "223018",
+    "townwork_code": "022026"
+  },
+  {
+    "citycode": "223026",
+    "townwork_code": "022026"
+  },
+  {
+    "citycode": "223042",
+    "townwork_code": "022026"
+  },
+  {
+    "citycode": "223051",
+    "townwork_code": "022026"
+  },
+  {
+    "citycode": "223069",
+    "townwork_code": "022026"
+  },
+  {
+    "citycode": "223255",
+    "townwork_code": "022027"
+  },
+  {
+    "citycode": "223417",
+    "townwork_code": "022028"
+  },
+  {
+    "citycode": "223425",
+    "townwork_code": "022028"
+  },
+  {
+    "citycode": "223441",
+    "townwork_code": "022028"
+  },
+  {
+    "citycode": "224243",
+    "townwork_code": "022029"
+  },
+  {
+    "citycode": "224294",
+    "townwork_code": "022029"
+  },
+  {
+    "citycode": "224618",
+    "townwork_code": "022030"
+  },
+  {
+    "citycode": "231011",
+    "townwork_code": "023001001"
+  },
+  {
+    "citycode": "231029",
+    "townwork_code": "023001002"
+  },
+  {
+    "citycode": "231037",
+    "townwork_code": "023001003"
+  },
+  {
+    "citycode": "231045",
+    "townwork_code": "023001004"
+  },
+  {
+    "citycode": "231053",
+    "townwork_code": "023001005"
+  },
+  {
+    "citycode": "231061",
+    "townwork_code": "023001006"
+  },
+  {
+    "citycode": "231070",
+    "townwork_code": "023001007"
+  },
+  {
+    "citycode": "231088",
+    "townwork_code": "023001008"
+  },
+  {
+    "citycode": "231096",
+    "townwork_code": "023001009"
+  },
+  {
+    "citycode": "231100",
+    "townwork_code": "023001010"
+  },
+  {
+    "citycode": "231118",
+    "townwork_code": "023001011"
+  },
+  {
+    "citycode": "231126",
+    "townwork_code": "023001012"
+  },
+  {
+    "citycode": "231134",
+    "townwork_code": "023001013"
+  },
+  {
+    "citycode": "231142",
+    "townwork_code": "023001014"
+  },
+  {
+    "citycode": "231151",
+    "townwork_code": "023001015"
+  },
+  {
+    "citycode": "231169",
+    "townwork_code": "023001016"
+  },
+  {
+    "citycode": "232017",
+    "townwork_code": "023002"
+  },
+  {
+    "citycode": "232025",
+    "townwork_code": "023003"
+  },
+  {
+    "citycode": "232033",
+    "townwork_code": "023004"
+  },
+  {
+    "citycode": "232041",
+    "townwork_code": "023005"
+  },
+  {
+    "citycode": "232050",
+    "townwork_code": "023006"
+  },
+  {
+    "citycode": "232068",
+    "townwork_code": "023007"
+  },
+  {
+    "citycode": "232076",
+    "townwork_code": "023008"
+  },
+  {
+    "citycode": "232084",
+    "townwork_code": "023009"
+  },
+  {
+    "citycode": "232092",
+    "townwork_code": "023010"
+  },
+  {
+    "citycode": "232106",
+    "townwork_code": "023011"
+  },
+  {
+    "citycode": "232114",
+    "townwork_code": "023012"
+  },
+  {
+    "citycode": "232122",
+    "townwork_code": "023013"
+  },
+  {
+    "citycode": "232131",
+    "townwork_code": "023014"
+  },
+  {
+    "citycode": "232149",
+    "townwork_code": "023015"
+  },
+  {
+    "citycode": "232157",
+    "townwork_code": "023016"
+  },
+  {
+    "citycode": "232165",
+    "townwork_code": "023017"
+  },
+  {
+    "citycode": "232173",
+    "townwork_code": "023018"
+  },
+  {
+    "citycode": "232190",
+    "townwork_code": "023019"
+  },
+  {
+    "citycode": "232203",
+    "townwork_code": "023020"
+  },
+  {
+    "citycode": "232211",
+    "townwork_code": "023021"
+  },
+  {
+    "citycode": "232220",
+    "townwork_code": "023022"
+  },
+  {
+    "citycode": "232238",
+    "townwork_code": "023023"
+  },
+  {
+    "citycode": "232246",
+    "townwork_code": "023024"
+  },
+  {
+    "citycode": "232254",
+    "townwork_code": "023025"
+  },
+  {
+    "citycode": "232262",
+    "townwork_code": "023026"
+  },
+  {
+    "citycode": "232271",
+    "townwork_code": "023027"
+  },
+  {
+    "citycode": "232289",
+    "townwork_code": "023028"
+  },
+  {
+    "citycode": "232297",
+    "townwork_code": "023029"
+  },
+  {
+    "citycode": "232301",
+    "townwork_code": "023030"
+  },
+  {
+    "citycode": "232319",
+    "townwork_code": "023031"
+  },
+  {
+    "citycode": "232327",
+    "townwork_code": "023032"
+  },
+  {
+    "citycode": "232335",
+    "townwork_code": "023033"
+  },
+  {
+    "citycode": "232343",
+    "townwork_code": "023034"
+  },
+  {
+    "citycode": "232351",
+    "townwork_code": "023035"
+  },
+  {
+    "citycode": "232360",
+    "townwork_code": "023036"
+  },
+  {
+    "citycode": "232378",
+    "townwork_code": "023038"
+  },
+  {
+    "citycode": "232386",
+    "townwork_code": "023037"
+  },
+  {
+    "citycode": "233021",
+    "townwork_code": "023039"
+  },
+  {
+    "citycode": "233421",
+    "townwork_code": "023040"
+  },
+  {
+    "citycode": "233617",
+    "townwork_code": "023041"
+  },
+  {
+    "citycode": "233625",
+    "townwork_code": "023041"
+  },
+  {
+    "citycode": "234249",
+    "townwork_code": "023042"
+  },
+  {
+    "citycode": "234257",
+    "townwork_code": "023042"
+  },
+  {
+    "citycode": "234273",
+    "townwork_code": "023042"
+  },
+  {
+    "citycode": "234419",
+    "townwork_code": "023043"
+  },
+  {
+    "citycode": "234427",
+    "townwork_code": "023043"
+  },
+  {
+    "citycode": "234451",
+    "townwork_code": "023043"
+  },
+  {
+    "citycode": "234460",
+    "townwork_code": "023043"
+  },
+  {
+    "citycode": "234478",
+    "townwork_code": "023043"
+  },
+  {
+    "citycode": "235016",
+    "townwork_code": "023045"
+  },
+  {
+    "citycode": "235610",
+    "townwork_code": "023046"
+  },
+  {
+    "citycode": "235628",
+    "townwork_code": "023046"
+  },
+  {
+    "citycode": "235636",
+    "townwork_code": "023046"
+  },
+  {
+    "citycode": "242012",
+    "townwork_code": "024001"
+  },
+  {
+    "citycode": "242021",
+    "townwork_code": "024002"
+  },
+  {
+    "citycode": "242039",
+    "townwork_code": "024003"
+  },
+  {
+    "citycode": "242047",
+    "townwork_code": "024004"
+  },
+  {
+    "citycode": "242055",
+    "townwork_code": "024005"
+  },
+  {
+    "citycode": "242071",
+    "townwork_code": "024006"
+  },
+  {
+    "citycode": "242080",
+    "townwork_code": "024007"
+  },
+  {
+    "citycode": "242098",
+    "townwork_code": "024008"
+  },
+  {
+    "citycode": "242101",
+    "townwork_code": "024009"
+  },
+  {
+    "citycode": "242110",
+    "townwork_code": "024010"
+  },
+  {
+    "citycode": "242128",
+    "townwork_code": "024011"
+  },
+  {
+    "citycode": "242144",
+    "townwork_code": "024012"
+  },
+  {
+    "citycode": "242152",
+    "townwork_code": "024013"
+  },
+  {
+    "citycode": "242161",
+    "townwork_code": "024014"
+  },
+  {
+    "citycode": "243035",
+    "townwork_code": "024015"
+  },
+  {
+    "citycode": "243248",
+    "townwork_code": "024016"
+  },
+  {
+    "citycode": "243418",
+    "townwork_code": "024017"
+  },
+  {
+    "citycode": "243434",
+    "townwork_code": "024017"
+  },
+  {
+    "citycode": "243442",
+    "townwork_code": "024017"
+  },
+  {
+    "citycode": "244414",
+    "townwork_code": "024018"
+  },
+  {
+    "citycode": "244422",
+    "townwork_code": "024018"
+  },
+  {
+    "citycode": "244431",
+    "townwork_code": "024018"
+  },
+  {
+    "citycode": "244619",
+    "townwork_code": "024019"
+  },
+  {
+    "citycode": "244708",
+    "townwork_code": "024019"
+  },
+  {
+    "citycode": "244716",
+    "townwork_code": "024019"
+  },
+  {
+    "citycode": "244724",
+    "townwork_code": "024019"
+  },
+  {
+    "citycode": "245437",
+    "townwork_code": "024020"
+  },
+  {
+    "citycode": "245615",
+    "townwork_code": "024021"
+  },
+  {
+    "citycode": "245623",
+    "townwork_code": "024021"
+  },
+  {
+    "citycode": "252018",
+    "townwork_code": "025001"
+  },
+  {
+    "citycode": "252026",
+    "townwork_code": "025002"
+  },
+  {
+    "citycode": "252034",
+    "townwork_code": "025003"
+  },
+  {
+    "citycode": "252042",
+    "townwork_code": "025004"
+  },
+  {
+    "citycode": "252069",
+    "townwork_code": "025005"
+  },
+  {
+    "citycode": "252077",
+    "townwork_code": "025006"
+  },
+  {
+    "citycode": "252085",
+    "townwork_code": "025007"
+  },
+  {
+    "citycode": "252093",
+    "townwork_code": "025008"
+  },
+  {
+    "citycode": "252107",
+    "townwork_code": "025009"
+  },
+  {
+    "citycode": "252115",
+    "townwork_code": "025010"
+  },
+  {
+    "citycode": "252123",
+    "townwork_code": "025011"
+  },
+  {
+    "citycode": "252131",
+    "townwork_code": "025012"
+  },
+  {
+    "citycode": "252140",
+    "townwork_code": "025013"
+  },
+  {
+    "citycode": "253839",
+    "townwork_code": "025014"
+  },
+  {
+    "citycode": "253847",
+    "townwork_code": "025014"
+  },
+  {
+    "citycode": "254258",
+    "townwork_code": "025015"
+  },
+  {
+    "citycode": "254410",
+    "townwork_code": "025016"
+  },
+  {
+    "citycode": "254428",
+    "townwork_code": "025016"
+  },
+  {
+    "citycode": "254436",
+    "townwork_code": "025016"
+  },
+  {
+    "citycode": "261017",
+    "townwork_code": "026001001"
+  },
+  {
+    "citycode": "261025",
+    "townwork_code": "026001002"
+  },
+  {
+    "citycode": "261033",
+    "townwork_code": "026001003"
+  },
+  {
+    "citycode": "261041",
+    "townwork_code": "026001004"
+  },
+  {
+    "citycode": "261050",
+    "townwork_code": "026001005"
+  },
+  {
+    "citycode": "261068",
+    "townwork_code": "026001006"
+  },
+  {
+    "citycode": "261076",
+    "townwork_code": "026001007"
+  },
+  {
+    "citycode": "261084",
+    "townwork_code": "026001008"
+  },
+  {
+    "citycode": "261092",
+    "townwork_code": "026001009"
+  },
+  {
+    "citycode": "261106",
+    "townwork_code": "026001010"
+  },
+  {
+    "citycode": "261114",
+    "townwork_code": "026001011"
+  },
+  {
+    "citycode": "262013",
+    "townwork_code": "026002"
+  },
+  {
+    "citycode": "262021",
+    "townwork_code": "026003"
+  },
+  {
+    "citycode": "262030",
+    "townwork_code": "026004"
+  },
+  {
+    "citycode": "262048",
+    "townwork_code": "026005"
+  },
+  {
+    "citycode": "262056",
+    "townwork_code": "026006"
+  },
+  {
+    "citycode": "262064",
+    "townwork_code": "026007"
+  },
+  {
+    "citycode": "262072",
+    "townwork_code": "026008"
+  },
+  {
+    "citycode": "262081",
+    "townwork_code": "026009"
+  },
+  {
+    "citycode": "262099",
+    "townwork_code": "026010"
+  },
+  {
+    "citycode": "262102",
+    "townwork_code": "026011"
+  },
+  {
+    "citycode": "262111",
+    "townwork_code": "026012"
+  },
+  {
+    "citycode": "262129",
+    "townwork_code": "026013"
+  },
+  {
+    "citycode": "262137",
+    "townwork_code": "026014"
+  },
+  {
+    "citycode": "262145",
+    "townwork_code": "026015"
+  },
+  {
+    "citycode": "263036",
+    "townwork_code": "026016"
+  },
+  {
+    "citycode": "263222",
+    "townwork_code": "026017"
+  },
+  {
+    "citycode": "263435",
+    "townwork_code": "026018"
+  },
+  {
+    "citycode": "263443",
+    "townwork_code": "026018"
+  },
+  {
+    "citycode": "263648",
+    "townwork_code": "026019"
+  },
+  {
+    "citycode": "263656",
+    "townwork_code": "026019"
+  },
+  {
+    "citycode": "263664",
+    "townwork_code": "026019"
+  },
+  {
+    "citycode": "263672",
+    "townwork_code": "026019"
+  },
+  {
+    "citycode": "264075",
+    "townwork_code": "026020"
+  },
+  {
+    "citycode": "264636",
+    "townwork_code": "026021"
+  },
+  {
+    "citycode": "264652",
+    "townwork_code": "026021"
+  },
+  {
+    "citycode": "271021",
+    "townwork_code": "027001001"
+  },
+  {
+    "citycode": "271039",
+    "townwork_code": "027001002"
+  },
+  {
+    "citycode": "271047",
+    "townwork_code": "027001003"
+  },
+  {
+    "citycode": "271063",
+    "townwork_code": "027001004"
+  },
+  {
+    "citycode": "271071",
+    "townwork_code": "027001005"
+  },
+  {
+    "citycode": "271080",
+    "townwork_code": "027001006"
+  },
+  {
+    "citycode": "271098",
+    "townwork_code": "027001007"
+  },
+  {
+    "citycode": "271110",
+    "townwork_code": "027001008"
+  },
+  {
+    "citycode": "271136",
+    "townwork_code": "027001009"
+  },
+  {
+    "citycode": "271144",
+    "townwork_code": "027001010"
+  },
+  {
+    "citycode": "271152",
+    "townwork_code": "027001011"
+  },
+  {
+    "citycode": "271161",
+    "townwork_code": "027001012"
+  },
+  {
+    "citycode": "271179",
+    "townwork_code": "027001013"
+  },
+  {
+    "citycode": "271187",
+    "townwork_code": "027001014"
+  },
+  {
+    "citycode": "271195",
+    "townwork_code": "027001015"
+  },
+  {
+    "citycode": "271209",
+    "townwork_code": "027001016"
+  },
+  {
+    "citycode": "271217",
+    "townwork_code": "027001017"
+  },
+  {
+    "citycode": "271225",
+    "townwork_code": "027001018"
+  },
+  {
+    "citycode": "271233",
+    "townwork_code": "027001019"
+  },
+  {
+    "citycode": "271241",
+    "townwork_code": "027001020"
+  },
+  {
+    "citycode": "271250",
+    "townwork_code": "027001021"
+  },
+  {
+    "citycode": "271268",
+    "townwork_code": "027001022"
+  },
+  {
+    "citycode": "271276",
+    "townwork_code": "027001023"
+  },
+  {
+    "citycode": "271284",
+    "townwork_code": "027001024"
+  },
+  {
+    "citycode": "271411",
+    "townwork_code": "027002001"
+  },
+  {
+    "citycode": "271420",
+    "townwork_code": "027002002"
+  },
+  {
+    "citycode": "271438",
+    "townwork_code": "027002003"
+  },
+  {
+    "citycode": "271446",
+    "townwork_code": "027002004"
+  },
+  {
+    "citycode": "271454",
+    "townwork_code": "027002005"
+  },
+  {
+    "citycode": "271462",
+    "townwork_code": "027002006"
+  },
+  {
+    "citycode": "271471",
+    "townwork_code": "027002007"
+  },
+  {
+    "citycode": "272027",
+    "townwork_code": "027003"
+  },
+  {
+    "citycode": "272035",
+    "townwork_code": "027004"
+  },
+  {
+    "citycode": "272043",
+    "townwork_code": "027005"
+  },
+  {
+    "citycode": "272051",
+    "townwork_code": "027006"
+  },
+  {
+    "citycode": "272060",
+    "townwork_code": "027007"
+  },
+  {
+    "citycode": "272078",
+    "townwork_code": "027008"
+  },
+  {
+    "citycode": "272086",
+    "townwork_code": "027009"
+  },
+  {
+    "citycode": "272094",
+    "townwork_code": "027010"
+  },
+  {
+    "citycode": "272108",
+    "townwork_code": "027011"
+  },
+  {
+    "citycode": "272116",
+    "townwork_code": "027012"
+  },
+  {
+    "citycode": "272124",
+    "townwork_code": "027013"
+  },
+  {
+    "citycode": "272132",
+    "townwork_code": "027014"
+  },
+  {
+    "citycode": "272141",
+    "townwork_code": "027015"
+  },
+  {
+    "citycode": "272159",
+    "townwork_code": "027016"
+  },
+  {
+    "citycode": "272167",
+    "townwork_code": "027017"
+  },
+  {
+    "citycode": "272175",
+    "townwork_code": "027018"
+  },
+  {
+    "citycode": "272183",
+    "townwork_code": "027019"
+  },
+  {
+    "citycode": "272191",
+    "townwork_code": "027020"
+  },
+  {
+    "citycode": "272205",
+    "townwork_code": "027021"
+  },
+  {
+    "citycode": "272213",
+    "townwork_code": "027022"
+  },
+  {
+    "citycode": "272221",
+    "townwork_code": "027023"
+  },
+  {
+    "citycode": "272230",
+    "townwork_code": "027024"
+  },
+  {
+    "citycode": "272248",
+    "townwork_code": "027025"
+  },
+  {
+    "citycode": "272256",
+    "townwork_code": "027026"
+  },
+  {
+    "citycode": "272264",
+    "townwork_code": "027027"
+  },
+  {
+    "citycode": "272272",
+    "townwork_code": "027028"
+  },
+  {
+    "citycode": "272281",
+    "townwork_code": "027029"
+  },
+  {
+    "citycode": "272299",
+    "townwork_code": "027030"
+  },
+  {
+    "citycode": "272302",
+    "townwork_code": "027031"
+  },
+  {
+    "citycode": "272311",
+    "townwork_code": "027032"
+  },
+  {
+    "citycode": "272329",
+    "townwork_code": "027033"
+  },
+  {
+    "citycode": "273015",
+    "townwork_code": "027034"
+  },
+  {
+    "citycode": "273210",
+    "townwork_code": "027035"
+  },
+  {
+    "citycode": "273228",
+    "townwork_code": "027035"
+  },
+  {
+    "citycode": "273414",
+    "townwork_code": "027036"
+  },
+  {
+    "citycode": "273619",
+    "townwork_code": "027037"
+  },
+  {
+    "citycode": "273627",
+    "townwork_code": "027037"
+  },
+  {
+    "citycode": "273660",
+    "townwork_code": "027037"
+  },
+  {
+    "citycode": "273813",
+    "townwork_code": "027038"
+  },
+  {
+    "citycode": "273821",
+    "townwork_code": "027038"
+  },
+  {
+    "citycode": "273830",
+    "townwork_code": "027038"
+  },
+  {
+    "citycode": "281018",
+    "townwork_code": "028001001"
+  },
+  {
+    "citycode": "281026",
+    "townwork_code": "028001002"
+  },
+  {
+    "citycode": "281051",
+    "townwork_code": "028001003"
+  },
+  {
+    "citycode": "281069",
+    "townwork_code": "028001004"
+  },
+  {
+    "citycode": "281077",
+    "townwork_code": "028001005"
+  },
+  {
+    "citycode": "281085",
+    "townwork_code": "028001006"
+  },
+  {
+    "citycode": "281093",
+    "townwork_code": "028001007"
+  },
+  {
+    "citycode": "281107",
+    "townwork_code": "028001008"
+  },
+  {
+    "citycode": "281115",
+    "townwork_code": "028001009"
+  },
+  {
+    "citycode": "282014",
+    "townwork_code": "028002"
+  },
+  {
+    "citycode": "282022",
+    "townwork_code": "028003"
+  },
+  {
+    "citycode": "282031",
+    "townwork_code": "028004"
+  },
+  {
+    "citycode": "282049",
+    "townwork_code": "028005"
+  },
+  {
+    "citycode": "282057",
+    "townwork_code": "028006"
+  },
+  {
+    "citycode": "282065",
+    "townwork_code": "028007"
+  },
+  {
+    "citycode": "282073",
+    "townwork_code": "028008"
+  },
+  {
+    "citycode": "282081",
+    "townwork_code": "028009"
+  },
+  {
+    "citycode": "282090",
+    "townwork_code": "028010"
+  },
+  {
+    "citycode": "282103",
+    "townwork_code": "028011"
+  },
+  {
+    "citycode": "282120",
+    "townwork_code": "028012"
+  },
+  {
+    "citycode": "282138",
+    "townwork_code": "028013"
+  },
+  {
+    "citycode": "282146",
+    "townwork_code": "028014"
+  },
+  {
+    "citycode": "282154",
+    "townwork_code": "028015"
+  },
+  {
+    "citycode": "282162",
+    "townwork_code": "028016"
+  },
+  {
+    "citycode": "282171",
+    "townwork_code": "028017"
+  },
+  {
+    "citycode": "282189",
+    "townwork_code": "028018"
+  },
+  {
+    "citycode": "282197",
+    "townwork_code": "028019"
+  },
+  {
+    "citycode": "282201",
+    "townwork_code": "028020"
+  },
+  {
+    "citycode": "282219",
+    "townwork_code": "028021"
+  },
+  {
+    "citycode": "282227",
+    "townwork_code": "028022"
+  },
+  {
+    "citycode": "282235",
+    "townwork_code": "028023"
+  },
+  {
+    "citycode": "282243",
+    "townwork_code": "028024"
+  },
+  {
+    "citycode": "282251",
+    "townwork_code": "028025"
+  },
+  {
+    "citycode": "282260",
+    "townwork_code": "028026"
+  },
+  {
+    "citycode": "282278",
+    "townwork_code": "028027"
+  },
+  {
+    "citycode": "282286",
+    "townwork_code": "028028"
+  },
+  {
+    "citycode": "282294",
+    "townwork_code": "028029"
+  },
+  {
+    "citycode": "283011",
+    "townwork_code": "028030"
+  },
+  {
+    "citycode": "283657",
+    "townwork_code": "028031"
+  },
+  {
+    "citycode": "283819",
+    "townwork_code": "028032"
+  },
+  {
+    "citycode": "283827",
+    "townwork_code": "028032"
+  },
+  {
+    "citycode": "284424",
+    "townwork_code": "028033"
+  },
+  {
+    "citycode": "284432",
+    "townwork_code": "028033"
+  },
+  {
+    "citycode": "284467",
+    "townwork_code": "028033"
+  },
+  {
+    "citycode": "284645",
+    "townwork_code": "028034"
+  },
+  {
+    "citycode": "284815",
+    "townwork_code": "028035"
+  },
+  {
+    "citycode": "285013",
+    "townwork_code": "028036"
+  },
+  {
+    "citycode": "285854",
+    "townwork_code": "028037"
+  },
+  {
+    "citycode": "285862",
+    "townwork_code": "028037"
+  },
+  {
+    "citycode": "292010",
+    "townwork_code": "029001"
+  },
+  {
+    "citycode": "292028",
+    "townwork_code": "029002"
+  },
+  {
+    "citycode": "292036",
+    "townwork_code": "029003"
+  },
+  {
+    "citycode": "292044",
+    "townwork_code": "029004"
+  },
+  {
+    "citycode": "292052",
+    "townwork_code": "029005"
+  },
+  {
+    "citycode": "292061",
+    "townwork_code": "029006"
+  },
+  {
+    "citycode": "292079",
+    "townwork_code": "029007"
+  },
+  {
+    "citycode": "292087",
+    "townwork_code": "029008"
+  },
+  {
+    "citycode": "292095",
+    "townwork_code": "029009"
+  },
+  {
+    "citycode": "292109",
+    "townwork_code": "029010"
+  },
+  {
+    "citycode": "292117",
+    "townwork_code": "029011"
+  },
+  {
+    "citycode": "292125",
+    "townwork_code": "029012"
+  },
+  {
+    "citycode": "293229",
+    "townwork_code": "029013"
+  },
+  {
+    "citycode": "293423",
+    "townwork_code": "029014"
+  },
+  {
+    "citycode": "293431",
+    "townwork_code": "029014"
+  },
+  {
+    "citycode": "293440",
+    "townwork_code": "029014"
+  },
+  {
+    "citycode": "293458",
+    "townwork_code": "029014"
+  },
+  {
+    "citycode": "293610",
+    "townwork_code": "029015"
+  },
+  {
+    "citycode": "293628",
+    "townwork_code": "029015"
+  },
+  {
+    "citycode": "293636",
+    "townwork_code": "029015"
+  },
+  {
+    "citycode": "293857",
+    "townwork_code": "029016"
+  },
+  {
+    "citycode": "293865",
+    "townwork_code": "029016"
+  },
+  {
+    "citycode": "294012",
+    "townwork_code": "029017"
+  },
+  {
+    "citycode": "294021",
+    "townwork_code": "029017"
+  },
+  {
+    "citycode": "294241",
+    "townwork_code": "029018"
+  },
+  {
+    "citycode": "294250",
+    "townwork_code": "029018"
+  },
+  {
+    "citycode": "294268",
+    "townwork_code": "029018"
+  },
+  {
+    "citycode": "294276",
+    "townwork_code": "029018"
+  },
+  {
+    "citycode": "294411",
+    "townwork_code": "029019"
+  },
+  {
+    "citycode": "294420",
+    "townwork_code": "029019"
+  },
+  {
+    "citycode": "294438",
+    "townwork_code": "029019"
+  },
+  {
+    "citycode": "294446",
+    "townwork_code": "029019"
+  },
+  {
+    "citycode": "294462",
+    "townwork_code": "029019"
+  },
+  {
+    "citycode": "294471",
+    "townwork_code": "029019"
+  },
+  {
+    "citycode": "294497",
+    "townwork_code": "029019"
+  },
+  {
+    "citycode": "294501",
+    "townwork_code": "029019"
+  },
+  {
+    "citycode": "294519",
+    "townwork_code": "029019"
+  },
+  {
+    "citycode": "294527",
+    "townwork_code": "029019"
+  },
+  {
+    "citycode": "294535",
+    "townwork_code": "029019"
+  },
+  {
+    "citycode": "302015",
+    "townwork_code": "030001"
+  },
+  {
+    "citycode": "302023",
+    "townwork_code": "030002"
+  },
+  {
+    "citycode": "302031",
+    "townwork_code": "030003"
+  },
+  {
+    "citycode": "302040",
+    "townwork_code": "030004"
+  },
+  {
+    "citycode": "302058",
+    "townwork_code": "030005"
+  },
+  {
+    "citycode": "302066",
+    "townwork_code": "030006"
+  },
+  {
+    "citycode": "302074",
+    "townwork_code": "030007"
+  },
+  {
+    "citycode": "302082",
+    "townwork_code": "030008"
+  },
+  {
+    "citycode": "302091",
+    "townwork_code": "030009"
+  },
+  {
+    "citycode": "303046",
+    "townwork_code": "030010"
+  },
+  {
+    "citycode": "303411",
+    "townwork_code": "030011"
+  },
+  {
+    "citycode": "303437",
+    "townwork_code": "030011"
+  },
+  {
+    "citycode": "303445",
+    "townwork_code": "030011"
+  },
+  {
+    "citycode": "303615",
+    "townwork_code": "030012"
+  },
+  {
+    "citycode": "303623",
+    "townwork_code": "030012"
+  },
+  {
+    "citycode": "303666",
+    "townwork_code": "030012"
+  },
+  {
+    "citycode": "303810",
+    "townwork_code": "030013"
+  },
+  {
+    "citycode": "303828",
+    "townwork_code": "030013"
+  },
+  {
+    "citycode": "303836",
+    "townwork_code": "030013"
+  },
+  {
+    "citycode": "303909",
+    "townwork_code": "030013"
+  },
+  {
+    "citycode": "303917",
+    "townwork_code": "030013"
+  },
+  {
+    "citycode": "303925",
+    "townwork_code": "030013"
+  },
+  {
+    "citycode": "304018",
+    "townwork_code": "030014"
+  },
+  {
+    "citycode": "304042",
+    "townwork_code": "030014"
+  },
+  {
+    "citycode": "304069",
+    "townwork_code": "030014"
+  },
+  {
+    "citycode": "304212",
+    "townwork_code": "030015"
+  },
+  {
+    "citycode": "304221",
+    "townwork_code": "030015"
+  },
+  {
+    "citycode": "304247",
+    "townwork_code": "030015"
+  },
+  {
+    "citycode": "304271",
+    "townwork_code": "030015"
+  },
+  {
+    "citycode": "304280",
+    "townwork_code": "030015"
+  },
+  {
+    "citycode": "312011",
+    "townwork_code": "031001"
+  },
+  {
+    "citycode": "312029",
+    "townwork_code": "031002"
+  },
+  {
+    "citycode": "312037",
+    "townwork_code": "031003"
+  },
+  {
+    "citycode": "312045",
+    "townwork_code": "031004"
+  },
+  {
+    "citycode": "313025",
+    "townwork_code": "031005"
+  },
+  {
+    "citycode": "313254",
+    "townwork_code": "031006"
+  },
+  {
+    "citycode": "313289",
+    "townwork_code": "031006"
+  },
+  {
+    "citycode": "313297",
+    "townwork_code": "031006"
+  },
+  {
+    "citycode": "313645",
+    "townwork_code": "031007"
+  },
+  {
+    "citycode": "313700",
+    "townwork_code": "031007"
+  },
+  {
+    "citycode": "313718",
+    "townwork_code": "031007"
+  },
+  {
+    "citycode": "313726",
+    "townwork_code": "031007"
+  },
+  {
+    "citycode": "313840",
+    "townwork_code": "031008"
+  },
+  {
+    "citycode": "313866",
+    "townwork_code": "031008"
+  },
+  {
+    "citycode": "313891",
+    "townwork_code": "031008"
+  },
+  {
+    "citycode": "313904",
+    "townwork_code": "031008"
+  },
+  {
+    "citycode": "314013",
+    "townwork_code": "031009"
+  },
+  {
+    "citycode": "314021",
+    "townwork_code": "031009"
+  },
+  {
+    "citycode": "314030",
+    "townwork_code": "031009"
+  },
+  {
+    "citycode": "322016",
+    "townwork_code": "032001"
+  },
+  {
+    "citycode": "322024",
+    "townwork_code": "032002"
+  },
+  {
+    "citycode": "322032",
+    "townwork_code": "032003"
+  },
+  {
+    "citycode": "322041",
+    "townwork_code": "032004"
+  },
+  {
+    "citycode": "322059",
+    "townwork_code": "032005"
+  },
+  {
+    "citycode": "322067",
+    "townwork_code": "032006"
+  },
+  {
+    "citycode": "322075",
+    "townwork_code": "032007"
+  },
+  {
+    "citycode": "322091",
+    "townwork_code": "032008"
+  },
+  {
+    "citycode": "323438",
+    "townwork_code": "032010"
+  },
+  {
+    "citycode": "323861",
+    "townwork_code": "032011"
+  },
+  {
+    "citycode": "324418",
+    "townwork_code": "032013"
+  },
+  {
+    "citycode": "324485",
+    "townwork_code": "032013"
+  },
+  {
+    "citycode": "324493",
+    "townwork_code": "032013"
+  },
+  {
+    "citycode": "325015",
+    "townwork_code": "032014"
+  },
+  {
+    "citycode": "325058",
+    "townwork_code": "032014"
+  },
+  {
+    "citycode": "325252",
+    "townwork_code": "032015"
+  },
+  {
+    "citycode": "325261",
+    "townwork_code": "032015"
+  },
+  {
+    "citycode": "325279",
+    "townwork_code": "032015"
+  },
+  {
+    "citycode": "325287",
+    "townwork_code": "032015"
+  },
+  {
+    "citycode": "331015",
+    "townwork_code": "033001001"
+  },
+  {
+    "citycode": "331023",
+    "townwork_code": "033001002"
+  },
+  {
+    "citycode": "331031",
+    "townwork_code": "033001003"
+  },
+  {
+    "citycode": "331040",
+    "townwork_code": "033001004"
+  },
+  {
+    "citycode": "332020",
+    "townwork_code": "033002"
+  },
+  {
+    "citycode": "332038",
+    "townwork_code": "033003"
+  },
+  {
+    "citycode": "332046",
+    "townwork_code": "033004"
+  },
+  {
+    "citycode": "332054",
+    "townwork_code": "033005"
+  },
+  {
+    "citycode": "332071",
+    "townwork_code": "033006"
+  },
+  {
+    "citycode": "332089",
+    "townwork_code": "033007"
+  },
+  {
+    "citycode": "332097",
+    "townwork_code": "033008"
+  },
+  {
+    "citycode": "332101",
+    "townwork_code": "033009"
+  },
+  {
+    "citycode": "332119",
+    "townwork_code": "033010"
+  },
+  {
+    "citycode": "332127",
+    "townwork_code": "033011"
+  },
+  {
+    "citycode": "332135",
+    "townwork_code": "033012"
+  },
+  {
+    "citycode": "332143",
+    "townwork_code": "033013"
+  },
+  {
+    "citycode": "332151",
+    "townwork_code": "033014"
+  },
+  {
+    "citycode": "332160",
+    "townwork_code": "033015"
+  },
+  {
+    "citycode": "333468",
+    "townwork_code": "033016"
+  },
+  {
+    "citycode": "334235",
+    "townwork_code": "033017"
+  },
+  {
+    "citycode": "334456",
+    "townwork_code": "033018"
+  },
+  {
+    "citycode": "334618",
+    "townwork_code": "033019"
+  },
+  {
+    "citycode": "335860",
+    "townwork_code": "033020"
+  },
+  {
+    "citycode": "336068",
+    "townwork_code": "033021"
+  },
+  {
+    "citycode": "336220",
+    "townwork_code": "033022"
+  },
+  {
+    "citycode": "336238",
+    "townwork_code": "033022"
+  },
+  {
+    "citycode": "336432",
+    "townwork_code": "033023"
+  },
+  {
+    "citycode": "336637",
+    "townwork_code": "033024"
+  },
+  {
+    "citycode": "336661",
+    "townwork_code": "033024"
+  },
+  {
+    "citycode": "336815",
+    "townwork_code": "033025"
+  },
+  {
+    "citycode": "341011",
+    "townwork_code": "034001001"
+  },
+  {
+    "citycode": "341029",
+    "townwork_code": "034001002"
+  },
+  {
+    "citycode": "341037",
+    "townwork_code": "034001003"
+  },
+  {
+    "citycode": "341045",
+    "townwork_code": "034001004"
+  },
+  {
+    "citycode": "341053",
+    "townwork_code": "034001005"
+  },
+  {
+    "citycode": "341061",
+    "townwork_code": "034001006"
+  },
+  {
+    "citycode": "341070",
+    "townwork_code": "034001007"
+  },
+  {
+    "citycode": "341088",
+    "townwork_code": "034001008"
+  },
+  {
+    "citycode": "342025",
+    "townwork_code": "034002"
+  },
+  {
+    "citycode": "342033",
+    "townwork_code": "034003"
+  },
+  {
+    "citycode": "342041",
+    "townwork_code": "034004"
+  },
+  {
+    "citycode": "342050",
+    "townwork_code": "034005"
+  },
+  {
+    "citycode": "342076",
+    "townwork_code": "034006"
+  },
+  {
+    "citycode": "342084",
+    "townwork_code": "034007"
+  },
+  {
+    "citycode": "342092",
+    "townwork_code": "034008"
+  },
+  {
+    "citycode": "342106",
+    "townwork_code": "034009"
+  },
+  {
+    "citycode": "342114",
+    "townwork_code": "034010"
+  },
+  {
+    "citycode": "342122",
+    "townwork_code": "034011"
+  },
+  {
+    "citycode": "342131",
+    "townwork_code": "034012"
+  },
+  {
+    "citycode": "342149",
+    "townwork_code": "034013"
+  },
+  {
+    "citycode": "342157",
+    "townwork_code": "034014"
+  },
+  {
+    "citycode": "343021",
+    "townwork_code": "034015"
+  },
+  {
+    "citycode": "343048",
+    "townwork_code": "034015"
+  },
+  {
+    "citycode": "343072",
+    "townwork_code": "034015"
+  },
+  {
+    "citycode": "343099",
+    "townwork_code": "034015"
+  },
+  {
+    "citycode": "343684",
+    "townwork_code": "034016"
+  },
+  {
+    "citycode": "343692",
+    "townwork_code": "034016"
+  },
+  {
+    "citycode": "344311",
+    "townwork_code": "034017"
+  },
+  {
+    "citycode": "344621",
+    "townwork_code": "034018"
+  },
+  {
+    "citycode": "345458",
+    "townwork_code": "034019"
+  },
+  {
+    "citycode": "352012",
+    "townwork_code": "035001"
+  },
+  {
+    "citycode": "352021",
+    "townwork_code": "035002"
+  },
+  {
+    "citycode": "352039",
+    "townwork_code": "035003"
+  },
+  {
+    "citycode": "352047",
+    "townwork_code": "035004"
+  },
+  {
+    "citycode": "352063",
+    "townwork_code": "035005"
+  },
+  {
+    "citycode": "352071",
+    "townwork_code": "035006"
+  },
+  {
+    "citycode": "352080",
+    "townwork_code": "035007"
+  },
+  {
+    "citycode": "352101",
+    "townwork_code": "035008"
+  },
+  {
+    "citycode": "352110",
+    "townwork_code": "035009"
+  },
+  {
+    "citycode": "352128",
+    "townwork_code": "035010"
+  },
+  {
+    "citycode": "352136",
+    "townwork_code": "035011"
+  },
+  {
+    "citycode": "352152",
+    "townwork_code": "035012"
+  },
+  {
+    "citycode": "352161",
+    "townwork_code": "035013"
+  },
+  {
+    "citycode": "353051",
+    "townwork_code": "035014"
+  },
+  {
+    "citycode": "353213",
+    "townwork_code": "035015"
+  },
+  {
+    "citycode": "353418",
+    "townwork_code": "035016"
+  },
+  {
+    "citycode": "353434",
+    "townwork_code": "035016"
+  },
+  {
+    "citycode": "353442",
+    "townwork_code": "035016"
+  },
+  {
+    "citycode": "355020",
+    "townwork_code": "035017"
+  },
+  {
+    "citycode": "362018",
+    "townwork_code": "036001"
+  },
+  {
+    "citycode": "362026",
+    "townwork_code": "036002"
+  },
+  {
+    "citycode": "362034",
+    "townwork_code": "036003"
+  },
+  {
+    "citycode": "362042",
+    "townwork_code": "036004"
+  },
+  {
+    "citycode": "362051",
+    "townwork_code": "036005"
+  },
+  {
+    "citycode": "362069",
+    "townwork_code": "036006"
+  },
+  {
+    "citycode": "362077",
+    "townwork_code": "036007"
+  },
+  {
+    "citycode": "362085",
+    "townwork_code": "036008"
+  },
+  {
+    "citycode": "363014",
+    "townwork_code": "036009"
+  },
+  {
+    "citycode": "363022",
+    "townwork_code": "036009"
+  },
+  {
+    "citycode": "363219",
+    "townwork_code": "036010"
+  },
+  {
+    "citycode": "363413",
+    "townwork_code": "036011"
+  },
+  {
+    "citycode": "363421",
+    "townwork_code": "036011"
+  },
+  {
+    "citycode": "363685",
+    "townwork_code": "036012"
+  },
+  {
+    "citycode": "363839",
+    "townwork_code": "036013"
+  },
+  {
+    "citycode": "363871",
+    "townwork_code": "036013"
+  },
+  {
+    "citycode": "363880",
+    "townwork_code": "036013"
+  },
+  {
+    "citycode": "364011",
+    "townwork_code": "036014"
+  },
+  {
+    "citycode": "364029",
+    "townwork_code": "036014"
+  },
+  {
+    "citycode": "364037",
+    "townwork_code": "036014"
+  },
+  {
+    "citycode": "364045",
+    "townwork_code": "036014"
+  },
+  {
+    "citycode": "364053",
+    "townwork_code": "036014"
+  },
+  {
+    "citycode": "364681",
+    "townwork_code": "036015"
+  },
+  {
+    "citycode": "364894",
+    "townwork_code": "036016"
+  },
+  {
+    "citycode": "372013",
+    "townwork_code": "037001"
+  },
+  {
+    "citycode": "372021",
+    "townwork_code": "037002"
+  },
+  {
+    "citycode": "372030",
+    "townwork_code": "037003"
+  },
+  {
+    "citycode": "372048",
+    "townwork_code": "037004"
+  },
+  {
+    "citycode": "372056",
+    "townwork_code": "037005"
+  },
+  {
+    "citycode": "372064",
+    "townwork_code": "037006"
+  },
+  {
+    "citycode": "372072",
+    "townwork_code": "037007"
+  },
+  {
+    "citycode": "372081",
+    "townwork_code": "037008"
+  },
+  {
+    "citycode": "373222",
+    "townwork_code": "037009"
+  },
+  {
+    "citycode": "373249",
+    "townwork_code": "037009"
+  },
+  {
+    "citycode": "373419",
+    "townwork_code": "037010"
+  },
+  {
+    "citycode": "373648",
+    "townwork_code": "037011"
+  },
+  {
+    "citycode": "373869",
+    "townwork_code": "037012"
+  },
+  {
+    "citycode": "373877",
+    "townwork_code": "037012"
+  },
+  {
+    "citycode": "374032",
+    "townwork_code": "037013"
+  },
+  {
+    "citycode": "374041",
+    "townwork_code": "037013"
+  },
+  {
+    "citycode": "374067",
+    "townwork_code": "037013"
+  },
+  {
+    "citycode": "382019",
+    "townwork_code": "038001"
+  },
+  {
+    "citycode": "382027",
+    "townwork_code": "038002"
+  },
+  {
+    "citycode": "382035",
+    "townwork_code": "038003"
+  },
+  {
+    "citycode": "382043",
+    "townwork_code": "038004"
+  },
+  {
+    "citycode": "382051",
+    "townwork_code": "038005"
+  },
+  {
+    "citycode": "382060",
+    "townwork_code": "038006"
+  },
+  {
+    "citycode": "382078",
+    "townwork_code": "038007"
+  },
+  {
+    "citycode": "382108",
+    "townwork_code": "038008"
+  },
+  {
+    "citycode": "382132",
+    "townwork_code": "038009"
+  },
+  {
+    "citycode": "382141",
+    "townwork_code": "038010"
+  },
+  {
+    "citycode": "382159",
+    "townwork_code": "038011"
+  },
+  {
+    "citycode": "383562",
+    "townwork_code": "038012"
+  },
+  {
+    "citycode": "383864",
+    "townwork_code": "038013"
+  },
+  {
+    "citycode": "384011",
+    "townwork_code": "038014"
+  },
+  {
+    "citycode": "384020",
+    "townwork_code": "038014"
+  },
+  {
+    "citycode": "384224",
+    "townwork_code": "038015"
+  },
+  {
+    "citycode": "384429",
+    "townwork_code": "038016"
+  },
+  {
+    "citycode": "384844",
+    "townwork_code": "038017"
+  },
+  {
+    "citycode": "384887",
+    "townwork_code": "038017"
+  },
+  {
+    "citycode": "385069",
+    "townwork_code": "038018"
+  },
+  {
+    "citycode": "392014",
+    "townwork_code": "039001"
+  },
+  {
+    "citycode": "392022",
+    "townwork_code": "039002"
+  },
+  {
+    "citycode": "392031",
+    "townwork_code": "039003"
+  },
+  {
+    "citycode": "392049",
+    "townwork_code": "039004"
+  },
+  {
+    "citycode": "392057",
+    "townwork_code": "039005"
+  },
+  {
+    "citycode": "392065",
+    "townwork_code": "039006"
+  },
+  {
+    "citycode": "392081",
+    "townwork_code": "039007"
+  },
+  {
+    "citycode": "392090",
+    "townwork_code": "039008"
+  },
+  {
+    "citycode": "392103",
+    "townwork_code": "039009"
+  },
+  {
+    "citycode": "392111",
+    "townwork_code": "039010"
+  },
+  {
+    "citycode": "392120",
+    "townwork_code": "039011"
+  },
+  {
+    "citycode": "393011",
+    "townwork_code": "039012"
+  },
+  {
+    "citycode": "393029",
+    "townwork_code": "039012"
+  },
+  {
+    "citycode": "393037",
+    "townwork_code": "039012"
+  },
+  {
+    "citycode": "393045",
+    "townwork_code": "039012"
+  },
+  {
+    "citycode": "393053",
+    "townwork_code": "039012"
+  },
+  {
+    "citycode": "393061",
+    "townwork_code": "039012"
+  },
+  {
+    "citycode": "393070",
+    "townwork_code": "039012"
+  },
+  {
+    "citycode": "393410",
+    "townwork_code": "039013"
+  },
+  {
+    "citycode": "393444",
+    "townwork_code": "039013"
+  },
+  {
+    "citycode": "393631",
+    "townwork_code": "039014"
+  },
+  {
+    "citycode": "393649",
+    "townwork_code": "039014"
+  },
+  {
+    "citycode": "393860",
+    "townwork_code": "039015"
+  },
+  {
+    "citycode": "393878",
+    "townwork_code": "039015"
+  },
+  {
+    "citycode": "394017",
+    "townwork_code": "039016"
+  },
+  {
+    "citycode": "394025",
+    "townwork_code": "039016"
+  },
+  {
+    "citycode": "394033",
+    "townwork_code": "039016"
+  },
+  {
+    "citycode": "394050",
+    "townwork_code": "039016"
+  },
+  {
+    "citycode": "394106",
+    "townwork_code": "039016"
+  },
+  {
+    "citycode": "394114",
+    "townwork_code": "039016"
+  },
+  {
+    "citycode": "394122",
+    "townwork_code": "039016"
+  },
+  {
+    "citycode": "394246",
+    "townwork_code": "039017"
+  },
+  {
+    "citycode": "394271",
+    "townwork_code": "039017"
+  },
+  {
+    "citycode": "394289",
+    "townwork_code": "039017"
+  },
+  {
+    "citycode": "401013",
+    "townwork_code": "040001001"
+  },
+  {
+    "citycode": "401030",
+    "townwork_code": "040001002"
+  },
+  {
+    "citycode": "401056",
+    "townwork_code": "040001003"
+  },
+  {
+    "citycode": "401064",
+    "townwork_code": "040001004"
+  },
+  {
+    "citycode": "401072",
+    "townwork_code": "040001005"
+  },
+  {
+    "citycode": "401081",
+    "townwork_code": "040001006"
+  },
+  {
+    "citycode": "401099",
+    "townwork_code": "040001007"
+  },
+  {
+    "citycode": "401315",
+    "townwork_code": "040002001"
+  },
+  {
+    "citycode": "401323",
+    "townwork_code": "040002002"
+  },
+  {
+    "citycode": "401331",
+    "townwork_code": "040002003"
+  },
+  {
+    "citycode": "401340",
+    "townwork_code": "040002004"
+  },
+  {
+    "citycode": "401358",
+    "townwork_code": "040002005"
+  },
+  {
+    "citycode": "401366",
+    "townwork_code": "040002006"
+  },
+  {
+    "citycode": "401374",
+    "townwork_code": "040002007"
+  },
+  {
+    "citycode": "402028",
+    "townwork_code": "040003"
+  },
+  {
+    "citycode": "402036",
+    "townwork_code": "040004"
+  },
+  {
+    "citycode": "402044",
+    "townwork_code": "040005"
+  },
+  {
+    "citycode": "402052",
+    "townwork_code": "040006"
+  },
+  {
+    "citycode": "402061",
+    "townwork_code": "040007"
+  },
+  {
+    "citycode": "402079",
+    "townwork_code": "040008"
+  },
+  {
+    "citycode": "402109",
+    "townwork_code": "040009"
+  },
+  {
+    "citycode": "402117",
+    "townwork_code": "040010"
+  },
+  {
+    "citycode": "402125",
+    "townwork_code": "040011"
+  },
+  {
+    "citycode": "402133",
+    "townwork_code": "040012"
+  },
+  {
+    "citycode": "402141",
+    "townwork_code": "040013"
+  },
+  {
+    "citycode": "402150",
+    "townwork_code": "040014"
+  },
+  {
+    "citycode": "402168",
+    "townwork_code": "040015"
+  },
+  {
+    "citycode": "402176",
+    "townwork_code": "040016"
+  },
+  {
+    "citycode": "402184",
+    "townwork_code": "040017"
+  },
+  {
+    "citycode": "402192",
+    "townwork_code": "040018"
+  },
+  {
+    "citycode": "402206",
+    "townwork_code": "040019"
+  },
+  {
+    "citycode": "402214",
+    "townwork_code": "040020"
+  },
+  {
+    "citycode": "402231",
+    "townwork_code": "040021"
+  },
+  {
+    "citycode": "402249",
+    "townwork_code": "040022"
+  },
+  {
+    "citycode": "402257",
+    "townwork_code": "040023"
+  },
+  {
+    "citycode": "402265",
+    "townwork_code": "040024"
+  },
+  {
+    "citycode": "402273",
+    "townwork_code": "040025"
+  },
+  {
+    "citycode": "402281",
+    "townwork_code": "040026"
+  },
+  {
+    "citycode": "402290",
+    "townwork_code": "040027"
+  },
+  {
+    "citycode": "402303",
+    "townwork_code": "040028"
+  },
+  {
+    "citycode": "402311",
+    "townwork_code": "040029"
+  },
+  {
+    "citycode": "403415",
+    "townwork_code": "040030"
+  },
+  {
+    "citycode": "403423",
+    "townwork_code": "040030"
+  },
+  {
+    "citycode": "403431",
+    "townwork_code": "040030"
+  },
+  {
+    "citycode": "403440",
+    "townwork_code": "040030"
+  },
+  {
+    "citycode": "403458",
+    "townwork_code": "040030"
+  },
+  {
+    "citycode": "403482",
+    "townwork_code": "040030"
+  },
+  {
+    "citycode": "403491",
+    "townwork_code": "040030"
+  },
+  {
+    "citycode": "403814",
+    "townwork_code": "040031"
+  },
+  {
+    "citycode": "403822",
+    "townwork_code": "040031"
+  },
+  {
+    "citycode": "403831",
+    "townwork_code": "040031"
+  },
+  {
+    "citycode": "403849",
+    "townwork_code": "040031"
+  },
+  {
+    "citycode": "404012",
+    "townwork_code": "040032"
+  },
+  {
+    "citycode": "404021",
+    "townwork_code": "040032"
+  },
+  {
+    "citycode": "404217",
+    "townwork_code": "040033"
+  },
+  {
+    "citycode": "404471",
+    "townwork_code": "040034"
+  },
+  {
+    "citycode": "404489",
+    "townwork_code": "040034"
+  },
+  {
+    "citycode": "405035",
+    "townwork_code": "040035"
+  },
+  {
+    "citycode": "405221",
+    "townwork_code": "040036"
+  },
+  {
+    "citycode": "405442",
+    "townwork_code": "040037"
+  },
+  {
+    "citycode": "406015",
+    "townwork_code": "040038"
+  },
+  {
+    "citycode": "406023",
+    "townwork_code": "040038"
+  },
+  {
+    "citycode": "406040",
+    "townwork_code": "040038"
+  },
+  {
+    "citycode": "406058",
+    "townwork_code": "040038"
+  },
+  {
+    "citycode": "406082",
+    "townwork_code": "040038"
+  },
+  {
+    "citycode": "406091",
+    "townwork_code": "040038"
+  },
+  {
+    "citycode": "406104",
+    "townwork_code": "040038"
+  },
+  {
+    "citycode": "406210",
+    "townwork_code": "040039"
+  },
+  {
+    "citycode": "406252",
+    "townwork_code": "040039"
+  },
+  {
+    "citycode": "406422",
+    "townwork_code": "040040"
+  },
+  {
+    "citycode": "406465",
+    "townwork_code": "040040"
+  },
+  {
+    "citycode": "406473",
+    "townwork_code": "040040"
+  },
+  {
+    "citycode": "412015",
+    "townwork_code": "041001"
+  },
+  {
+    "citycode": "412023",
+    "townwork_code": "041002"
+  },
+  {
+    "citycode": "412031",
+    "townwork_code": "041003"
+  },
+  {
+    "citycode": "412040",
+    "townwork_code": "041004"
+  },
+  {
+    "citycode": "412058",
+    "townwork_code": "041005"
+  },
+  {
+    "citycode": "412066",
+    "townwork_code": "041006"
+  },
+  {
+    "citycode": "412074",
+    "townwork_code": "041007"
+  },
+  {
+    "citycode": "412082",
+    "townwork_code": "041008"
+  },
+  {
+    "citycode": "412091",
+    "townwork_code": "041009"
+  },
+  {
+    "citycode": "412104",
+    "townwork_code": "041010"
+  },
+  {
+    "citycode": "413275",
+    "townwork_code": "041011"
+  },
+  {
+    "citycode": "413411",
+    "townwork_code": "041012"
+  },
+  {
+    "citycode": "413453",
+    "townwork_code": "041012"
+  },
+  {
+    "citycode": "413461",
+    "townwork_code": "041012"
+  },
+  {
+    "citycode": "413879",
+    "townwork_code": "041013"
+  },
+  {
+    "citycode": "414018",
+    "townwork_code": "041014"
+  },
+  {
+    "citycode": "414239",
+    "townwork_code": "041015"
+  },
+  {
+    "citycode": "414247",
+    "townwork_code": "041015"
+  },
+  {
+    "citycode": "414255",
+    "townwork_code": "041015"
+  },
+  {
+    "citycode": "414417",
+    "townwork_code": "041016"
+  },
+  {
+    "citycode": "422011",
+    "townwork_code": "042001"
+  },
+  {
+    "citycode": "422029",
+    "townwork_code": "042002"
+  },
+  {
+    "citycode": "422037",
+    "townwork_code": "042003"
+  },
+  {
+    "citycode": "422045",
+    "townwork_code": "042004"
+  },
+  {
+    "citycode": "422053",
+    "townwork_code": "042005"
+  },
+  {
+    "citycode": "422070",
+    "townwork_code": "042006"
+  },
+  {
+    "citycode": "422088",
+    "townwork_code": "042007"
+  },
+  {
+    "citycode": "422096",
+    "townwork_code": "042008"
+  },
+  {
+    "citycode": "422100",
+    "townwork_code": "042009"
+  },
+  {
+    "citycode": "422118",
+    "townwork_code": "042010"
+  },
+  {
+    "citycode": "422126",
+    "townwork_code": "042011"
+  },
+  {
+    "citycode": "422134",
+    "townwork_code": "042012"
+  },
+  {
+    "citycode": "422142",
+    "townwork_code": "042013"
+  },
+  {
+    "citycode": "423076",
+    "townwork_code": "042014"
+  },
+  {
+    "citycode": "423084",
+    "townwork_code": "042014"
+  },
+  {
+    "citycode": "423211",
+    "townwork_code": "042015"
+  },
+  {
+    "citycode": "423220",
+    "townwork_code": "042015"
+  },
+  {
+    "citycode": "423238",
+    "townwork_code": "042015"
+  },
+  {
+    "citycode": "423831",
+    "townwork_code": "042016"
+  },
+  {
+    "citycode": "423912",
+    "townwork_code": "042016"
+  },
+  {
+    "citycode": "424111",
+    "townwork_code": "042017"
+  },
+  {
+    "citycode": "431010",
+    "townwork_code": "043001001"
+  },
+  {
+    "citycode": "431028",
+    "townwork_code": "043001002"
+  },
+  {
+    "citycode": "431036",
+    "townwork_code": "043001003"
+  },
+  {
+    "citycode": "431044",
+    "townwork_code": "043001004"
+  },
+  {
+    "citycode": "431052",
+    "townwork_code": "043001005"
+  },
+  {
+    "citycode": "432024",
+    "townwork_code": "043002"
+  },
+  {
+    "citycode": "432032",
+    "townwork_code": "043003"
+  },
+  {
+    "citycode": "432041",
+    "townwork_code": "043004"
+  },
+  {
+    "citycode": "432059",
+    "townwork_code": "043005"
+  },
+  {
+    "citycode": "432067",
+    "townwork_code": "043006"
+  },
+  {
+    "citycode": "432083",
+    "townwork_code": "043007"
+  },
+  {
+    "citycode": "432105",
+    "townwork_code": "043008"
+  },
+  {
+    "citycode": "432113",
+    "townwork_code": "043009"
+  },
+  {
+    "citycode": "432121",
+    "townwork_code": "043010"
+  },
+  {
+    "citycode": "432130",
+    "townwork_code": "043011"
+  },
+  {
+    "citycode": "432148",
+    "townwork_code": "043012"
+  },
+  {
+    "citycode": "432156",
+    "townwork_code": "043013"
+  },
+  {
+    "citycode": "432164",
+    "townwork_code": "043014"
+  },
+  {
+    "citycode": "433489",
+    "townwork_code": "043016"
+  },
+  {
+    "citycode": "433641",
+    "townwork_code": "043017"
+  },
+  {
+    "citycode": "433675",
+    "townwork_code": "043017"
+  },
+  {
+    "citycode": "433683",
+    "townwork_code": "043017"
+  },
+  {
+    "citycode": "433691",
+    "townwork_code": "043017"
+  },
+  {
+    "citycode": "434035",
+    "townwork_code": "043018"
+  },
+  {
+    "citycode": "434043",
+    "townwork_code": "043018"
+  },
+  {
+    "citycode": "434230",
+    "townwork_code": "043019"
+  },
+  {
+    "citycode": "434248",
+    "townwork_code": "043019"
+  },
+  {
+    "citycode": "434256",
+    "townwork_code": "043019"
+  },
+  {
+    "citycode": "434281",
+    "townwork_code": "043019"
+  },
+  {
+    "citycode": "434329",
+    "townwork_code": "043019"
+  },
+  {
+    "citycode": "434337",
+    "townwork_code": "043019"
+  },
+  {
+    "citycode": "434418",
+    "townwork_code": "043020"
+  },
+  {
+    "citycode": "434426",
+    "townwork_code": "043020"
+  },
+  {
+    "citycode": "434434",
+    "townwork_code": "043020"
+  },
+  {
+    "citycode": "434442",
+    "townwork_code": "043020"
+  },
+  {
+    "citycode": "434477",
+    "townwork_code": "043020"
+  },
+  {
+    "citycode": "434680",
+    "townwork_code": "043021"
+  },
+  {
+    "citycode": "434825",
+    "townwork_code": "043022"
+  },
+  {
+    "citycode": "434841",
+    "townwork_code": "043022"
+  },
+  {
+    "citycode": "435015",
+    "townwork_code": "043023"
+  },
+  {
+    "citycode": "435058",
+    "townwork_code": "043023"
+  },
+  {
+    "citycode": "435066",
+    "townwork_code": "043023"
+  },
+  {
+    "citycode": "435074",
+    "townwork_code": "043023"
+  },
+  {
+    "citycode": "435104",
+    "townwork_code": "043023"
+  },
+  {
+    "citycode": "435112",
+    "townwork_code": "043023"
+  },
+  {
+    "citycode": "435121",
+    "townwork_code": "043023"
+  },
+  {
+    "citycode": "435139",
+    "townwork_code": "043023"
+  },
+  {
+    "citycode": "435147",
+    "townwork_code": "043023"
+  },
+  {
+    "citycode": "435317",
+    "townwork_code": "043024"
+  },
+  {
+    "citycode": "442011",
+    "townwork_code": "044001"
+  },
+  {
+    "citycode": "442020",
+    "townwork_code": "044002"
+  },
+  {
+    "citycode": "442038",
+    "townwork_code": "044003"
+  },
+  {
+    "citycode": "442046",
+    "townwork_code": "044004"
+  },
+  {
+    "citycode": "442054",
+    "townwork_code": "044005"
+  },
+  {
+    "citycode": "442062",
+    "townwork_code": "044006"
+  },
+  {
+    "citycode": "442071",
+    "townwork_code": "044007"
+  },
+  {
+    "citycode": "442089",
+    "townwork_code": "044008"
+  },
+  {
+    "citycode": "442097",
+    "townwork_code": "044009"
+  },
+  {
+    "citycode": "442101",
+    "townwork_code": "044010"
+  },
+  {
+    "citycode": "442119",
+    "townwork_code": "044011"
+  },
+  {
+    "citycode": "442127",
+    "townwork_code": "044012"
+  },
+  {
+    "citycode": "442135",
+    "townwork_code": "044013"
+  },
+  {
+    "citycode": "442143",
+    "townwork_code": "044014"
+  },
+  {
+    "citycode": "443221",
+    "townwork_code": "044015"
+  },
+  {
+    "citycode": "443417",
+    "townwork_code": "044016"
+  },
+  {
+    "citycode": "444618",
+    "townwork_code": "044017"
+  },
+  {
+    "citycode": "444626",
+    "townwork_code": "044017"
+  },
+  {
+    "citycode": "452017",
+    "townwork_code": "045001"
+  },
+  {
+    "citycode": "452025",
+    "townwork_code": "045002"
+  },
+  {
+    "citycode": "452033",
+    "townwork_code": "045003"
+  },
+  {
+    "citycode": "452041",
+    "townwork_code": "045004"
+  },
+  {
+    "citycode": "452050",
+    "townwork_code": "045005"
+  },
+  {
+    "citycode": "452068",
+    "townwork_code": "045006"
+  },
+  {
+    "citycode": "452076",
+    "townwork_code": "045007"
+  },
+  {
+    "citycode": "452084",
+    "townwork_code": "045008"
+  },
+  {
+    "citycode": "452092",
+    "townwork_code": "045009"
+  },
+  {
+    "citycode": "453412",
+    "townwork_code": "045011"
+  },
+  {
+    "citycode": "453617",
+    "townwork_code": "045012"
+  },
+  {
+    "citycode": "453820",
+    "townwork_code": "045013"
+  },
+  {
+    "citycode": "453838",
+    "townwork_code": "045013"
+  },
+  {
+    "citycode": "454010",
+    "townwork_code": "045014"
+  },
+  {
+    "citycode": "454028",
+    "townwork_code": "045014"
+  },
+  {
+    "citycode": "454036",
+    "townwork_code": "045014"
+  },
+  {
+    "citycode": "454044",
+    "townwork_code": "045014"
+  },
+  {
+    "citycode": "454052",
+    "townwork_code": "045014"
+  },
+  {
+    "citycode": "454061",
+    "townwork_code": "045014"
+  },
+  {
+    "citycode": "454214",
+    "townwork_code": "045015"
+  },
+  {
+    "citycode": "454290",
+    "townwork_code": "045015"
+  },
+  {
+    "citycode": "454303",
+    "townwork_code": "045015"
+  },
+  {
+    "citycode": "454311",
+    "townwork_code": "045015"
+  },
+  {
+    "citycode": "454419",
+    "townwork_code": "045016"
+  },
+  {
+    "citycode": "454427",
+    "townwork_code": "045016"
+  },
+  {
+    "citycode": "454435",
+    "townwork_code": "045016"
+  },
+  {
+    "citycode": "462012",
+    "townwork_code": "046001"
+  },
+  {
+    "citycode": "462039",
+    "townwork_code": "046002"
+  },
+  {
+    "citycode": "462047",
+    "townwork_code": "046003"
+  },
+  {
+    "citycode": "462063",
+    "townwork_code": "046004"
+  },
+  {
+    "citycode": "462080",
+    "townwork_code": "046005"
+  },
+  {
+    "citycode": "462101",
+    "townwork_code": "046006"
+  },
+  {
+    "citycode": "462136",
+    "townwork_code": "046007"
+  },
+  {
+    "citycode": "462144",
+    "townwork_code": "046008"
+  },
+  {
+    "citycode": "462152",
+    "townwork_code": "046009"
+  },
+  {
+    "citycode": "462161",
+    "townwork_code": "046010"
+  },
+  {
+    "citycode": "462179",
+    "townwork_code": "046011"
+  },
+  {
+    "citycode": "462187",
+    "townwork_code": "046012"
+  },
+  {
+    "citycode": "462195",
+    "townwork_code": "046013"
+  },
+  {
+    "citycode": "462209",
+    "townwork_code": "046014"
+  },
+  {
+    "citycode": "462217",
+    "townwork_code": "046015"
+  },
+  {
+    "citycode": "462225",
+    "townwork_code": "046016"
+  },
+  {
+    "citycode": "462233",
+    "townwork_code": "046017"
+  },
+  {
+    "citycode": "462241",
+    "townwork_code": "046018"
+  },
+  {
+    "citycode": "462250",
+    "townwork_code": "046019"
+  },
+  {
+    "citycode": "463035",
+    "townwork_code": "046020"
+  },
+  {
+    "citycode": "463043",
+    "townwork_code": "046020"
+  },
+  {
+    "citycode": "463922",
+    "townwork_code": "046021"
+  },
+  {
+    "citycode": "464040",
+    "townwork_code": "046022"
+  },
+  {
+    "citycode": "464520",
+    "townwork_code": "046023"
+  },
+  {
+    "citycode": "464686",
+    "townwork_code": "046024"
+  },
+  {
+    "citycode": "464821",
+    "townwork_code": "046025"
+  },
+  {
+    "citycode": "464902",
+    "townwork_code": "046025"
+  },
+  {
+    "citycode": "464911",
+    "townwork_code": "046025"
+  },
+  {
+    "citycode": "464929",
+    "townwork_code": "046025"
+  },
+  {
+    "citycode": "465011",
+    "townwork_code": "046026"
+  },
+  {
+    "citycode": "465020",
+    "townwork_code": "046026"
+  },
+  {
+    "citycode": "465054",
+    "townwork_code": "046026"
+  },
+  {
+    "citycode": "465232",
+    "townwork_code": "046027"
+  },
+  {
+    "citycode": "465241",
+    "townwork_code": "046027"
+  },
+  {
+    "citycode": "465259",
+    "townwork_code": "046027"
+  },
+  {
+    "citycode": "465275",
+    "townwork_code": "046027"
+  },
+  {
+    "citycode": "465291",
+    "townwork_code": "046027"
+  },
+  {
+    "citycode": "465305",
+    "townwork_code": "046027"
+  },
+  {
+    "citycode": "465313",
+    "townwork_code": "046027"
+  },
+  {
+    "citycode": "465321",
+    "townwork_code": "046027"
+  },
+  {
+    "citycode": "465330",
+    "townwork_code": "046027"
+  },
+  {
+    "citycode": "465348",
+    "townwork_code": "046027"
+  },
+  {
+    "citycode": "465356",
+    "townwork_code": "046027"
+  },
+  {
+    "citycode": "472018",
+    "townwork_code": "047001"
+  },
+  {
+    "citycode": "472051",
+    "townwork_code": "047002"
+  },
+  {
+    "citycode": "472077",
+    "townwork_code": "047003"
+  },
+  {
+    "citycode": "472085",
+    "townwork_code": "047004"
+  },
+  {
+    "citycode": "472093",
+    "townwork_code": "047005"
+  },
+  {
+    "citycode": "472107",
+    "townwork_code": "047006"
+  },
+  {
+    "citycode": "472115",
+    "townwork_code": "047007"
+  },
+  {
+    "citycode": "472123",
+    "townwork_code": "047008"
+  },
+  {
+    "citycode": "472131",
+    "townwork_code": "047009"
+  },
+  {
+    "citycode": "472140",
+    "townwork_code": "047010"
+  },
+  {
+    "citycode": "472158",
+    "townwork_code": "047011"
+  },
+  {
+    "citycode": "473014",
+    "townwork_code": "047012"
+  },
+  {
+    "citycode": "473022",
+    "townwork_code": "047012"
+  },
+  {
+    "citycode": "473031",
+    "townwork_code": "047012"
+  },
+  {
+    "citycode": "473065",
+    "townwork_code": "047012"
+  },
+  {
+    "citycode": "473081",
+    "townwork_code": "047012"
+  },
+  {
+    "citycode": "473111",
+    "townwork_code": "047012"
+  },
+  {
+    "citycode": "473138",
+    "townwork_code": "047012"
+  },
+  {
+    "citycode": "473146",
+    "townwork_code": "047012"
+  },
+  {
+    "citycode": "473154",
+    "townwork_code": "047012"
+  },
+  {
+    "citycode": "473243",
+    "townwork_code": "047013"
+  },
+  {
+    "citycode": "473251",
+    "townwork_code": "047013"
+  },
+  {
+    "citycode": "473260",
+    "townwork_code": "047013"
+  },
+  {
+    "citycode": "473278",
+    "townwork_code": "047013"
+  },
+  {
+    "citycode": "473286",
+    "townwork_code": "047013"
+  },
+  {
+    "citycode": "473294",
+    "townwork_code": "047013"
+  },
+  {
+    "citycode": "473481",
+    "townwork_code": "047014"
+  },
+  {
+    "citycode": "473502",
+    "townwork_code": "047014"
+  },
+  {
+    "citycode": "473537",
+    "townwork_code": "047014"
+  },
+  {
+    "citycode": "473545",
+    "townwork_code": "047014"
+  },
+  {
+    "citycode": "473553",
+    "townwork_code": "047014"
+  },
+  {
+    "citycode": "473561",
+    "townwork_code": "047014"
+  },
+  {
+    "citycode": "473570",
+    "townwork_code": "047014"
+  },
+  {
+    "citycode": "473588",
+    "townwork_code": "047014"
+  },
+  {
+    "citycode": "473596",
+    "townwork_code": "047014"
+  },
+  {
+    "citycode": "473600",
+    "townwork_code": "047014"
+  },
+  {
+    "citycode": "473618",
+    "townwork_code": "047014"
+  },
+  {
+    "citycode": "473626",
+    "townwork_code": "047014"
+  },
+  {
+    "citycode": "473758",
+    "townwork_code": "047015"
+  },
+  {
+    "citycode": "473812",
+    "townwork_code": "047016"
+  },
+  {
+    "citycode": "473821",
+    "townwork_code": "047016"
+  }
+]
