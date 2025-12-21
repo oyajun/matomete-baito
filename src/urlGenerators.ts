@@ -82,15 +82,28 @@ export function townworkSearchUrl(keyword: string, cityCodes: string[]): string 
  */
 export function baitoruSearchUrl(keyword: string, cityCodes: string[]): string {
     const uniqueCityCodes = [...new Set(cityCodes)]
-    const normalizedCodes = uniqueCityCodes
+    const normalizedCodes = [...new Set(uniqueCityCodes
         .map(code => code.substring(0, 5))
-        .filter(code => code.length === 5)
+        .filter(code => code.length === 5))]
 
     if (normalizedCodes.length === 0) {
         throw new Error('市区町村コードを指定してください')
     }
 
-    const paths = normalizedCodes.map(code => {
+    const orderIndex = (() => {
+        const entries = Object.keys(CITYCODE_BAITORU_URL)
+        const indexMap = new Map<string, number>()
+        entries.forEach((code, idx) => indexMap.set(code, idx))
+        return indexMap
+    })()
+
+    const orderedCodes = [...normalizedCodes].sort((a, b) => {
+        const ai = orderIndex.get(a) ?? Number.MAX_SAFE_INTEGER
+        const bi = orderIndex.get(b) ?? Number.MAX_SAFE_INTEGER
+        return ai - bi
+    })
+
+    const paths = orderedCodes.map(code => {
         const path = CITYCODE_BAITORU_URL[code]
         if (!path) {
             throw new Error(`バイトルのURLパスが見つかりません: ${code}`)
@@ -122,7 +135,10 @@ export function baitoruSearchUrl(keyword: string, cityCodes: string[]): string {
         return trimmed.slice(lastSlash + 1)
     })
 
-    const combinedSlug = slugs.join('-')
+    // 同じスラッグはまとめる
+    const uniqueSlugs = [...new Set(slugs)]
+
+    const combinedSlug = uniqueSlugs.join('-')
     const encodedKeyword = encodeURIComponent(keyword.trim())
     const keywordSegment = encodedKeyword ? `wrd${encodedKeyword}/` : ''
 
