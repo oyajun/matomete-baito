@@ -39,13 +39,7 @@ export function CitySelectionModal({
     setTempSelectedCities(newSelected)
   }
 
-  const handleSelectAll = () => {
-    setTempSelectedCities(new Set(cities.map((city) => city.code)))
-  }
 
-  const handleDeselectAll = () => {
-    setTempSelectedCities(new Set())
-  }
 
   const handleConfirm = () => {
     onConfirm(tempSelectedCities)
