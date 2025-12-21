@@ -40,7 +40,9 @@ citycodes 引数は6桁→jsonは5桁。
 tokai/jlist/shizuoka/shizuokashiigai/numazushi　の部分はjsonデータから組み立てる  
 https://www.baitoru.com/tokai/jlist/shizuoka/shizuokashiigai/numazushi/wrd%E3%82%AB%E3%83%95%E3%82%A7  
 複数市区町村コードを指定する場合  
-https://www.baitoru.com/tokai/jlist/shizuoka/shizuokashiigai/numazushi-atamishi/wrd%E3%82%AB%E3%83%95%E3%82%A7/
+https://www.baitoru.com/tokai/jlist/shizuoka/shizuokashiigai/numazushi-atamishi/wrd%E3%82%AB%E3%83%95%E3%82%A7/  
+カテゴリをまたぐとき
+https://www.baitoru.com/kanto/jlist/kanagawa/yokohamashi-kawasakishi-sagamiharashi-yokohamashiigai/yokohamashinishiku-kawasakishikawasakiku-sagamiharashimidoriku-yokosukashi-odawarashi/
 
 ## 処理内容
 1. キーワードと市区町村コードの配列を受け取る

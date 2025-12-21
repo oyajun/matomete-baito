@@ -111,29 +111,51 @@ export function baitoruSearchUrl(keyword: string, cityCodes: string[]): string {
         return path
     })
 
-    const basePath = (() => {
-        const prefixes = paths.map(path => {
-            const trimmed = path.endsWith('/') ? path.slice(0, -1) : path
-            const lastSlash = trimmed.lastIndexOf('/')
-            if (lastSlash === -1) {
-                throw new Error('バイトルのURLパス形式が不正です')
-            }
-            return trimmed.slice(0, lastSlash + 1)
-        })
+    const parsedPaths = paths.map(path => {
+        const trimmed = path.replace(/^\/+|\/+$/g, '')
+        const segments = trimmed.split('/')
 
-        const uniqueBases = new Set(prefixes)
-        if (uniqueBases.size !== 1) {
-            throw new Error('同じエリア内の市区町村を選択してください')
+        if (segments.length < 5) {
+            throw new Error('バイトルのURLパス形式が不正です')
         }
 
-        return prefixes[0]
+        const [region, jlist, prefecture, ...rest] = segments
+        const slug = rest.pop()
+        if (!slug) {
+            throw new Error('バイトルのURLパス形式が不正です')
+        }
+
+        const category = rest.join('/')
+        return { region, jlist, prefecture, category, slug }
+    })
+
+    const prefix = (() => {
+        const first = parsedPaths[0]
+        const isSamePrefix = parsedPaths.every(p =>
+            p.region === first.region && p.jlist === first.jlist && p.prefecture === first.prefecture
+        )
+        if (!isSamePrefix) {
+            throw new Error('同じ都道府県内の市区町村を選択してください')
+        }
+        return `/${first.region}/${first.jlist}/${first.prefecture}/`
     })()
 
-    const slugs = paths.map(path => {
-        const trimmed = path.endsWith('/') ? path.slice(0, -1) : path
-        const lastSlash = trimmed.lastIndexOf('/')
-        return trimmed.slice(lastSlash + 1)
-    })
+    const categoryOrder: string[] = []
+    const seenCategories = new Set<string>()
+    for (const { category } of parsedPaths) {
+        if (category && !seenCategories.has(category)) {
+            seenCategories.add(category)
+            categoryOrder.push(category)
+        }
+    }
+
+    if (categoryOrder.length === 0) {
+        throw new Error('カテゴリが取得できませんでした')
+    }
+
+    const basePath = `${prefix}${categoryOrder.join('-')}/`
+
+    const slugs = parsedPaths.map(p => p.slug)
 
     // 同じスラッグはまとめる
     const uniqueSlugs = [...new Set(slugs)]
