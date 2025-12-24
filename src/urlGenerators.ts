@@ -139,7 +139,7 @@ export function baitoruSearchUrl(keyword: string, cityCodes: string[]): string {
         const trimmed = path.replace(/^\/+|\/+$/g, '')
         const segments = trimmed.split('/')
 
-        if (segments.length < 5) {
+        if (segments.length < 4) {
             throw new Error('バイトルのURLパス形式が不正です')
         }
 
@@ -174,11 +174,9 @@ export function baitoruSearchUrl(keyword: string, cityCodes: string[]): string {
         }
     }
 
-    if (categoryOrder.length === 0) {
-        throw new Error('カテゴリが取得できませんでした')
-    }
-
-    const basePath = `${prefix}${categoryOrder.join('-')}/`
+    // 政令市がない県の場合、カテゴリは空になる
+    const categoryPath = categoryOrder.length > 0 ? `${categoryOrder.join('-')}/` : ''
+    const basePath = `${prefix}${categoryPath}`
 
     // スラッグもJSONの順序で重複を除去して結合
     const slugOrder: string[] = []
