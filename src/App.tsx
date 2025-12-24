@@ -61,6 +61,7 @@ function App() {
       <main className="app-main">
         <SearchForm onCriteriaChange={handleCriteriaChange} />
         <SearchResults results={results} helperMessage={helperMessage} />
+        <a href="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3760146&pid=892409137&vc_url=https%3A%2F%2Ftownwork.net%2Fprefectures%2Ftokyo%2Fjob_search%2F%3Fma%3D013006%26ma%3D013007%26kw%3Dcafe%26vos%3Ddtwmprsc0000060019" rel="nofollow">abcd</a>
       </main>
     </div>
   )
