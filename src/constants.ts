@@ -83,3 +83,21 @@ export const PREFECTURE_SLUG: Record<string, string> = {
     '46': 'kagoshima',
     '47': 'okinawa'
 }
+
+// 雇用形態の定義
+export type EmploymentTypeId = 'part_time' | 'full_time' | 'contract' | 'dispatch' | 'outsourcing'
+
+export interface EmploymentTypeDefinition {
+    id: EmploymentTypeId
+    label: string
+    townworkCode: string
+    baitoruCodes: string[]
+}
+
+export const EMPLOYMENT_TYPES: EmploymentTypeDefinition[] = [
+    { id: 'part_time', label: 'アルバイト・パート', townworkCode: '01', baitoruCodes: ['1'] },
+    { id: 'full_time', label: '正社員', townworkCode: '02', baitoruCodes: ['2'] },
+    { id: 'contract', label: '契約社員', townworkCode: '03', baitoruCodes: ['3'] },
+    { id: 'dispatch', label: '派遣社員', townworkCode: '04', baitoruCodes: ['4', '5', '6'] },
+    { id: 'outsourcing', label: '業務委託', townworkCode: '05', baitoruCodes: ['7'] },
+]
