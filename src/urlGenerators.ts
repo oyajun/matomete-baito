@@ -89,14 +89,8 @@ export function townworkSearchUrl(keyword: string, cityCodes: string[]): string 
     const queryString = params.toString()
     const townworkUrl = `https://townwork.net/prefectures/${prefectureSlug}/job_search/?${queryString}`
 
-    // ValueCommerceのアフィリエイトリンクでラップ
-    const affiliateParams = new URLSearchParams({
-        sid: '3760146',
-        pid: '892409137',
-        vc_url: townworkUrl
-    })
-
-    return `https://ck.jp.ap.valuecommerce.com/servlet/referral?${affiliateParams.toString()}`
+    // ValueCommerceのアフィリエイトリンクでラップ（vc_urlを明示的にエンコード）
+    return `https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3760146&pid=892409137&vc_url=${encodeURIComponent(townworkUrl)}`
 }
 
 /**
