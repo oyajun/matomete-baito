@@ -33,12 +33,11 @@ function App() {
     }
 
     try {
-      const townworkResult = townworkSearchUrl(criteria.keyword, criteria.cityCodes)
+      const townworkUrl = townworkSearchUrl(criteria.keyword, criteria.cityCodes)
       const searchResults: SearchResult[] = [
         {
           siteName: 'タウンワーク',
-          url: townworkResult.url,
-          html: townworkResult.html,
+          url: townworkUrl,
         },
         {
           siteName: 'バイトル',

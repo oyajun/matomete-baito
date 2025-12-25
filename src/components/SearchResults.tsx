@@ -25,7 +25,7 @@ export function SearchResults({ results, helperMessage }: SearchResultsProps) {
   return (
     <div className="search-results">
       <div className="results-header">
-        <h2 className="results-title">検索結果 <span className="affiliate-notice">（アフィリエイトリンクを含みます）</span></h2>
+        <h2 className="results-title">検索結果</h2>
         <button
           onClick={handleOpenAll}
           className="open-all-button"
