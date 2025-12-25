@@ -1,6 +1,7 @@
 // URL生成関数のテンプレート
 
-import { CITYCODE_BAITORU_URL, CITYCODE_TOWNWORK, PREFECTURE_SLUG } from './constants'
+import { CITYCODE_BAITORU_URL, CITYCODE_TOWNWORK, PREFECTURE_SLUG, EMPLOYMENT_TYPES } from './constants'
+import type { EmploymentTypeId } from './constants'
 import citycodeBaitoruUrlRaw from './data/citycode_baitoruurl.json?raw'
 
 // JSONの記述順を保持するために生データから順序を抽出する
@@ -24,9 +25,10 @@ const BAITORU_ORDER_INDEX = (() => {
  * タウンワークの検索URLを生成する
  * @param keyword 検索キーワード
  * @param cityCodes 市区町村コードの配列
+ * @param employmentTypes 雇用形態の配列
  * @returns 検索URL
  */
-export function townworkSearchUrl(keyword: string, cityCodes: string[]): string {
+export function townworkSearchUrl(keyword: string, cityCodes: string[], employmentTypes: EmploymentTypeId[] = []): string {
     // 重複を削除
     const uniqueCityCodes = [...new Set(cityCodes)]
 
@@ -77,6 +79,15 @@ export function townworkSearchUrl(keyword: string, cityCodes: string[]): string 
         params.append('sa', sa)
     }
 
+    // 雇用形態パラメータを追加
+    for (const typeId of employmentTypes) {
+        const typeDef = EMPLOYMENT_TYPES.find(t => t.id === typeId)
+        if (typeDef) {
+            params.append('emp', typeDef.townworkCode)
+        }
+    }
+
+    // 
     // キーワードを追加（URLSearchParamsが自動的にエンコードする）
     if (keyword.trim()) {
         params.append('kw', keyword)
@@ -93,9 +104,10 @@ export function townworkSearchUrl(keyword: string, cityCodes: string[]): string 
  * バイトルの検索URLを生成する
  * @param keyword 検索キーワード
  * @param cityCodes 市区町村コードの配列
+ * @param employmentTypes 雇用形態の配列
  * @returns バイトルの検索URL
  */
-export function baitoruSearchUrl(keyword: string, cityCodes: string[]): string {
+export function baitoruSearchUrl(keyword: string, cityCodes: string[], employmentTypes: EmploymentTypeId[] = []): string {
     const uniqueCityCodes = [...new Set(cityCodes)]
 
     // 6桁コードをcitycode_baitoruurl.jsonの記述順でソート
@@ -186,8 +198,29 @@ export function baitoruSearchUrl(keyword: string, cityCodes: string[]): string {
     }
 
     const combinedSlug = slugOrder.join('-')
+
+    // 雇用形態セグメントの生成
+    let employmentSegment = ''
+    if (employmentTypes.length > 0) {
+        const codes: string[] = []
+        for (const typeId of employmentTypes) {
+            const typeDef = EMPLOYMENT_TYPES.find(t => t.id === typeId)
+            if (typeDef) {
+                typeDef.baitoruCodes.forEach(code => codes.push(`btp${code}`))
+            }
+        }
+        if (codes.length > 0) {
+            // 重複を除去して指定の順序で並べる
+            const uniqueCodes = [...new Set(codes)]
+            // 仕様で指定された順序: btp1-btp3-btp4-btp5-btp8-btp9-btp7
+            const specifiedOrder = ['btp1', 'btp3', 'btp4', 'btp5', 'btp8', 'btp9', 'btp7']
+            const orderedCodes = specifiedOrder.filter(code => uniqueCodes.includes(code))
+            employmentSegment = `${orderedCodes.join('-')}/`
+        }
+    }
+
     const encodedKeyword = encodeURIComponent(keyword.trim())
     const keywordSegment = encodedKeyword ? `wrd${encodedKeyword}/` : ''
 
-    return `https://www.baitoru.com${basePath}${combinedSlug}/${keywordSegment}`
+    return `https://www.baitoru.com${basePath}${combinedSlug}/${employmentSegment}${keywordSegment}`
 }

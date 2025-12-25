@@ -1,15 +1,17 @@
 import { useEffect, useState } from 'react'
-import { PREFECTURES } from '../constants'
+import { PREFECTURES, EMPLOYMENT_TYPES } from '../constants'
+import type { EmploymentTypeId } from '../constants'
 import { CitySelectionModal } from './CitySelectionModal'
 
 interface SearchFormProps {
-  onCriteriaChange: (keyword: string, cityCodes: string[]) => void
+  onCriteriaChange: (keyword: string, cityCodes: string[], employmentTypes: EmploymentTypeId[]) => void
 }
 
 export function SearchForm({ onCriteriaChange }: SearchFormProps) {
   const [keyword, setKeyword] = useState('')
   const [selectedPrefecture, setSelectedPrefecture] = useState('13')
   const [selectedCities, setSelectedCities] = useState<Set<string>>(new Set())
+  const [selectedEmploymentTypes, setSelectedEmploymentTypes] = useState<Set<EmploymentTypeId>>(new Set(['part_time']))
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   const handlePrefectureChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -31,13 +33,23 @@ export function SearchForm({ onCriteriaChange }: SearchFormProps) {
     setSelectedCities(new Set(cities))
   }
 
+  const handleEmploymentTypeChange = (id: EmploymentTypeId) => {
+    const newSet = new Set(selectedEmploymentTypes)
+    if (newSet.has(id)) {
+      newSet.delete(id)
+    } else {
+      newSet.add(id)
+    }
+    setSelectedEmploymentTypes(newSet)
+  }
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
   }
 
   useEffect(() => {
-    onCriteriaChange(keyword, Array.from(selectedCities))
-  }, [keyword, selectedCities, onCriteriaChange])
+    onCriteriaChange(keyword, Array.from(selectedCities), Array.from(selectedEmploymentTypes))
+  }, [keyword, selectedCities, selectedEmploymentTypes, onCriteriaChange])
 
   const currentPrefecture = PREFECTURES.find((p) => p.code === selectedPrefecture)
 
@@ -92,6 +104,22 @@ export function SearchForm({ onCriteriaChange }: SearchFormProps) {
             </button>
           </div>
         )}
+
+        <div className="form-group">
+          <label>雇用形態（未選択で全て）</label>
+          <div className="checkbox-group">
+            {EMPLOYMENT_TYPES.map((type) => (
+              <label key={type.id} className="checkbox-label">
+                <input
+                  type="checkbox"
+                  checked={selectedEmploymentTypes.has(type.id)}
+                  onChange={() => handleEmploymentTypeChange(type.id)}
+                />
+                {type.label}
+              </label>
+            ))}
+          </div>
+        </div>
 
         <div className="form-group">
           <label htmlFor="keyword">キーワード（任意）</label>

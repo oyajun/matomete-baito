@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import './App.css'
 import { PROJECT_NAME_JA } from './constants'
+import type { EmploymentTypeId } from './constants'
 import { SearchForm } from './components/SearchForm'
 import { SearchResults } from './components/SearchResults'
 import { townworkSearchUrl, baitoruSearchUrl } from './urlGenerators'
@@ -14,15 +15,16 @@ interface SearchResult {
 interface SearchCriteria {
   keyword: string
   cityCodes: string[]
+  employmentTypes: EmploymentTypeId[]
 }
 
 function App() {
-  const [criteria, setCriteria] = useState<SearchCriteria>({ keyword: '', cityCodes: [] })
+  const [criteria, setCriteria] = useState<SearchCriteria>({ keyword: '', cityCodes: [], employmentTypes: [] })
   const [results, setResults] = useState<SearchResult[]>([])
   const [helperMessage, setHelperMessage] = useState('市区町村を選択してください')
 
-  const handleCriteriaChange = useCallback((keyword: string, cityCodes: string[]) => {
-    setCriteria({ keyword, cityCodes })
+  const handleCriteriaChange = useCallback((keyword: string, cityCodes: string[], employmentTypes: EmploymentTypeId[]) => {
+    setCriteria({ keyword, cityCodes, employmentTypes })
   }, [])
 
   useEffect(() => {
@@ -33,7 +35,7 @@ function App() {
     }
 
     try {
-      const townworkUrl = townworkSearchUrl(criteria.keyword, criteria.cityCodes)
+      const townworkUrl = townworkSearchUrl(criteria.keyword, criteria.cityCodes, criteria.employmentTypes)
       const searchResults: SearchResult[] = [
         {
           siteName: 'タウンワーク',
@@ -41,7 +43,7 @@ function App() {
         },
         {
           siteName: 'バイトル',
-          url: baitoruSearchUrl(criteria.keyword, criteria.cityCodes),
+          url: baitoruSearchUrl(criteria.keyword, criteria.cityCodes, criteria.employmentTypes),
         },
       ]
       setResults(searchResults)
