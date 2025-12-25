@@ -82,21 +82,23 @@ export function townworkSearchUrl(keyword: string, cityCodes: string[]): { url: 
         params.append('kw', keyword)
     }
 
-    // vosパラメータを追加
-    params.append('vos', 'dtwmprsc0000060019')
-
-    // タウンワークのURLを組み立て
+    // タウンワークのURLを組み立て（vosパラメータは最後に手動で追加）
     const queryString = params.toString()
-    const townworkUrl = `https://townwork.net/prefectures/${prefectureSlug}/job_search/?${queryString}`
+    const vosParam = 'vos=dtwmprsc0000060019'
+    const separator = queryString ? '&' : ''
+    const townworkUrl = `https://townwork.net/prefectures/${prefectureSlug}/job_search/?${queryString}${separator}${vosParam}`
 
-    // ValueCommerceのアフィリエイトリンクでラップ（vc_urlを明示的にエンコード）
-    const affiliateUrl = `//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3760146&pid=892409137&vc_url=${encodeURIComponent(townworkUrl)}`
+    // ValueCommerceのアフィリエイトリンク（通常のURL用）
+    const affiliateUrl = `https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3760146&pid=892409137&vc_url=${encodeURIComponent(townworkUrl)}`
 
+    // HTML用にエスケープしたアフィリエイトリンク
+    const affiliateUrlForHtml = affiliateUrl.replace(/&/g, '&amp;')
+    
     // トラッキングピクセル付きHTMLリンクを生成
-    const html = `<a href="${affiliateUrl}" rel="nofollow" target="_blank"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3760146&pid=892409137" height="1" width="0" border="0">タウンワークで検索</a>`
+    const html = `<a href="${affiliateUrlForHtml}" rel="nofollow" target="_blank"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3760146&amp;pid=892409137" height="1" width="0" border="0">タウンワークで検索</a>`
 
     return {
-        url: `https:${affiliateUrl}`,
+        url: affiliateUrl,
         html
     }
 }
