@@ -96,8 +96,8 @@ export interface EmploymentTypeDefinition {
 
 export const EMPLOYMENT_TYPES: EmploymentTypeDefinition[] = [
     { id: 'part_time', label: 'アルバイト・パート', townworkCode: '01', baitoruCodes: ['1'] },
-    { id: 'full_time', label: '正社員', townworkCode: '02', baitoruCodes: ['2'] },
-    { id: 'contract', label: '契約社員', townworkCode: '03', baitoruCodes: ['3'] },
-    { id: 'dispatch', label: '派遣社員', townworkCode: '04', baitoruCodes: ['4', '5', '6'] },
+    { id: 'full_time', label: '正社員', townworkCode: '02', baitoruCodes: ['3'] },
+    { id: 'contract', label: '契約社員', townworkCode: '03', baitoruCodes: ['4'] },
+    { id: 'dispatch', label: '派遣社員', townworkCode: '04', baitoruCodes: ['5', '8', '9'] },
     { id: 'outsourcing', label: '業務委託', townworkCode: '05', baitoruCodes: ['7'] },
 ]

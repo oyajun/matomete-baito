@@ -210,17 +210,12 @@ export function baitoruSearchUrl(keyword: string, cityCodes: string[], employmen
             }
         }
         if (codes.length > 0) {
-            // 重複を除去して結合
+            // 重複を除去して指定の順序で並べる
             const uniqueCodes = [...new Set(codes)]
-            // 数値順にソートした方がURLが安定的になるかもしれないが、
-            // 仕様には特に順序指定はない。ここでは単純に結合する。
-            // ただし、btp4-btp5-btp6 のような順序が自然なので、コードの数値部分でソートする
-            uniqueCodes.sort((a, b) => {
-                const numA = parseInt(a.replace('btp', ''), 10)
-                const numB = parseInt(b.replace('btp', ''), 10)
-                return numA - numB
-            })
-            employmentSegment = `${uniqueCodes.join('-')}/`
+            // 仕様で指定された順序: btp1-btp3-btp4-btp5-btp8-btp9-btp7
+            const specifiedOrder = ['btp1', 'btp3', 'btp4', 'btp5', 'btp8', 'btp9', 'btp7']
+            const orderedCodes = specifiedOrder.filter(code => uniqueCodes.includes(code))
+            employmentSegment = `${orderedCodes.join('-')}/`
         }
     }
 
