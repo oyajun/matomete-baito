@@ -39,7 +39,7 @@
   height: auto;
 }
 
-.affiliate-banner + .affiliate-banner {
+.affiliate-banner+.affiliate-banner {
   margin-top: 0.75rem;
 }
 
