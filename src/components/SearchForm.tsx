@@ -11,7 +11,7 @@ export function SearchForm({ onCriteriaChange }: SearchFormProps) {
   const [keyword, setKeyword] = useState('')
   const [selectedPrefecture, setSelectedPrefecture] = useState('13')
   const [selectedCities, setSelectedCities] = useState<Set<string>>(new Set())
-  const [selectedEmploymentTypes, setSelectedEmploymentTypes] = useState<Set<EmploymentTypeId>>(new Set())
+  const [selectedEmploymentTypes, setSelectedEmploymentTypes] = useState<Set<EmploymentTypeId>>(new Set(['part_time']))
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   const handlePrefectureChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
