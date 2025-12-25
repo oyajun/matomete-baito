@@ -82,11 +82,6 @@ export function townworkSearchUrl(keyword: string, cityCodes: string[]): string 
         params.append('kw', keyword)
     }
 
-    // saパラメータがある場合はactパラメータを追加
-    if (saParams.length > 0) {
-        params.append('act', 'true')
-    }
-
     // URLを組み立て
     const queryString = params.toString()
     return `https://townwork.net/prefectures/${prefectureSlug}/job_search/?${queryString}`
