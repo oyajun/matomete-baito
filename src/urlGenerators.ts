@@ -24,7 +24,7 @@ const BAITORU_ORDER_INDEX = (() => {
  * タウンワークの検索URLを生成する
  * @param keyword 検索キーワード
  * @param cityCodes 市区町村コードの配列
- * @returns タウンワークの検索URL
+ * @returns タウンワークの検索URL（ValueCommerceアフィリエイトリンク）
  */
 export function townworkSearchUrl(keyword: string, cityCodes: string[]): string {
     // 重複を削除
@@ -82,9 +82,21 @@ export function townworkSearchUrl(keyword: string, cityCodes: string[]): string 
         params.append('kw', keyword)
     }
 
-    // URLを組み立て
+    // vosパラメータを追加
+    params.append('vos', 'dtwmprsc0000060019')
+
+    // タウンワークのURLを組み立て
     const queryString = params.toString()
-    return `https://townwork.net/prefectures/${prefectureSlug}/job_search/?${queryString}`
+    const townworkUrl = `https://townwork.net/prefectures/${prefectureSlug}/job_search/?${queryString}`
+
+    // ValueCommerceのアフィリエイトリンクでラップ
+    const affiliateParams = new URLSearchParams({
+        sid: '3760146',
+        pid: '892409137',
+        vc_url: townworkUrl
+    })
+
+    return `https://ck.jp.ap.valuecommerce.com/servlet/referral?${affiliateParams.toString()}`
 }
 
 /**

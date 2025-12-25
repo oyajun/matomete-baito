@@ -412,6 +412,12 @@
   color: #2c3e50;
 }
 
+.affiliate-notice {
+  font-size: 0.8em;
+  color: #666;
+  white-space: nowrap;
+}
+
 .open-all-button {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
@@ -593,6 +599,12 @@
 
   .results-header h2 {
     font-size: 1.3rem;
+  }
+
+  .affiliate-notice {
+    display: block;
+    margin-top: 0.25rem;
+    white-space: normal;
   }
 
   .open-all-button {
