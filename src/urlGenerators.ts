@@ -88,14 +88,11 @@ export function townworkSearchUrl(keyword: string, cityCodes: string[]): { url: 
     const separator = queryString ? '&' : ''
     const townworkUrl = `https://townwork.net/prefectures/${prefectureSlug}/job_search/?${queryString}${separator}${vosParam}`
 
-    // ValueCommerceのアフィリエイトリンク（通常のURL用）
-    const affiliateUrl = `https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3760146&pid=892409137&vc_url=${encodeURIComponent(townworkUrl)}`
-
-    // HTML用にエスケープしたアフィリエイトリンク
-    const affiliateUrlForHtml = affiliateUrl.replace(/&/g, '&amp;')
+    // ValueCommerceのアフィリエイトリンク
+    const affiliateUrl = `//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3760146&pid=892409137&vc_url=${encodeURIComponent(townworkUrl)}`
     
     // トラッキングピクセル付きHTMLリンクを生成
-    const html = `<a href="${affiliateUrlForHtml}" rel="nofollow" target="_blank"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3760146&amp;pid=892409137" height="1" width="0" border="0">タウンワークで検索</a>`
+    const html = `<a href="${affiliateUrl}" rel="nofollow" target="_blank"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3760146&pid=892409137" height="1" width="0" border="0">タウンワークで検索</a>`
 
     return {
         url: affiliateUrl,
