@@ -1,6 +1,7 @@
 interface SearchResult {
   siteName: string
   url: string
+  html?: string
 }
 
 interface SearchResultsProps {
@@ -37,9 +38,13 @@ export function SearchResults({ results, helperMessage }: SearchResultsProps) {
         <ul className="results-list">
           {results.map((result, index) => (
             <li key={index} className="result-item">
-              <a href={result.url} target="_blank" rel="noopener noreferrer">
-                {result.siteName}で検索
-              </a>
+              {result.html ? (
+                <div dangerouslySetInnerHTML={{ __html: result.html }} />
+              ) : (
+                <a href={result.url} target="_blank" rel="noopener noreferrer">
+                  {result.siteName}で検索
+                </a>
+              )}
             </li>
           ))}
         </ul>

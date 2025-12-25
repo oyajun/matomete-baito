@@ -24,9 +24,9 @@ const BAITORU_ORDER_INDEX = (() => {
  * タウンワークの検索URLを生成する
  * @param keyword 検索キーワード
  * @param cityCodes 市区町村コードの配列
- * @returns タウンワークの検索URL（ValueCommerceアフィリエイトリンク）
+ * @returns { url: アフィリエイトURL, html: トラッキングピクセル付きHTMLリンク }
  */
-export function townworkSearchUrl(keyword: string, cityCodes: string[]): string {
+export function townworkSearchUrl(keyword: string, cityCodes: string[]): { url: string; html: string } {
     // 重複を削除
     const uniqueCityCodes = [...new Set(cityCodes)]
 
@@ -90,7 +90,15 @@ export function townworkSearchUrl(keyword: string, cityCodes: string[]): string 
     const townworkUrl = `https://townwork.net/prefectures/${prefectureSlug}/job_search/?${queryString}`
 
     // ValueCommerceのアフィリエイトリンクでラップ（vc_urlを明示的にエンコード）
-    return `https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3760146&pid=892409137&vc_url=${encodeURIComponent(townworkUrl)}`
+    const affiliateUrl = `//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3760146&pid=892409137&vc_url=${encodeURIComponent(townworkUrl)}`
+
+    // トラッキングピクセル付きHTMLリンクを生成
+    const html = `<a href="${affiliateUrl}" rel="nofollow" target="_blank"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3760146&pid=892409137" height="1" width="0" border="0">タウンワークで検索</a>`
+
+    return {
+        url: `https:${affiliateUrl}`,
+        html
+    }
 }
 
 /**

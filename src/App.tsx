@@ -8,6 +8,7 @@ import { townworkSearchUrl, baitoruSearchUrl } from './urlGenerators'
 interface SearchResult {
   siteName: string
   url: string
+  html?: string
 }
 
 interface SearchCriteria {
@@ -32,10 +33,12 @@ function App() {
     }
 
     try {
+      const townworkResult = townworkSearchUrl(criteria.keyword, criteria.cityCodes)
       const searchResults: SearchResult[] = [
         {
           siteName: 'タウンワーク',
-          url: townworkSearchUrl(criteria.keyword, criteria.cityCodes),
+          url: townworkResult.url,
+          html: townworkResult.html,
         },
         {
           siteName: 'バイトル',
