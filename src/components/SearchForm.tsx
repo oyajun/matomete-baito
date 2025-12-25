@@ -106,17 +106,6 @@ export function SearchForm({ onCriteriaChange }: SearchFormProps) {
         )}
 
         <div className="form-group">
-          <label htmlFor="keyword">キーワード（任意）</label>
-          <input
-            type="text"
-            id="keyword"
-            value={keyword}
-            onChange={(e) => setKeyword(e.target.value)}
-            placeholder="例: カフェ、コンビニ"
-          />
-        </div>
-
-        <div className="form-group">
           <label>雇用形態（未選択で全て）</label>
           <div className="checkbox-group">
             {EMPLOYMENT_TYPES.map((type) => (
@@ -130,6 +119,17 @@ export function SearchForm({ onCriteriaChange }: SearchFormProps) {
               </label>
             ))}
           </div>
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="keyword">キーワード（任意）</label>
+          <input
+            type="text"
+            id="keyword"
+            value={keyword}
+            onChange={(e) => setKeyword(e.target.value)}
+            placeholder="例: カフェ、コンビニ"
+          />
         </div>
       </form>
 
