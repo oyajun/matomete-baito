@@ -16,7 +16,7 @@ export function SearchResults({ results, helperMessage }: SearchResultsProps) {
       return
     }
     results.forEach((result) => {
-      window.open(result.url, '_blank', 'noopener,noreferrer')
+      window.open(result.url, '_blank', 'noopener')
     })
   }
   const placeholder =
