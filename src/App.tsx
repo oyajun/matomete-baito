@@ -65,6 +65,13 @@ function App() {
         <SearchForm onCriteriaChange={handleCriteriaChange} />
         <SearchResults results={results} helperMessage={helperMessage} />
       </main>
+      <footer className="affiliate-footer">
+        <div className="affiliate-banner">
+          <a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3760146&pid=892412430" rel="nofollow">
+            <img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3760146&pid=892412430" border="0" />
+          </a>
+        </div>
+      </footer>
     </div>
   )
 }

@@ -29,6 +29,20 @@
   gap: 2rem;
 }
 
+.affiliate-footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.affiliate-banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.affiliate-banner + .affiliate-banner {
+  margin-top: 0.75rem;
+}
+
 /* SearchForm スタイル */
 .search-form {
   background: #fff;
