@@ -56,7 +56,10 @@ export function CitySelectionModal({
     <div className="modal-backdrop" onClick={handleBackdropClick}>
       <div className="modal-content">
         <div className="modal-header">
-          <h2>{prefectureName}の市区町村を選択</h2>
+          <div>
+            <h2>{prefectureName}の市区町村を選択</h2>
+            <p className="modal-notice">シゴトinでは最初に選択した1つの市区町村のみ検索できます。</p>
+          </div>
           <button className="close-button" onClick={onClose}>
             ×
           </button>

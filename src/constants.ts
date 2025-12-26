@@ -92,12 +92,13 @@ export interface EmploymentTypeDefinition {
     label: string
     townworkCode: string
     baitoruCodes: string[]
+    shigotoinCodes: string[]
 }
 
 export const EMPLOYMENT_TYPES: EmploymentTypeDefinition[] = [
-    { id: 'part_time', label: 'アルバイト・パート', townworkCode: '01', baitoruCodes: ['1'] },
-    { id: 'full_time', label: '正社員', townworkCode: '02', baitoruCodes: ['3'] },
-    { id: 'contract', label: '契約社員', townworkCode: '03', baitoruCodes: ['4'] },
-    { id: 'dispatch', label: '派遣社員', townworkCode: '04', baitoruCodes: ['5', '8', '9'] },
-    { id: 'outsourcing', label: '業務委託', townworkCode: '05', baitoruCodes: ['7'] },
+    { id: 'part_time', label: 'アルバイト・パート', townworkCode: '01', baitoruCodes: ['1'], shigotoinCodes: ['04'] },
+    { id: 'full_time', label: '正社員', townworkCode: '02', baitoruCodes: ['3'], shigotoinCodes: ['01'] },
+    { id: 'contract', label: '契約社員', townworkCode: '03', baitoruCodes: ['4'], shigotoinCodes: ['03'] },
+    { id: 'dispatch', label: '派遣社員', townworkCode: '04', baitoruCodes: ['5', '8', '9'], shigotoinCodes: ['02', '08'] },
+    { id: 'outsourcing', label: '業務委託', townworkCode: '05', baitoruCodes: ['7'], shigotoinCodes: ['06'] },
 ]

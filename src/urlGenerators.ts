@@ -1,6 +1,6 @@
 // URL生成関数のテンプレート
 
-import { CITYCODE_BAITORU_URL, CITYCODE_TOWNWORK, PREFECTURE_SLUG, EMPLOYMENT_TYPES } from './constants'
+import { CITYCODE_BAITORU_URL, CITYCODE_TOWNWORK, PREFECTURE_SLUG, EMPLOYMENT_TYPES, PREFECTURES } from './constants'
 import type { EmploymentTypeId } from './constants'
 import citycodeBaitoruUrlRaw from './data/citycode_baitoruurl.json?raw'
 
@@ -223,4 +223,64 @@ export function baitoruSearchUrl(keyword: string, cityCodes: string[], employmen
     const keywordSegment = encodedKeyword ? `wrd${encodedKeyword}/` : ''
 
     return `https://www.baitoru.com${basePath}${combinedSlug}/${employmentSegment}${keywordSegment}`
+}
+
+/**
+ * シゴトinの検索URLを生成する
+ * @param keyword 検索キーワード
+ * @param cityCodes 市区町村コードの配列
+ * @param employmentTypes 雇用形態の配列
+ * @returns シゴトinの検索URL
+ */
+export function shigotoinSearchUrl(keyword: string, cityCodes: string[], employmentTypes: EmploymentTypeId[] = []): string {
+    if (cityCodes.length === 0) {
+        throw new Error('市区町村コードを指定してください')
+    }
+
+    // 最初の市区町村コードのみを使用
+    const firstCityCode = cityCodes[0]
+
+    // 都道府県コード（最初の2桁）から都道府県名を取得
+    const prefectureCode = firstCityCode.substring(0, 2)
+    const prefecture = PREFECTURES.find(p => p.code === prefectureCode)
+    if (!prefecture) {
+        throw new Error('都道府県が見つかりません')
+    }
+
+    // 市区町村コードから市区町村名を取得
+    const city = prefecture.cities.find(c => c.code === firstCityCode)
+    if (!city) {
+        throw new Error('市区町村が見つかりません')
+    }
+
+    // lqパラメータの形式: 都道府県名 市区町村名
+    const lq = `${prefecture.name} ${city.name}`
+
+    // URLパラメータを手動で組み立て（スペースを%20で保持）
+    const queryParts: string[] = []
+
+    // dst=0 を指定（固定）
+    queryParts.push('dst=0')
+
+    // 雇用形態パラメータを追加
+    for (const typeId of employmentTypes) {
+        const typeDef = EMPLOYMENT_TYPES.find(t => t.id === typeId)
+        if (typeDef) {
+            typeDef.shigotoinCodes.forEach(code => {
+                queryParts.push(`empls[]=${encodeURIComponent(code)}`)
+            })
+        }
+    }
+
+    // lqパラメータを追加（encodeURIComponentでスペースを%20に変換）
+    queryParts.push(`lq=${encodeURIComponent(lq)}`)
+
+    // qパラメータを追加（キーワード）
+    if (keyword.trim()) {
+        queryParts.push(`q=${encodeURIComponent(keyword)}`)
+    }
+
+    // シゴトinのURLを組み立て
+    const queryString = queryParts.join('&')
+    return `https://shigotoin.com/search?${queryString}`
 }

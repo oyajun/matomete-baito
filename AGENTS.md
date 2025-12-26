@@ -28,6 +28,7 @@
 ## 対応サイト
 - タウンワーク
 - バイトル
+- シゴトin
 
 ## 関数仕様
 ### townworkSearchUrl(keyword: string, cityCodes: string[]): string
@@ -74,6 +75,30 @@ https://www.baitoru.com/tokai/jlist/shizuoka/shizuokashiigai/numazushi-atamishi/
 https://www.baitoru.com/kanto/jlist/kanagawa/yokohamashi-kawasakishi-sagamiharashi-yokohamashiigai/yokohamashinishiku-kawasakishikawasakiku-sagamiharashimidoriku-yokosukashi-odawarashi/
 雇用形態
 https://www.baitoru.com/kanto/jlist/tokyo/23ku/sumidaku-kotoku/btp1-btp3-btp4-btp5/wrd%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%20%E5%93%81%E5%87%BA%E3%81%97/
+
+### shigotoinSearchUrl(keyword: string, cityCodes: string[]): string
+empls[]= 雇用形態コード
+- 01: 正社員
+- 02: 派遣
+- 03: 契約社員
+- 04: バイト・パート
+- 06: 業務委託・SOHO
+- 08: 紹介予定派遣  
+
+派遣社員が選択された場合、empls[]=02 と empls[]=08 を指定する。
+
+lq= 都道府県 市区町村名（スペースは半角スペース）
+- 政令市: 神奈川県 横浜市鶴見区
+- 町村: 神奈川県 足柄下郡箱根町  
+
+q=キーワード (スペースはHTMLエンコードされた空白に変換)
+
+lq パラメータは、最初の1つだけ有効なので、複数市区町村を指定する場合は、最初の1つを指定し、あとは捨てる
+#### 例
+https://shigotoin.com/search?dst=0&empls[]=03&empls[]=04&lq=東京都 世田谷区&q=カフェ
+https://shigotoin.com/search?dst=0&empls[]=01&lq=神奈川県 横浜市鶴見区&q=カフェ
+
+
 
 ## 処理内容
 1. キーワードと市区町村コードの配列を受け取る

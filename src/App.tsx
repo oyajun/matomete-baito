@@ -4,7 +4,7 @@ import { PROJECT_NAME_JA } from './constants'
 import type { EmploymentTypeId } from './constants'
 import { SearchForm } from './components/SearchForm'
 import { SearchResults } from './components/SearchResults'
-import { townworkSearchUrl, baitoruSearchUrl } from './urlGenerators'
+import { townworkSearchUrl, baitoruSearchUrl, shigotoinSearchUrl } from './urlGenerators'
 
 interface SearchResult {
   siteName: string
@@ -44,6 +44,10 @@ function App() {
         {
           siteName: 'バイトル',
           url: baitoruSearchUrl(criteria.keyword, criteria.cityCodes, criteria.employmentTypes),
+        },
+        {
+          siteName: 'シゴトin',
+          url: shigotoinSearchUrl(criteria.keyword, criteria.cityCodes, criteria.employmentTypes),
         },
       ]
       setResults(searchResults)
