@@ -41,9 +41,14 @@ export function SearchResults({ results, helperMessage }: SearchResultsProps) {
               {result.html ? (
                 <div dangerouslySetInnerHTML={{ __html: result.html }} />
               ) : (
-                <a href={result.url} target="_blank" rel="noopener noreferrer">
-                  {result.siteName}で検索
-                </a>
+                <>
+                  <a href={result.url} target="_blank" rel="noopener noreferrer">
+                    {result.siteName}で検索
+                  </a>
+                  {result.siteName === 'シゴトin' && (
+                    <p className="affiliate-notice">シゴトinのリンクはアフィリエイトリンクです。</p>
+                  )}
+                </>
               )}
             </li>
           ))}
