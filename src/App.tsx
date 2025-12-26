@@ -67,6 +67,13 @@ function App() {
         <SearchResults results={results} helperMessage={helperMessage} />
       </main>
       <footer className="affiliate-footer">
+        <p>広告</p>
+        <div className="affiliate-banner">
+          <a href="https://px.a8.net/svt/ejp?a8mat=45KMSF+604DDE+5U6E+5Z6WX" rel="nofollow">
+            <img width="120" height="60" alt="" src="https://www24.a8.net/svt/bgt?aid=251225439363&wid=001&eno=01&mid=s00000027239001004000&mc=1" />
+          </a>
+          <img width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=45KMSF+604DDE+5U6E+5Z6WX" alt="" />
+        </div>
         <div className="affiliate-banner">
           <a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3760146&pid=892412443" rel="nofollow">
             <img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3760146&pid=892412443" />
