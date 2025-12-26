@@ -22,13 +22,24 @@ export function SearchResults({ results, helperMessage }: SearchResultsProps) {
   const placeholder =
     helperMessage || '市区町村を選択するとリンクが表示されます'
 
-  const generateAffiliateLink = (result: SearchResult): string => {
+  const generateAffiliateLink = (result: SearchResult) => {
     if (result.siteName === 'シゴトin') {
       const encodedUrl = encodeURIComponent(result.url)
       const affiliateUrl = `//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3760146&pid=892416098&vc_url=${encodedUrl}`
-      return `<a href="${affiliateUrl}" rel="nofollow" target="_blank"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3760146&pid=892416098" height="1" width="0" border="0">シゴトin</a>`
+      return (
+        <a href={affiliateUrl} rel="nofollow noopener noreferrer" target="_blank">
+          <img
+            src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3760146&pid=892416098"
+            height={1}
+            width={0}
+            alt=""
+            style={{ display: 'none', border: 0 }}
+          />
+          シゴトinで検索
+        </a>
+      )
     }
-    return ''
+    return null
   }
 
   return (
@@ -46,12 +57,12 @@ export function SearchResults({ results, helperMessage }: SearchResultsProps) {
       {resultsAvailable ? (
         <ul className="results-list">
           {results.map((result, index) => {
-            const affiliateHtml = generateAffiliateLink(result)
+            const affiliateNode = generateAffiliateLink(result)
             return (
               <li key={index} className="result-item">
-                {affiliateHtml ? (
+                {affiliateNode ? (
                   <div>
-                    <div dangerouslySetInnerHTML={{ __html: affiliateHtml }} />
+                    {affiliateNode}
                     <p className="affiliate-note">シゴトinのリンクはアフィリエイトリンクです。</p>
                   </div>
                 ) : (
