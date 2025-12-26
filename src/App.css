@@ -242,15 +242,22 @@
 .modal-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem;
+  align-items: flex-start;
+  padding: 1.5rem 1.5rem 0.75rem 1.5rem;
   border-bottom: 1px solid #e9ecef;
+  gap: 1rem;
 }
 
 .modal-header h2 {
   margin: 0;
   font-size: 1.5rem;
   color: #2c3e50;
+}
+
+.modal-notice {
+  margin: 0.75rem 0 0 0;
+  font-size: 0.95rem;
+  color: #555;
 }
 
 .close-button {
@@ -365,6 +372,8 @@
   border-top: 1px solid #e9ecef;
   background: #f8f9fa;
 }
+
+
 
 .cancel-button {
   flex: 1;
