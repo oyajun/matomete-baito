@@ -43,6 +43,12 @@
   margin-top: 0.75rem;
 }
 
+.affiliate-note {
+  margin: 0.25rem 0 0;
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
 /* SearchForm スタイル */
 .search-form {
   background: #fff;

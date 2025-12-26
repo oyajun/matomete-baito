@@ -50,7 +50,10 @@ export function SearchResults({ results, helperMessage }: SearchResultsProps) {
             return (
               <li key={index} className="result-item">
                 {affiliateHtml ? (
-                  <div dangerouslySetInnerHTML={{ __html: affiliateHtml }} />
+                  <div>
+                    <div dangerouslySetInnerHTML={{ __html: affiliateHtml }} />
+                    <p className="affiliate-note">シゴトinのリンクはアフィリエイトリンクです。</p>
+                  </div>
                 ) : (
                   <a href={result.url} target="_blank" rel="noopener noreferrer">
                     {result.siteName}で検索
