@@ -275,6 +275,11 @@ export function shigotoinSearchUrl(keyword: string, cityCodes: string[], employm
     // lqパラメータを追加（encodeURIComponentでスペースを%20に変換）
     queryParts.push(`lq=${encodeURIComponent(lq)}`)
 
+    // qパラメータを追加（キーワード）
+    if (keyword.trim()) {
+        queryParts.push(`q=${encodeURIComponent(keyword)}`)
+    }
+
     // シゴトinのURLを組み立て
     const queryString = queryParts.join('&')
     return `https://shigotoin.com/search?${queryString}`

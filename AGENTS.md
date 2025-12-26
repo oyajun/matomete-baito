@@ -91,10 +91,12 @@ lq= 都道府県 市区町村名（スペースは半角スペース）
 - 政令市: 神奈川県 横浜市鶴見区
 - 町村: 神奈川県 足柄下郡箱根町  
 
+q=キーワード (スペースはHTMLエンコードされた空白に変換)
+
 lq パラメータは、最初の1つだけ有効なので、複数市区町村を指定する場合は、最初の1つを指定し、あとは捨てる
 #### 例
-https://shigotoin.com/search?dst=0&empls[]=03&empls[]=04&lq=東京都 世田谷区  
-https://shigotoin.com/search?dst=0&empls[]=01&lq=神奈川県 横浜市鶴見区
+https://shigotoin.com/search?dst=0&empls[]=03&empls[]=04&lq=東京都 世田谷区&q=カフェ
+https://shigotoin.com/search?dst=0&empls[]=01&lq=神奈川県 横浜市鶴見区&q=カフェ
 
 
 
