@@ -14,14 +14,14 @@ interface CsvRow {
 }
 
 interface City {
-    code: string
-    name: string
+    c: string  // code
+    n: string  // name
 }
 
 interface Prefecture {
-    code: string
-    name: string
-    cities: City[]
+    c: string   // code
+    n: string   // name
+    t: City[]   // towns/cities
 }
 
 // CSVファイルを読み込む（通常の市区町村）
@@ -73,9 +73,9 @@ rows.forEach(row => {
 
     if (!prefectureMap.has(prefCode)) {
         prefectureMap.set(prefCode, {
-            code: prefCode,
-            name: row.prefectureName,
-            cities: [],
+            c: prefCode,
+            n: row.prefectureName,
+            t: [],
         })
     }
 
@@ -96,15 +96,15 @@ rows.forEach(row => {
     // 市区町村コードの最初の5桁のみを使用（6桁目のチェックデジットを削除）
     const code5 = row.code.substring(0, 5)
 
-    prefecture.cities.push({
-        code: code5,
-        name: displayName,
+    prefecture.t.push({
+        c: code5,
+        n: displayName,
     })
 })
 
 // Mapを配列に変換してソート
 const prefectures: Prefecture[] = Array.from(prefectureMap.values()).sort((a, b) =>
-    a.code.localeCompare(b.code)
+    a.c.localeCompare(b.c)
 )
 
 // JSONファイルとして出力
@@ -120,4 +120,4 @@ fs.writeFileSync(outputPath, JSON.stringify(prefectures, null, 2), 'utf-8')
 
 console.log(`Generated ${outputPath}`)
 console.log(`Total prefectures: ${prefectures.length}`)
-console.log(`Total cities: ${prefectures.reduce((sum, p) => sum + p.cities.length, 0)}`)
+console.log(`Total cities: ${prefectures.reduce((sum, p) => sum + p.t.length, 0)}`)

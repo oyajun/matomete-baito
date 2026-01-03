@@ -53,12 +53,12 @@ export function SearchForm({ onCriteriaChange }: SearchFormProps) {
     onCriteriaChange(keyword, Array.from(selectedCities), Array.from(selectedEmploymentTypes))
   }, [keyword, selectedCities, selectedEmploymentTypes, onCriteriaChange])
 
-  const currentPrefecture = PREFECTURES.find((p) => p.code === selectedPrefecture)
+  const currentPrefecture = PREFECTURES.find((p) => p.c === selectedPrefecture)
 
   // 選択された市区町村の名前を取得
-  const selectedCityNames = currentPrefecture?.cities
-    .filter((city) => selectedCities.has(city.code))
-    .map((city) => city.name) ?? []
+  const selectedCityNames = currentPrefecture?.t
+    .filter((city) => selectedCities.has(city.c))
+    .map((city) => city.n) ?? []
 
   return (
     <>
@@ -72,8 +72,8 @@ export function SearchForm({ onCriteriaChange }: SearchFormProps) {
             required
           >
             {PREFECTURES.map((pref) => (
-              <option key={pref.code} value={pref.code}>
-                {pref.name}
+              <option key={pref.c} value={pref.c}>
+                {pref.n}
               </option>
             ))}
           </select>
@@ -130,11 +130,11 @@ export function SearchForm({ onCriteriaChange }: SearchFormProps) {
 
       {isModalOpen && currentPrefecture && (
         <CitySelectionModal
-          cities={currentPrefecture.cities}
+          cities={currentPrefecture.t}
           selectedCities={selectedCities}
           onClose={handleCloseModal}
           onConfirm={handleConfirmCities}
-          prefectureName={currentPrefecture.name}
+          prefectureName={currentPrefecture.n}
         />
       )}
     </>

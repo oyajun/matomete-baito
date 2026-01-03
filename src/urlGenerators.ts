@@ -10,7 +10,7 @@ function getUniqueCodes(codes: string[]): string[] {
 }
 
 function findPrefectureByCode(prefectureCode: string) {
-    const prefecture = PREFECTURES.find(p => p.code === prefectureCode)
+    const prefecture = PREFECTURES.find(p => p.c === prefectureCode)
     if (!prefecture) {
         throw new Error('都道府県が見つかりません')
     }
@@ -60,7 +60,7 @@ export function townworkSearchUrl(keyword: string, cityCodes: string[], employme
 
     // 市区町村コードをタウンワークのコードに変換
     const townworkCodes = uniqueCityCodes
-        .map(citycode => CITYCODE_TOWNWORK.find(m => m.citycode === citycode)?.townwork_code)
+        .map(citycode => CITYCODE_TOWNWORK.find(m => m.c === citycode)?.t)
         .filter((code): code is string => code !== null && code !== undefined)
 
     if (townworkCodes.length === 0) {
@@ -240,13 +240,13 @@ export function shigotoinSearchUrl(keyword: string, cityCodes: string[], employm
     const prefecture = findPrefectureByCode(prefectureCode)
 
     // 市区町村コードから市区町村名を取得
-    const city = prefecture.cities.find(c => c.code === firstCityCode)
+    const city = prefecture.t.find(c => c.c === firstCityCode)
     if (!city) {
         throw new Error('市区町村が見つかりません')
     }
 
     // lqパラメータの形式: 都道府県名 市区町村名
-    const lq = `${prefecture.name} ${city.name}`
+    const lq = `${prefecture.n} ${city.n}`
 
     // URLパラメータを手動で組み立て
     const queryParts: string[] = ['dst=0']

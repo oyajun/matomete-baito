@@ -5,14 +5,14 @@ export const PROJECT_URL = 'matomete-baito.com'
 
 // 都道府県と市区町村のデータ型定義
 export interface City {
-    code: string
-    name: string
+    c: string  // code
+    n: string  // name
 }
 
 export interface Prefecture {
-    code: string
-    name: string
-    cities: City[]
+    c: string   // code
+    n: string   // name
+    t: City[]   // cities (towns)
 }
 
 // 都道府県と市区町村のデータをJSONファイルから読み込み
@@ -24,8 +24,8 @@ export const PREFECTURES: Prefecture[] = prefecturesData as Prefecture[]
 
 // 市区町村コードとタウンワークコードのマッピング
 export interface CitycodeMapping {
-    citycode: string
-    townwork_code: string | null
+    c: string        // citycode
+    t: string | null // townwork_code
 }
 
 export const CITYCODE_TOWNWORK: CitycodeMapping[] = citycodeData as CitycodeMapping[]

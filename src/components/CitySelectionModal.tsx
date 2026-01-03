@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 
 interface City {
-  code: string
-  name: string
+  c: string  // code
+  n: string  // name
 }
 
 interface CitySelectionModalProps {
@@ -68,13 +68,13 @@ export function CitySelectionModal({
         <div className="modal-body">
           <div className="cities-grid">
             {cities.map((city) => (
-              <label key={city.code} className="city-checkbox-item">
+              <label key={city.c} className="city-checkbox-item">
                 <input
                   type="checkbox"
-                  checked={tempSelectedCities.has(city.code)}
-                  onChange={() => handleCityToggle(city.code)}
+                  checked={tempSelectedCities.has(city.c)}
+                  onChange={() => handleCityToggle(city.c)}
                 />
-                <span>{city.name}</span>
+                <span>{city.n}</span>
               </label>
             ))}
           </div>

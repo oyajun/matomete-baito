@@ -2,14 +2,14 @@ import fs from 'fs'
 import path from 'path'
 
 interface City {
-    code: string
-    name: string
+    c: string  // code
+    n: string  // name
 }
 
 interface Prefecture {
-    code: string
-    name: string
-    cities: City[]
+    c: string   // code
+    n: string   // name
+    t: City[]   // towns/cities
 }
 
 // 区が含まれているかチェック
@@ -24,9 +24,9 @@ const data: Prefecture[] = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
 // 各都道府県の市区町村を並び替え（区を最初に）
 const sortedData = data.map(prefecture => ({
     ...prefecture,
-    cities: prefecture.cities.sort((a, b) => {
-        const aHasWard = hasWard(a.name)
-        const bHasWard = hasWard(b.name)
+    t: prefecture.t.sort((a, b) => {
+        const aHasWard = hasWard(a.n)
+        const bHasWard = hasWard(b.n)
 
         // 両方とも区の場合、または両方とも区でない場合は元の順序を維持
         if (aHasWard === bHasWard) {
