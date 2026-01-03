@@ -10,20 +10,14 @@ export function SearchResults({ results, recopResults, helperMessage }: SearchRe
   const resultsAvailable = results.length > 0
   const recopResultsAvailable = (recopResults ?? []).some(cat => cat.results.length > 0)
   const handleOpenAll = () => {
-    if (!resultsAvailable && !recopResultsAvailable) {
-      return
-    }
-    results.forEach((result) => {
+    const allResults = [
+      ...results,
+      ...(recopResults ?? []).flatMap(cat => cat.results)
+    ]
+    
+    allResults.forEach(result => {
       window.open(result.url, '_blank', 'noopener')
     })
-    // リクオプのリンクも開く
-    if (recopResults) {
-      recopResults.forEach(category => {
-        category.results.forEach((result) => {
-          window.open(result.url, '_blank', 'noopener')
-        })
-      })
-    }
   }
   const placeholder =
     helperMessage || '市区町村を選択するとリンクが表示されます'

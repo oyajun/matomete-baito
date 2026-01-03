@@ -93,8 +93,11 @@ rows.forEach(row => {
         ? row.cityName
         : row.cityName
 
+    // 市区町村コードの最初の5桁のみを使用（6桁目のチェックデジットを削除）
+    const code5 = row.code.substring(0, 5)
+
     prefecture.cities.push({
-        code: row.code,
+        code: code5,
         name: displayName,
     })
 })
