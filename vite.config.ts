@@ -4,7 +4,10 @@ import inlineCSS from './vite-plugin-inline-css'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), inlineCSS()],
+  plugins: [
+    react(),
+    inlineCSS()
+  ],
   build: {
     // CSSをインライン化する閾値を増やす（4KB以下はインライン化）
     cssCodeSplit: false,
@@ -12,8 +15,15 @@ export default defineConfig({
     assetsInlineLimit: 4096,
     rollupOptions: {
       output: {
-        // CSSとJSのチャンク戦略
-        manualChunks: undefined,
+        // React と React-DOM を別チャンクに分割
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('react') || id.includes('react-dom')) {
+              return 'vendor-react'
+            }
+            return 'vendor'
+          }
+        },
         // アセットファイル名の最適化
         assetFileNames: (assetInfo) => {
           if (!assetInfo.name) return 'assets/[name]-[hash][extname]'
@@ -27,6 +37,10 @@ export default defineConfig({
       }
     },
     // ミニファイの最適化
-    minify: 'esbuild'
+    minify: 'esbuild',
+    // ターゲットを最適化
+    target: 'es2015',
+    // チャンクサイズの警告閾値を調整
+    chunkSizeWarningLimit: 600
   }
 })
