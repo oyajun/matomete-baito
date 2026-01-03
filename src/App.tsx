@@ -80,12 +80,12 @@ function App() {
         </div>
         <div className="affiliate-banner">
           <a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3760146&pid=892412443" rel="nofollow" aria-label="求人情報サイトへのリンク">
-            <img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3760146&pid=892412443" alt="求人情報バナー" />
+            <img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3760146&pid=892412443" width="300" height="250" alt="求人情報バナー" />
           </a>
         </div>
         <div className="affiliate-banner">  
           <a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3760146&pid=892412430" rel="nofollow" aria-label="転職・求人情報サイトへのリンク">
-            <img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3760146&pid=892412430" alt="転職・求人情報バナー"/>
+            <img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3760146&pid=892412430" width="468" height="60" alt="転職・求人情報バナー"/>
           </a>
         </div>
       </footer>
