@@ -30,8 +30,8 @@ export function SearchResults({ results, helperMessage }: SearchResultsProps) {
         <a href={affiliateUrl} rel="nofollow noopener noreferrer" target="_blank">
           <img
             src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3760146&pid=892416098"
-            height={1}
             width={0}
+            height={1}
             alt=""
             style={{ display: 'none', border: 0 }}
           />
