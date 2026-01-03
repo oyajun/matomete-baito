@@ -115,23 +115,20 @@ export function townworkSearchUrl(keyword: string, cityCodes: string[], employme
 export function baitoruSearchUrl(keyword: string, cityCodes: string[], employmentTypes: EmploymentTypeId[] = []): string {
     const uniqueCityCodes = getUniqueCodes(cityCodes)
 
-    // 6桁コードをcitycode_baitoruurl.jsonの記述順でソート
+    // 5桁コードをcitycode_baitoruurl.jsonの記述順でソート
     const sortedCityCodes = [...uniqueCityCodes].sort((a, b) => {
-        const a5 = a.substring(0, 5)
-        const b5 = b.substring(0, 5)
-        const ai = BAITORU_ORDER_INDEX.get(a5) ?? Number.MAX_SAFE_INTEGER
-        const bi = BAITORU_ORDER_INDEX.get(b5) ?? Number.MAX_SAFE_INTEGER
+        const ai = BAITORU_ORDER_INDEX.get(a) ?? Number.MAX_SAFE_INTEGER
+        const bi = BAITORU_ORDER_INDEX.get(b) ?? Number.MAX_SAFE_INTEGER
         return ai - bi
     })
 
-    // 5桁に変換して重複を除去（順序を保持）
+    // 重複を除去（順序を保持）
     const normalizedCodes: string[] = []
     const seenCodes = new Set<string>()
     for (const code of sortedCityCodes) {
-        const code5 = code.substring(0, 5)
-        if (code5.length === 5 && !seenCodes.has(code5)) {
-            seenCodes.add(code5)
-            normalizedCodes.push(code5)
+        if (code.length === 5 && !seenCodes.has(code)) {
+            seenCodes.add(code)
+            normalizedCodes.push(code)
         }
     }
 
@@ -298,8 +295,8 @@ export function recopSearchUrl(domain: string, cityCodes: string[]): string {
         throw new Error(`都道府県が見つかりません: ${prefectureCode}`)
     }
 
-    // 地域コードは市区町村コードの最初の5桁をカンマで連結
-    const areaCodes = cityCodes.map(code => code.substring(0, 5)).join(',')
+    // 地域コードは市区町村コード（5桁）をカンマで連結
+    const areaCodes = cityCodes.join(',')
 
     // https://企業のドメイン/jobfind-pc/area/地域/都道府県/地域コード
     return `https://${domain}/jobfind-pc/area/${region}/${prefecture}/${areaCodes}`
