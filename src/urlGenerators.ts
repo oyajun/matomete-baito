@@ -91,9 +91,9 @@ export function townworkSearchUrl(keyword: string, cityCodes: string[], employme
     const params = new URLSearchParams()
     maParams.forEach(ma => params.append('ma', ma))
     saParams.forEach(sa => params.append('sa', sa))
-    
+
     // 雇用形態パラメータを追加
-    appendEmploymentParams(params, employmentTypes, 'emp', (typeId) => 
+    appendEmploymentParams(params, employmentTypes, 'emp', (typeId) =>
         EMPLOYMENT_TYPES.find(t => t.id === typeId)?.townworkCode
     )
 
@@ -207,15 +207,15 @@ export function baitoruSearchUrl(keyword: string, cityCodes: string[], employmen
     // 雇用形態セグメントの生成
     const employmentSegment = (() => {
         if (employmentTypes.length === 0) return ''
-        
-        const codes = employmentTypes.flatMap(typeId => 
+
+        const codes = employmentTypes.flatMap(typeId =>
             EMPLOYMENT_TYPES.find(t => t.id === typeId)?.baitoruCodes.map(code => `btp${code}`) ?? []
         )
-        
+
         const uniqueCodes = getUniqueCodes(codes)
         const specifiedOrder = ['btp1', 'btp3', 'btp4', 'btp5', 'btp8', 'btp9', 'btp7']
         const orderedCodes = specifiedOrder.filter(code => uniqueCodes.includes(code))
-        
+
         return orderedCodes.length > 0 ? `${orderedCodes.join('-')}/` : ''
     })()
 
