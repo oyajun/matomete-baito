@@ -29,6 +29,13 @@
 - タウンワーク
 - バイトル
 - シゴトin
+- リクオプを使用している企業のサイト
+  - コンビニ
+    - セブンイレブン ptj.sej.co.jp/arbeit/recruitment
+    - ローソン crew.lawson.co.jp
+  - ドラッグストア
+    - ツルハ tsuruha-g.work
+    - ウエルシア welcia-yakkyoku-recruit.net
 
 ## 関数仕様
 ### townworkSearchUrl(keyword: string, cityCodes: string[]): string
@@ -98,7 +105,10 @@ lq パラメータは、最初の1つだけ有効なので、複数市区町村�
 https://shigotoin.com/search?dst=0&empls[]=03&empls[]=04&lq=東京都 世田谷区&q=カフェ
 https://shigotoin.com/search?dst=0&empls[]=01&lq=神奈川県 横浜市鶴見区&q=カフェ
 
-
+### recopSearchUrl(domain: string, cityCodes: string[]): string
+https://企業のドメイン/jobfind-pc/area/地域/都道府県/地域コード
+#### 例
+https://tsuruha-g.work/jobfind-pc/area/Kanto/Tokyo/13101
 
 ## 処理内容
 1. キーワードと市区町村コードの配列を受け取る

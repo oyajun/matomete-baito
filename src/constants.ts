@@ -102,3 +102,133 @@ export const EMPLOYMENT_TYPES: EmploymentTypeDefinition[] = [
     { id: 'dispatch', label: '派遣社員', townworkCode: '04', baitoruCodes: ['5', '8', '9'], shigotoinCodes: ['02', '08'] },
     { id: 'outsourcing', label: '業務委託', townworkCode: '05', baitoruCodes: ['7'], shigotoinCodes: ['06'] },
 ]
+
+// リクオプ企業の定義
+export interface RecopCompany {
+    name: string
+    domain: string
+}
+
+export interface RecopCategory {
+    category: string
+    companies: RecopCompany[]
+}
+
+export const RECOP_CATEGORIES: RecopCategory[] = [
+    {
+        category: 'コンビニ',
+        companies: [
+            { name: 'セブンイレブン', domain: 'ptj.sej.co.jp/arbeit/recruitment' },
+            { name: 'ローソン', domain: 'crew.lawson.co.jp' },
+        ]
+    },
+    {
+        category: 'ドラッグストア',
+        companies: [
+            { name: 'ツルハ', domain: 'tsuruha-g.work' },
+            { name: 'ウエルシア', domain: 'welcia-yakkyoku-recruit.net' },
+        ]
+    }
+]
+
+// リクオプの地域コードマッピング
+export const RECOP_REGION_MAP: Record<string, string> = {
+    '01': 'Hokkaido',
+    '02': 'Tohoku',
+    '03': 'Tohoku',
+    '04': 'Tohoku',
+    '05': 'Tohoku',
+    '06': 'Tohoku',
+    '07': 'Tohoku',
+    '08': 'Kanto',
+    '09': 'Kanto',
+    '10': 'Kanto',
+    '11': 'Kanto',
+    '12': 'Kanto',
+    '13': 'Kanto',
+    '14': 'Kanto',
+    '15': 'Chubu',
+    '16': 'Chubu',
+    '17': 'Chubu',
+    '18': 'Chubu',
+    '19': 'Chubu',
+    '20': 'Chubu',
+    '21': 'Chubu',
+    '22': 'Chubu',
+    '23': 'Chubu',
+    '24': 'Kinki',
+    '25': 'Kinki',
+    '26': 'Kinki',
+    '27': 'Kinki',
+    '28': 'Kinki',
+    '29': 'Kinki',
+    '30': 'Kinki',
+    '31': 'Chugoku',
+    '32': 'Chugoku',
+    '33': 'Chugoku',
+    '34': 'Chugoku',
+    '35': 'Chugoku',
+    '36': 'Shikoku',
+    '37': 'Shikoku',
+    '38': 'Shikoku',
+    '39': 'Shikoku',
+    '40': 'Kyushu',
+    '41': 'Kyushu',
+    '42': 'Kyushu',
+    '43': 'Kyushu',
+    '44': 'Kyushu',
+    '45': 'Kyushu',
+    '46': 'Kyushu',
+    '47': 'Okinawa'
+}
+
+// リクオプの都道府県名マッピング（英語表記）
+export const RECOP_PREFECTURE_MAP: Record<string, string> = {
+    '01': 'Hokkaido',
+    '02': 'Aomori',
+    '03': 'Iwate',
+    '04': 'Miyagi',
+    '05': 'Akita',
+    '06': 'Yamagata',
+    '07': 'Fukushima',
+    '08': 'Ibaraki',
+    '09': 'Tochigi',
+    '10': 'Gunma',
+    '11': 'Saitama',
+    '12': 'Chiba',
+    '13': 'Tokyo',
+    '14': 'Kanagawa',
+    '15': 'Niigata',
+    '16': 'Toyama',
+    '17': 'Ishikawa',
+    '18': 'Fukui',
+    '19': 'Yamanashi',
+    '20': 'Nagano',
+    '21': 'Gifu',
+    '22': 'Shizuoka',
+    '23': 'Aichi',
+    '24': 'Mie',
+    '25': 'Shiga',
+    '26': 'Kyoto',
+    '27': 'Osaka',
+    '28': 'Hyogo',
+    '29': 'Nara',
+    '30': 'Wakayama',
+    '31': 'Tottori',
+    '32': 'Shimane',
+    '33': 'Okayama',
+    '34': 'Hiroshima',
+    '35': 'Yamaguchi',
+    '36': 'Tokushima',
+    '37': 'Kagawa',
+    '38': 'Ehime',
+    '39': 'Kochi',
+    '40': 'Fukuoka',
+    '41': 'Saga',
+    '42': 'Nagasaki',
+    '43': 'Kumamoto',
+    '44': 'Oita',
+    '45': 'Miyazaki',
+    '46': 'Kagoshima',
+    '47': 'Okinawa'
+}

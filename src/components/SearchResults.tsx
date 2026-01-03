@@ -1,23 +1,29 @@
-interface SearchResult {
-  siteName: string
-  url: string
-  html?: string
-}
+import type { SearchResult, RecopSearchResult } from '../types.d'
 
 interface SearchResultsProps {
   results: SearchResult[]
+  recopResults?: RecopSearchResult[]
   helperMessage?: string
 }
 
-export function SearchResults({ results, helperMessage }: SearchResultsProps) {
+export function SearchResults({ results, recopResults, helperMessage }: SearchResultsProps) {
   const resultsAvailable = results.length > 0
+  const recopResultsAvailable = (recopResults ?? []).some(cat => cat.results.length > 0)
   const handleOpenAll = () => {
-    if (!resultsAvailable) {
+    if (!resultsAvailable && !recopResultsAvailable) {
       return
     }
     results.forEach((result) => {
       window.open(result.url, '_blank', 'noopener')
     })
+    // リクオプのリンクも開く
+    if (recopResults) {
+      recopResults.forEach(category => {
+        category.results.forEach((result) => {
+          window.open(result.url, '_blank', 'noopener')
+        })
+      })
+    }
   }
   const placeholder =
     helperMessage || '市区町村を選択するとリンクが表示されます'
@@ -49,31 +55,53 @@ export function SearchResults({ results, helperMessage }: SearchResultsProps) {
         <button
           onClick={handleOpenAll}
           className="open-all-button"
-          disabled={!resultsAvailable}
+          disabled={!resultsAvailable && !recopResultsAvailable}
         >
           すべて開く
         </button>
       </div>
-      {resultsAvailable ? (
-        <ul className="results-list">
-          {results.map((result, index) => {
-            const affiliateNode = generateAffiliateLink(result)
-            return (
-              <li key={index} className="result-item">
-                {affiliateNode ? (
-                  <div>
-                    {affiliateNode}
-                    <p className="affiliate-note">シゴトinのリンクはアフィリエイトリンクです。</p>
+      {resultsAvailable || recopResultsAvailable ? (
+        <>
+          <ul className="results-list">
+            {results.map((result, index) => {
+              const affiliateNode = generateAffiliateLink(result)
+              return (
+                <li key={index} className="result-item">
+                  {affiliateNode ? (
+                    <div>
+                      {affiliateNode}
+                      <p className="affiliate-note">シゴトinのリンクはアフィリエイトリンクです。</p>
+                    </div>
+                  ) : (
+                    <a href={result.url} target="_blank" rel="noopener noreferrer">
+                      {result.siteName}で検索
+                    </a>
+                  )}
+                </li>
+              )
+            })}
+          </ul>
+          {recopResults && recopResults.some(cat => cat.results.length > 0) && (
+            <div className="recop-categories">
+              {recopResults.map((category, catIndex) => (
+                category.results.length > 0 && (
+                  <div key={catIndex} className="recop-category">
+                    <h4 className="recop-category-title">{category.category}</h4>
+                    <ul className="results-list">
+                      {category.results.map((result, index) => (
+                        <li key={index} className="result-item">
+                          <a href={result.url} target="_blank" rel="noopener noreferrer">
+                            {result.siteName}で検索
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                ) : (
-                  <a href={result.url} target="_blank" rel="noopener noreferrer">
-                    {result.siteName}で検索
-                  </a>
-                )}
-              </li>
-            )
-          })}
-        </ul>
+                )
+              ))}
+            </div>
+          )}
+        </>
       ) : (
         <p className="results-placeholder">{placeholder}</p>
       )}

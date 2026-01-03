@@ -1,16 +1,11 @@
 import { useCallback, useEffect, useState } from 'react'
 import './App.css'
-import { PROJECT_NAME_JA } from './constants'
+import { PROJECT_NAME_JA, RECOP_CATEGORIES } from './constants'
 import type { EmploymentTypeId } from './constants'
 import { SearchForm } from './components/SearchForm'
 import { SearchResults } from './components/SearchResults'
-import { townworkSearchUrl, baitoruSearchUrl, shigotoinSearchUrl } from './urlGenerators'
-
-interface SearchResult {
-  siteName: string
-  url: string
-  html?: string
-}
+import { townworkSearchUrl, baitoruSearchUrl, shigotoinSearchUrl, recopSearchUrl } from './urlGenerators'
+import type { SearchResult, RecopSearchResult } from './types.d'
 
 interface SearchCriteria {
   keyword: string
@@ -21,6 +16,7 @@ interface SearchCriteria {
 function App() {
   const [criteria, setCriteria] = useState<SearchCriteria>({ keyword: '', cityCodes: [], employmentTypes: [] })
   const [results, setResults] = useState<SearchResult[]>([])
+  const [recopResults, setRecopResults] = useState<RecopSearchResult[]>([])
   const [helperMessage, setHelperMessage] = useState('市区町村を選択してください')
 
   const handleCriteriaChange = useCallback((keyword: string, cityCodes: string[], employmentTypes: EmploymentTypeId[]) => {
@@ -30,6 +26,7 @@ function App() {
   useEffect(() => {
     if (criteria.cityCodes.length === 0) {
       setResults([])
+      setRecopResults([])
       setHelperMessage('市区町村を選択してください')
       return
     }
@@ -51,9 +48,31 @@ function App() {
         },
       ]
       setResults(searchResults)
+
+      // リクオプの検索結果を生成
+      const recopSearchResults: RecopSearchResult[] = RECOP_CATEGORIES.map(category => {
+        const categoryResults: SearchResult[] = category.companies.map(company => {
+          try {
+            return {
+              siteName: company.name,
+              url: recopSearchUrl(company.domain, criteria.cityCodes)
+            }
+          } catch (error) {
+            return null
+          }
+        }).filter((result): result is SearchResult => result !== null)
+
+        return {
+          category: category.category,
+          results: categoryResults
+        }
+      })
+
+      setRecopResults(recopSearchResults)
       setHelperMessage('')
     } catch (error) {
       setResults([])
+      setRecopResults([])
       setHelperMessage(
         error instanceof Error ? error.message : '検索URLの生成に失敗しました'
       )
@@ -68,7 +87,7 @@ function App() {
       </header>
       <main className="app-main">
         <SearchForm onCriteriaChange={handleCriteriaChange} />
-        <SearchResults results={results} helperMessage={helperMessage} />
+        <SearchResults results={results} recopResults={recopResults} helperMessage={helperMessage} />
       </main>
       <footer className="affiliate-footer">
         <p>広告</p>

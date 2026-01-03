@@ -1,6 +1,6 @@
 // URL生成関数のテンプレート
 
-import { CITYCODE_BAITORU_URL, CITYCODE_TOWNWORK, PREFECTURE_SLUG, EMPLOYMENT_TYPES, PREFECTURES } from './constants'
+import { CITYCODE_BAITORU_URL, CITYCODE_TOWNWORK, PREFECTURE_SLUG, EMPLOYMENT_TYPES, PREFECTURES, RECOP_REGION_MAP, RECOP_PREFECTURE_MAP } from './constants'
 import type { EmploymentTypeId } from './constants'
 import citycodeBaitoruUrlRaw from './data/citycode_baitoruurl.json?raw'
 
@@ -283,4 +283,38 @@ export function shigotoinSearchUrl(keyword: string, cityCodes: string[], employm
     // シゴトinのURLを組み立て
     const queryString = queryParts.join('&')
     return `https://shigotoin.com/search?${queryString}`
+}
+
+/**
+ * リクオプの検索URLを生成する
+ * @param domain 企業のドメイン
+ * @param cityCodes 市区町村コードの配列
+ * @returns リクオプの検索URL
+ */
+export function recopSearchUrl(domain: string, cityCodes: string[]): string {
+    if (cityCodes.length === 0) {
+        throw new Error('市区町村コードを指定してください')
+    }
+
+    // 最初の市区町村コードから都道府県コードを取得
+    const firstCityCode = cityCodes[0]
+    const prefectureCode = firstCityCode.substring(0, 2)
+
+    // 地域名（英語）を取得
+    const region = RECOP_REGION_MAP[prefectureCode]
+    if (!region) {
+        throw new Error(`地域が見つかりません: ${prefectureCode}`)
+    }
+
+    // 都道府県名（英語）を取得
+    const prefecture = RECOP_PREFECTURE_MAP[prefectureCode]
+    if (!prefecture) {
+        throw new Error(`都道府県が見つかりません: ${prefectureCode}`)
+    }
+
+    // 地域コードは市区町村コードの最初の5桁
+    const areaCode = firstCityCode.substring(0, 5)
+
+    // https://企業のドメイン/jobfind-pc/area/地域/都道府県/地域コード
+    return `https://${domain}/jobfind-pc/area/${region}/${prefecture}/${areaCode}`
 }
