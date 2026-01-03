@@ -1,8 +1,35 @@
-// URL生成関数のテンプレート
+// URL生成関数
 
 import { CITYCODE_BAITORU_URL, CITYCODE_TOWNWORK, PREFECTURE_SLUG, EMPLOYMENT_TYPES, PREFECTURES, RECOP_REGION_MAP, RECOP_PREFECTURE_MAP } from './constants'
 import type { EmploymentTypeId } from './constants'
 import citycodeBaitoruUrlRaw from './data/citycode_baitoruurl.json?raw'
+
+// ヘルパー関数
+function getUniqueCodes(codes: string[]): string[] {
+    return [...new Set(codes)]
+}
+
+function findPrefectureByCode(prefectureCode: string) {
+    const prefecture = PREFECTURES.find(p => p.code === prefectureCode)
+    if (!prefecture) {
+        throw new Error('都道府県が見つかりません')
+    }
+    return prefecture
+}
+
+function appendEmploymentParams(
+    params: URLSearchParams,
+    employmentTypes: EmploymentTypeId[],
+    paramName: string,
+    getCode: (typeId: EmploymentTypeId) => string | undefined
+): void {
+    for (const typeId of employmentTypes) {
+        const code = getCode(typeId)
+        if (code) {
+            params.append(paramName, code)
+        }
+    }
+}
 
 // JSONの記述順を保持するために生データから順序を抽出する
 const BAITORU_CODE_ORDER = (() => {
@@ -29,75 +56,53 @@ const BAITORU_ORDER_INDEX = (() => {
  * @returns 検索URL
  */
 export function townworkSearchUrl(keyword: string, cityCodes: string[], employmentTypes: EmploymentTypeId[] = []): string {
-    // 重複を削除
-    const uniqueCityCodes = [...new Set(cityCodes)]
+    const uniqueCityCodes = getUniqueCodes(cityCodes)
 
     // 市区町村コードをタウンワークのコードに変換
     const townworkCodes = uniqueCityCodes
-        .map(citycode => {
-            const mapping = CITYCODE_TOWNWORK.find(m => m.citycode === citycode)
-            return mapping?.townwork_code
-        })
+        .map(citycode => CITYCODE_TOWNWORK.find(m => m.citycode === citycode)?.townwork_code)
         .filter((code): code is string => code !== null && code !== undefined)
 
     if (townworkCodes.length === 0) {
         throw new Error('有効な市区町村コードが見つかりません')
     }
 
-    // 都道府県コードを取得（市区町村コードの最初の2桁）
+    // 都道府県コードを取得
     const prefectureCode = cityCodes[0].substring(0, 2)
     const prefectureSlug = PREFECTURE_SLUG[prefectureCode]
-
     if (!prefectureSlug) {
         throw new Error('都道府県が見つかりません')
     }
 
     // maパラメータ（6桁）とsaパラメータ（9桁）に分類
-    const maParams: string[] = []
-    const saParams: string[] = []
-
-    for (const code of townworkCodes) {
-        if (code.length === 9) {
-            // 政令市の区コード
-            saParams.push(code)
-        } else if (code.length === 6) {
-            // 市区町村コード
-            maParams.push(code)
-        }
-    }
+    const { ma: maParams, sa: saParams } = townworkCodes.reduce(
+        (acc, code) => {
+            if (code.length === 9) {
+                acc.sa.push(code)
+            } else if (code.length === 6) {
+                acc.ma.push(code)
+            }
+            return acc
+        },
+        { ma: [] as string[], sa: [] as string[] }
+    )
 
     // URLのクエリパラメータを組み立て
     const params = new URLSearchParams()
-
-    // maパラメータを追加
-    for (const ma of maParams) {
-        params.append('ma', ma)
-    }
-
-    // saパラメータを追加
-    for (const sa of saParams) {
-        params.append('sa', sa)
-    }
-
+    maParams.forEach(ma => params.append('ma', ma))
+    saParams.forEach(sa => params.append('sa', sa))
+    
     // 雇用形態パラメータを追加
-    for (const typeId of employmentTypes) {
-        const typeDef = EMPLOYMENT_TYPES.find(t => t.id === typeId)
-        if (typeDef) {
-            params.append('emp', typeDef.townworkCode)
-        }
-    }
+    appendEmploymentParams(params, employmentTypes, 'emp', (typeId) => 
+        EMPLOYMENT_TYPES.find(t => t.id === typeId)?.townworkCode
+    )
 
-    // 
-    // キーワードを追加（URLSearchParamsが自動的にエンコードする）
+    // キーワードを追加
     if (keyword.trim()) {
         params.append('kw', keyword)
     }
 
-    // タウンワークのURLを組み立て
-    const queryString = params.toString()
-    const townworkUrl = `https://townwork.net/prefectures/${prefectureSlug}/job_search/?${queryString}`
-
-    return townworkUrl
+    return `https://townwork.net/prefectures/${prefectureSlug}/job_search/?${params.toString()}`
 }
 
 /**
@@ -108,7 +113,7 @@ export function townworkSearchUrl(keyword: string, cityCodes: string[], employme
  * @returns バイトルの検索URL
  */
 export function baitoruSearchUrl(keyword: string, cityCodes: string[], employmentTypes: EmploymentTypeId[] = []): string {
-    const uniqueCityCodes = [...new Set(cityCodes)]
+    const uniqueCityCodes = getUniqueCodes(cityCodes)
 
     // 6桁コードをcitycode_baitoruurl.jsonの記述順でソート
     const sortedCityCodes = [...uniqueCityCodes].sort((a, b) => {
@@ -200,24 +205,19 @@ export function baitoruSearchUrl(keyword: string, cityCodes: string[], employmen
     const combinedSlug = slugOrder.join('-')
 
     // 雇用形態セグメントの生成
-    let employmentSegment = ''
-    if (employmentTypes.length > 0) {
-        const codes: string[] = []
-        for (const typeId of employmentTypes) {
-            const typeDef = EMPLOYMENT_TYPES.find(t => t.id === typeId)
-            if (typeDef) {
-                typeDef.baitoruCodes.forEach(code => codes.push(`btp${code}`))
-            }
-        }
-        if (codes.length > 0) {
-            // 重複を除去して指定の順序で並べる
-            const uniqueCodes = [...new Set(codes)]
-            // 仕様で指定された順序: btp1-btp3-btp4-btp5-btp8-btp9-btp7
-            const specifiedOrder = ['btp1', 'btp3', 'btp4', 'btp5', 'btp8', 'btp9', 'btp7']
-            const orderedCodes = specifiedOrder.filter(code => uniqueCodes.includes(code))
-            employmentSegment = `${orderedCodes.join('-')}/`
-        }
-    }
+    const employmentSegment = (() => {
+        if (employmentTypes.length === 0) return ''
+        
+        const codes = employmentTypes.flatMap(typeId => 
+            EMPLOYMENT_TYPES.find(t => t.id === typeId)?.baitoruCodes.map(code => `btp${code}`) ?? []
+        )
+        
+        const uniqueCodes = getUniqueCodes(codes)
+        const specifiedOrder = ['btp1', 'btp3', 'btp4', 'btp5', 'btp8', 'btp9', 'btp7']
+        const orderedCodes = specifiedOrder.filter(code => uniqueCodes.includes(code))
+        
+        return orderedCodes.length > 0 ? `${orderedCodes.join('-')}/` : ''
+    })()
 
     const encodedKeyword = encodeURIComponent(keyword.trim())
     const keywordSegment = encodedKeyword ? `wrd${encodedKeyword}/` : ''
@@ -239,13 +239,8 @@ export function shigotoinSearchUrl(keyword: string, cityCodes: string[], employm
 
     // 最初の市区町村コードのみを使用
     const firstCityCode = cityCodes[0]
-
-    // 都道府県コード（最初の2桁）から都道府県名を取得
     const prefectureCode = firstCityCode.substring(0, 2)
-    const prefecture = PREFECTURES.find(p => p.code === prefectureCode)
-    if (!prefecture) {
-        throw new Error('都道府県が見つかりません')
-    }
+    const prefecture = findPrefectureByCode(prefectureCode)
 
     // 市区町村コードから市区町村名を取得
     const city = prefecture.cities.find(c => c.code === firstCityCode)
@@ -256,33 +251,24 @@ export function shigotoinSearchUrl(keyword: string, cityCodes: string[], employm
     // lqパラメータの形式: 都道府県名 市区町村名
     const lq = `${prefecture.name} ${city.name}`
 
-    // URLパラメータを手動で組み立て（スペースを%20で保持）
-    const queryParts: string[] = []
-
-    // dst=0 を指定（固定）
-    queryParts.push('dst=0')
+    // URLパラメータを手動で組み立て
+    const queryParts: string[] = ['dst=0']
 
     // 雇用形態パラメータを追加
-    for (const typeId of employmentTypes) {
+    employmentTypes.forEach(typeId => {
         const typeDef = EMPLOYMENT_TYPES.find(t => t.id === typeId)
-        if (typeDef) {
-            typeDef.shigotoinCodes.forEach(code => {
-                queryParts.push(`empls[]=${encodeURIComponent(code)}`)
-            })
-        }
-    }
+        typeDef?.shigotoinCodes.forEach(code => {
+            queryParts.push(`empls[]=${encodeURIComponent(code)}`)
+        })
+    })
 
-    // lqパラメータを追加（encodeURIComponentでスペースを%20に変換）
     queryParts.push(`lq=${encodeURIComponent(lq)}`)
 
-    // qパラメータを追加（キーワード）
     if (keyword.trim()) {
         queryParts.push(`q=${encodeURIComponent(keyword)}`)
     }
 
-    // シゴトinのURLを組み立て
-    const queryString = queryParts.join('&')
-    return `https://shigotoin.com/search?${queryString}`
+    return `https://shigotoin.com/search?${queryParts.join('&')}`
 }
 
 /**

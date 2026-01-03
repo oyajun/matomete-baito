@@ -34,13 +34,15 @@ export function SearchForm({ onCriteriaChange }: SearchFormProps) {
   }
 
   const handleEmploymentTypeChange = (id: EmploymentTypeId) => {
-    const newSet = new Set(selectedEmploymentTypes)
-    if (newSet.has(id)) {
-      newSet.delete(id)
-    } else {
-      newSet.add(id)
-    }
-    setSelectedEmploymentTypes(newSet)
+    setSelectedEmploymentTypes(prev => {
+      const newSet = new Set(prev)
+      if (newSet.has(id)) {
+        newSet.delete(id)
+      } else {
+        newSet.add(id)
+      }
+      return newSet
+    })
   }
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -54,16 +56,9 @@ export function SearchForm({ onCriteriaChange }: SearchFormProps) {
   const currentPrefecture = PREFECTURES.find((p) => p.code === selectedPrefecture)
 
   // 選択された市区町村の名前を取得
-  const getSelectedCityNames = () => {
-    if (!currentPrefecture || selectedCities.size === 0) {
-      return []
-    }
-    return currentPrefecture.cities
-      .filter((city) => selectedCities.has(city.code))
-      .map((city) => city.name)
-  }
-
-  const selectedCityNames = getSelectedCityNames()
+  const selectedCityNames = currentPrefecture?.cities
+    .filter((city) => selectedCities.has(city.code))
+    .map((city) => city.name) ?? []
 
   return (
     <>

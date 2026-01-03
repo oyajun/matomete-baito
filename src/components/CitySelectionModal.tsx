@@ -30,13 +30,15 @@ export function CitySelectionModal({
   }, [selectedCities])
 
   const handleCityToggle = (cityCode: string) => {
-    const newSelected = new Set(tempSelectedCities)
-    if (newSelected.has(cityCode)) {
-      newSelected.delete(cityCode)
-    } else {
-      newSelected.add(cityCode)
-    }
-    setTempSelectedCities(newSelected)
+    setTempSelectedCities(prev => {
+      const newSelected = new Set(prev)
+      if (newSelected.has(cityCode)) {
+        newSelected.delete(cityCode)
+      } else {
+        newSelected.add(cityCode)
+      }
+      return newSelected
+    })
   }
 
 
@@ -47,9 +49,7 @@ export function CitySelectionModal({
   }
 
   const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (e.target === e.currentTarget) {
-      onClose()
-    }
+    if (e.target === e.currentTarget) onClose()
   }
 
   return (
