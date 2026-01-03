@@ -106,6 +106,7 @@ https://shigotoin.com/search?dst=0&empls[]=03&empls[]=04&lq=東京都 世田谷�
 https://shigotoin.com/search?dst=0&empls[]=01&lq=神奈川県 横浜市鶴見区&q=カフェ
 
 ### recopSearchUrl(domain: string, cityCodes: string[]): string
+地域コードが複数の場合はカンマでつなぐ  
 https://企業のドメイン/jobfind-pc/area/地域/都道府県/地域コード
 #### 例
 https://tsuruha-g.work/jobfind-pc/area/Kanto/Tokyo/13101

@@ -312,9 +312,9 @@ export function recopSearchUrl(domain: string, cityCodes: string[]): string {
         throw new Error(`都道府県が見つかりません: ${prefectureCode}`)
     }
 
-    // 地域コードは市区町村コードの最初の5桁
-    const areaCode = firstCityCode.substring(0, 5)
+    // 地域コードは市区町村コードの最初の5桁をカンマで連結
+    const areaCodes = cityCodes.map(code => code.substring(0, 5)).join(',')
 
     // https://企業のドメイン/jobfind-pc/area/地域/都道府県/地域コード
-    return `https://${domain}/jobfind-pc/area/${region}/${prefecture}/${areaCode}`
+    return `https://${domain}/jobfind-pc/area/${region}/${prefecture}/${areaCodes}`
 }
