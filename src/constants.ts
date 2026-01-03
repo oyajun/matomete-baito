@@ -15,12 +15,17 @@ export interface Prefecture {
     t: City[]   // cities (towns)
 }
 
-// 都道府県と市区町村のデータをJSONファイルから読み込み
-import prefecturesData from './data/prefectures.json'
-import citycodeData from './data/citycode_townwork.json'
-import citycodeBaitoruUrlData from './data/citycode_baitoruurl.json'
+// 都道府県と市区町村のデータをJSONファイルから遅延読み込み
+let prefecturesCache: Prefecture[] | null = null
+let citycodeCache: CitycodeMapping[] | null = null
+let citycodeBaitoruUrlCache: Record<string, string> | null = null
 
-export const PREFECTURES: Prefecture[] = prefecturesData as Prefecture[]
+export async function loadPrefectures(): Promise<Prefecture[]> {
+    if (prefecturesCache) return prefecturesCache
+    const data = await import('./data/prefectures.json')
+    prefecturesCache = data.default as Prefecture[]
+    return prefecturesCache
+}
 
 // 市区町村コードとタウンワークコードのマッピング
 export interface CitycodeMapping {
@@ -28,10 +33,25 @@ export interface CitycodeMapping {
     t: string | null // townwork_code
 }
 
-export const CITYCODE_TOWNWORK: CitycodeMapping[] = citycodeData as CitycodeMapping[]
+export async function loadCitycodeTownwork(): Promise<CitycodeMapping[]> {
+    if (citycodeCache) return citycodeCache
+    const data = await import('./data/citycode_townwork.json')
+    citycodeCache = data.default as CitycodeMapping[]
+    return citycodeCache
+}
 
 // 市区町村コードとバイトルURLパスのマッピング
-export const CITYCODE_BAITORU_URL: Record<string, string> = citycodeBaitoruUrlData as Record<string, string>
+export async function loadCitycodeBaitoruUrl(): Promise<Record<string, string>> {
+    if (citycodeBaitoruUrlCache) return citycodeBaitoruUrlCache
+    const data = await import('./data/citycode_baitoruurl.json')
+    citycodeBaitoruUrlCache = data.default as Record<string, string>
+    return citycodeBaitoruUrlCache
+}
+
+// 後方互換性のための同期アクセス（非推奨）
+export const PREFECTURES: Prefecture[] = []
+export const CITYCODE_TOWNWORK: CitycodeMapping[] = []
+export const CITYCODE_BAITORU_URL: Record<string, string> = {}
 
 // 都道府県コードとタウンワークのslugのマッピング
 export const PREFECTURE_SLUG: Record<string, string> = {

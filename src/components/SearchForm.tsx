@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import { PREFECTURES, EMPLOYMENT_TYPES } from '../constants'
-import type { EmploymentTypeId } from '../constants'
+import { loadPrefectures, EMPLOYMENT_TYPES } from '../constants'
+import type { EmploymentTypeId, Prefecture } from '../constants'
 import { CitySelectionModal } from './CitySelectionModal'
 
 interface SearchFormProps {
@@ -13,6 +13,11 @@ export function SearchForm({ onCriteriaChange }: SearchFormProps) {
   const [selectedCities, setSelectedCities] = useState<Set<string>>(new Set())
   const [selectedEmploymentTypes, setSelectedEmploymentTypes] = useState<Set<EmploymentTypeId>>(new Set(['part_time']))
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [prefectures, setPrefectures] = useState<Prefecture[]>([])
+
+  useEffect(() => {
+    loadPrefectures().then(data => setPrefectures(data))
+  }, [])
 
   const handlePrefectureChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedPrefecture(e.target.value)
@@ -53,7 +58,7 @@ export function SearchForm({ onCriteriaChange }: SearchFormProps) {
     onCriteriaChange(keyword, Array.from(selectedCities), Array.from(selectedEmploymentTypes))
   }, [keyword, selectedCities, selectedEmploymentTypes, onCriteriaChange])
 
-  const currentPrefecture = PREFECTURES.find((p) => p.c === selectedPrefecture)
+  const currentPrefecture = prefectures.find((p) => p.c === selectedPrefecture)
 
   // 選択された市区町村の名前を取得
   const selectedCityNames = currentPrefecture?.t
@@ -71,7 +76,7 @@ export function SearchForm({ onCriteriaChange }: SearchFormProps) {
             onChange={handlePrefectureChange}
             required
           >
-            {PREFECTURES.map((pref) => (
+            {prefectures.map((pref) => (
               <option key={pref.c} value={pref.c}>
                 {pref.n}
               </option>

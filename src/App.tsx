@@ -31,52 +31,65 @@ function App() {
       return
     }
 
-    try {
-      const townworkUrl = townworkSearchUrl(criteria.keyword, criteria.cityCodes, criteria.employmentTypes)
-      const searchResults: SearchResult[] = [
-        {
-          siteName: 'タウンワーク',
-          url: townworkUrl,
-        },
-        {
-          siteName: 'バイトル',
-          url: baitoruSearchUrl(criteria.keyword, criteria.cityCodes, criteria.employmentTypes),
-        },
-        {
-          siteName: 'シゴトin',
-          url: shigotoinSearchUrl(criteria.keyword, criteria.cityCodes, criteria.employmentTypes),
-        },
-      ]
-      setResults(searchResults)
+    async function generateUrls() {
+      try {
+        const [townworkUrl, baitoruUrl, shigotoinUrl] = await Promise.all([
+          townworkSearchUrl(criteria.keyword, criteria.cityCodes, criteria.employmentTypes),
+          baitoruSearchUrl(criteria.keyword, criteria.cityCodes, criteria.employmentTypes),
+          shigotoinSearchUrl(criteria.keyword, criteria.cityCodes, criteria.employmentTypes),
+        ])
 
-      // リクオプの検索結果を生成
-      const recopSearchResults: RecopSearchResult[] = RECOP_CATEGORIES.map(category => {
-        const categoryResults: SearchResult[] = category.companies.map(company => {
-          try {
+        const searchResults: SearchResult[] = [
+          {
+            siteName: 'タウンワーク',
+            url: townworkUrl,
+          },
+          {
+            siteName: 'バイトル',
+            url: baitoruUrl,
+          },
+          {
+            siteName: 'シゴトin',
+            url: shigotoinUrl,
+          },
+        ]
+        setResults(searchResults)
+
+        // リクオプの検索結果を生成
+        const recopSearchResults: RecopSearchResult[] = await Promise.all(
+          RECOP_CATEGORIES.map(async category => {
+            const categoryResults: SearchResult[] = (await Promise.all(
+              category.companies.map(async company => {
+                try {
+                  return {
+                    siteName: company.name,
+                    url: await recopSearchUrl(company.domain, criteria.cityCodes)
+                  }
+                } catch (error) {
+                  return null
+                }
+              })
+            )).filter((result): result is SearchResult => result !== null)
+
             return {
-              siteName: company.name,
-              url: recopSearchUrl(company.domain, criteria.cityCodes)
+              category: category.category,
+              results: categoryResults
             }
-          } catch (error) {
-            return null
-          }
-        }).filter((result): result is SearchResult => result !== null)
+          })
+        )
 
-        return {
-          category: category.category,
-          results: categoryResults
-        }
-      })
-
-      setRecopResults(recopSearchResults)
-      setHelperMessage('')
-    } catch (error) {
-      setResults([])
-      setRecopResults([])
-      setHelperMessage(
-        error instanceof Error ? error.message : '検索URLの生成に失敗しました'
-      )
+        setRecopResults(recopSearchResults)
+        setHelperMessage('')
+      } catch (error) {
+        setResults([])
+        setRecopResults([])
+        setHelperMessage(
+          error instanceof Error ? error.message : '検索URLの生成に失敗しました'
+        )
+      }
     }
+
+    generateUrls()
   }, [criteria])
 
   return (

@@ -1,16 +1,40 @@
 // URL生成関数
 
-import { CITYCODE_BAITORU_URL, CITYCODE_TOWNWORK, PREFECTURE_SLUG, EMPLOYMENT_TYPES, PREFECTURES, RECOP_REGION_MAP, RECOP_PREFECTURE_MAP } from './constants'
-import type { EmploymentTypeId } from './constants'
+import { loadPrefectures, loadCitycodeTownwork, loadCitycodeBaitoruUrl, PREFECTURE_SLUG, EMPLOYMENT_TYPES, RECOP_REGION_MAP, RECOP_PREFECTURE_MAP } from './constants'
+import type { EmploymentTypeId, Prefecture, CitycodeMapping } from './constants'
 import citycodeBaitoruUrlRaw from './data/citycode_baitoruurl.json?raw'
+
+// データのキャッシュ
+let prefecturesCache: Prefecture[] | null = null
+let citycodeCache: CitycodeMapping[] | null = null
+let citycodeBaitoruUrlCache: Record<string, string> | null = null
+
+// データを取得する（初回のみロード、以降はキャッシュから取得）
+async function getDataCaches() {
+    if (!prefecturesCache) {
+        prefecturesCache = await loadPrefectures()
+    }
+    if (!citycodeCache) {
+        citycodeCache = await loadCitycodeTownwork()
+    }
+    if (!citycodeBaitoruUrlCache) {
+        citycodeBaitoruUrlCache = await loadCitycodeBaitoruUrl()
+    }
+    return {
+        prefectures: prefecturesCache,
+        citycode: citycodeCache,
+        citycodeBaitoruUrl: citycodeBaitoruUrlCache
+    }
+}
 
 // ヘルパー関数
 function getUniqueCodes(codes: string[]): string[] {
     return [...new Set(codes)]
 }
 
-function findPrefectureByCode(prefectureCode: string) {
-    const prefecture = PREFECTURES.find(p => p.c === prefectureCode)
+async function findPrefectureByCode(prefectureCode: string) {
+    const caches = await getDataCaches()
+    const prefecture = caches.prefectures.find(p => p.c === prefectureCode)
     if (!prefecture) {
         throw new Error('都道府県が見つかりません')
     }
@@ -55,12 +79,13 @@ const BAITORU_ORDER_INDEX = (() => {
  * @param employmentTypes 雇用形態の配列
  * @returns 検索URL
  */
-export function townworkSearchUrl(keyword: string, cityCodes: string[], employmentTypes: EmploymentTypeId[] = []): string {
+export async function townworkSearchUrl(keyword: string, cityCodes: string[], employmentTypes: EmploymentTypeId[] = []): Promise<string> {
+    const caches = await getDataCaches()
     const uniqueCityCodes = getUniqueCodes(cityCodes)
 
     // 市区町村コードをタウンワークのコードに変換
     const townworkCodes = uniqueCityCodes
-        .map(citycode => CITYCODE_TOWNWORK.find(m => m.c === citycode)?.t)
+        .map(citycode => caches.citycode.find(m => m.c === citycode)?.t)
         .filter((code): code is string => code !== null && code !== undefined)
 
     if (townworkCodes.length === 0) {
@@ -112,7 +137,8 @@ export function townworkSearchUrl(keyword: string, cityCodes: string[], employme
  * @param employmentTypes 雇用形態の配列
  * @returns バイトルの検索URL
  */
-export function baitoruSearchUrl(keyword: string, cityCodes: string[], employmentTypes: EmploymentTypeId[] = []): string {
+export async function baitoruSearchUrl(keyword: string, cityCodes: string[], employmentTypes: EmploymentTypeId[] = []): Promise<string> {
+    const caches = await getDataCaches()
     const uniqueCityCodes = getUniqueCodes(cityCodes)
 
     // 5桁コードをcitycode_baitoruurl.jsonの記述順でソート
@@ -139,7 +165,7 @@ export function baitoruSearchUrl(keyword: string, cityCodes: string[], employmen
     const orderedCodes = normalizedCodes
 
     const paths = orderedCodes.map(code => {
-        const path = CITYCODE_BAITORU_URL[code]
+        const path = caches.citycodeBaitoruUrl[code]
         if (!path) {
             throw new Error(`バイトルのURLパスが見つかりません: ${code}`)
         }
@@ -229,7 +255,7 @@ export function baitoruSearchUrl(keyword: string, cityCodes: string[], employmen
  * @param employmentTypes 雇用形態の配列
  * @returns シゴトinの検索URL
  */
-export function shigotoinSearchUrl(keyword: string, cityCodes: string[], employmentTypes: EmploymentTypeId[] = []): string {
+export async function shigotoinSearchUrl(keyword: string, cityCodes: string[], employmentTypes: EmploymentTypeId[] = []): Promise<string> {
     if (cityCodes.length === 0) {
         throw new Error('市区町村コードを指定してください')
     }
@@ -237,7 +263,7 @@ export function shigotoinSearchUrl(keyword: string, cityCodes: string[], employm
     // 最初の市区町村コードのみを使用
     const firstCityCode = cityCodes[0]
     const prefectureCode = firstCityCode.substring(0, 2)
-    const prefecture = findPrefectureByCode(prefectureCode)
+    const prefecture = await findPrefectureByCode(prefectureCode)
 
     // 市区町村コードから市区町村名を取得
     const city = prefecture.t.find(c => c.c === firstCityCode)
@@ -274,7 +300,7 @@ export function shigotoinSearchUrl(keyword: string, cityCodes: string[], employm
  * @param cityCodes 市区町村コードの配列
  * @returns リクオプの検索URL
  */
-export function recopSearchUrl(domain: string, cityCodes: string[]): string {
+export async function recopSearchUrl(domain: string, cityCodes: string[]): Promise<string> {
     if (cityCodes.length === 0) {
         throw new Error('市区町村コードを指定してください')
     }
